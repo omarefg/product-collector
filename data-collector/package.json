@@ -1,0 +1,17 @@
+{
+  "name": "data-collector",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ml:countries": "node src/mercadolibre/countries.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "mongodb": "^3.5.3"
+  }
+}
