@@ -4,7 +4,7 @@ const app = express()
 
 app.get('/', (req, res) => {
     res.json({
-        hola: 'mundo'
+        hola: 'mundo cruel'
     })
 })
 

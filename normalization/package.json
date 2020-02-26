@@ -6,9 +6,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "docker:destroy": "docker-compose down && docker system prune && docker volume prune",
-    "docker:stop": "docker-compose down",
-    "docker:start": "docker-compose up -d"
+    "docker:start": "./bash/normalization.sh start",
+    "docker:stop": "./bash/normalization.sh stop",
+    "docker:clean": "./bash/normalization.sh clean"
   },
   "keywords": [],
   "author": "",
