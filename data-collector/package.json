@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ml:countries": "node src/mercadolibre/countries.js"
+    "ml:countries": "node src/mercadolibre/countries.js",
+    "ml:categories": "node src/mercadolibre/categories.js"
   },
   "keywords": [],
   "author": "",

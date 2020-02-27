@@ -54,7 +54,7 @@ class MongoConnect {
   createMany(collection, data) {
     return this.connect()
       .then((db) => db.collection(collection).insertMany(data))
-      .then((result) => result.insertedId)
+      .then((result) => result)
       .catch((err) => console.error(err));
   }
 

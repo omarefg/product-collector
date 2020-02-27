@@ -15,6 +15,11 @@ const countries = async () => {
   }
 };
 
-console.time("Import countries");
-countries();
-console.timeEnd("Import countries");
+const main = async () =>{
+  console.time("Import countries");
+  await countries();
+  console.timeEnd("Import countries");
+  process.exit(0)
+} 
+
+main()

@@ -1,16 +1,15 @@
 const MongoConnect = require("../../lib/mongo");
 const { config } = require("../../config");
 
-class CountriesService {
-  
+class CategoriesService {
   constructor() {
     this.mongodb = new MongoConnect();
-    this.collection = "countries";
+    this.collection = "categories";
   }
 
-  createCountries(data) {
+  createCategories(data) {
     try {
-      const countries = data.map((item) => {
+      const categories = data.map((item) => {
         const obj = {
           _id: item.id,
           ...item
@@ -18,13 +17,13 @@ class CountriesService {
         delete obj.id;
         return obj;
       });
-      return this.mongodb.createMany(this.collection, countries);
+      return this.mongodb.createMany(this.collection, categories);
     } catch (error) {
       throw new Error(error);
     }
   }
 
-  async getCountries() {
+  async getCategories() {
     try {
       const data = await this.mongodb.getAll(this.collection, {});
       return data;
@@ -34,4 +33,4 @@ class CountriesService {
   }
 }
 
-module.exports = CountriesService;
+module.exports = CategoriesService;
