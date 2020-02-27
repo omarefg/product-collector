@@ -1,6 +1,6 @@
-const express = require('express');
+const express = require('express')
 
-const app = express();
+const app = express()
 
 app.get('/', (req, res) => {
     res.json({
@@ -9,5 +9,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(3000, () => {
-    console.log(`Server running on http://localhost:3000`)
+    console.log('Server running on http://localhost:3000')
 })
