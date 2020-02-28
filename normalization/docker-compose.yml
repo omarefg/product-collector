@@ -2,10 +2,10 @@ version: "3.7"
 
 services:
 
-  # myapp:
+  # app:
   #   container_name: normalization_app
   #   restart: always
-  #   build: .
+  #   build: docker-image-app
   #   ports:
   #     - '3000:3000'
   #   links:
@@ -14,7 +14,7 @@ services:
 
   mongo:
     container_name: normalization_mongo
-    image: mongo
+    build: docker-image-mongo
     ports:
       - "27027:27017"
     volumes:
