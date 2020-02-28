@@ -31,7 +31,7 @@ const apiKeys = [
     }
 ]
 
-function generateRandomToken () {
+export function generateRandomToken () {
     const buffer = crypto.randomBytes(32)
     return buffer.toString('hex')
 }
