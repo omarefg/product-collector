@@ -5,16 +5,16 @@ START="start"
 STOP="stop"
 
 if [ "$#" -eq 0 ] || [ $1 = "-h" ] || [ $1 = "--help" ]; then
-    echo "Usage: ./normalization [OPTIONS] COMMAND [arg...]"
-    echo "       ./normalization [ -h | --help ]"
+    echo "Usage: ./docker_services.bash [OPTIONS] COMMAND [arg...]"
+    echo "       ./docker_services.bash [ -h | --help ]"
     echo ""
     echo "Options:"
     echo "  -h, --help    Prints usage."
     echo ""
     echo "Commands:"
-    echo "  $CLEAN      - Stop and Remove normalization containers."
-    echo "  $START        - Build and Run normalization."
-    echo "  $STOP       - Stop normalization."
+    echo "  $CLEAN      - Stop and Remove docker_services containers."
+    echo "  $START        - Build and Run docker_services."
+    echo "  $STOP       - Stop docker_services."
     exit
 fi
 

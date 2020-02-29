@@ -5,10 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "docker:start": "./bash/normalization.sh start",
-    "docker:stop": "./bash/normalization.sh stop",
-    "docker:clean": "./bash/normalization.sh clean"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
