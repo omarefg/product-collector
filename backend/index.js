@@ -1,10 +1,12 @@
 const express = require('express');
+const helmet = require('helmet');
 const app = express();
 
 const { config } = require('./config/index');
 
+app.use(helmet());
+
 app.use('/', function(req, res) {
-  console.log(req);
   res.send('Hola');
 });
 
