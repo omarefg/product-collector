@@ -1,0 +1,43 @@
+version: "3.7"
+
+services:
+
+  # normalization:
+  #   container_name: normalization
+  #   restart: always
+  #   build:
+  #     context: ./
+  #     dockerfile: ./docker/normalization/Dockerfile
+  #   ports:
+  #     - '3000:3000'
+  #   links:
+  #     - redis
+  #     - mongo
+  #   env_file:
+  #     - .env
+
+  mongo:
+    container_name: product_collector_mongo
+    build:
+      context: ./
+      dockerfile: ./docker/mongo/Dockerfile
+    ports:
+      - "27027:27017"
+    volumes:
+      - product_collector_mongo:/data/mongodb
+    env_file:
+      - .env
+
+  redis:
+    container_name: product_collector_redis
+    image: redis
+    ports:
+      - "6389:6379"
+    volumes:
+      - product_collector_redis:/data/redis
+    env_file:
+      - .env
+
+volumes:
+  product_collector_mongo:
+  product_collector_redis:
