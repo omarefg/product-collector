@@ -1,0 +1,165 @@
+// Color system
+
+$white=    #fff 
+$gray-100= #f8f9fa 
+$gray-200= #e9ecef 
+$gray-300= #dee2e6 
+$gray-400= #ced4da 
+$gray-500= #adb5bd 
+$gray-600= #6c757d 
+$gray-700= #495057 
+$gray-800= #343a40 
+$gray-900= #212529 
+$black=    #000 
+
+
+$blue=    #0d6efd 
+$indigo=  #6610f2 
+$purple=  #6f42c1 
+$pink=    #d63384 
+$red=     #dc3545 
+$orange=  #fd7e14 
+$yellow=  #ffc107 
+$green=   #28a745 
+$teal=    #20c997 
+$cyan=    #17a2b8 
+
+
+$primary=       $blue 
+$secondary=     $gray-600 
+$success=       $green 
+$info=          $cyan 
+$warning=       $yellow 
+$danger=        $red 
+$light=         $gray-100 
+$dark=          $gray-800 
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer= 1rem 
+
+$negative-spacers= negativify-map($spacers) 
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg=                   $white 
+$body-color=                $gray-900 
+$body-text-align=           null 
+
+// Links
+//
+// Style anchor elements.
+$link-color = #3cb878 
+
+
+$link-color=                              $primary 
+$link-decoration=                         none 
+$link-hover-color=                        darken($link-color, 15%) 
+$link-hover-decoration=                   underline 
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage= 15% 
+
+$stretched-link-pseudo-element=           after 
+$stretched-link-z-index=                  1 
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom=   1rem 
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif=      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" 
+$font-family-monospace=       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace 
+$font-family-base=            $font-family-sans-serif 
+// stylelint-enable value-keyword-case
+
+// $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
+// $font-size-base effects the font size of the body text
+$font-size-root=              null 
+$font-size-base=              1rem  // Assumes the browser default, typically `16px`
+$font-size-lg=                $font-size-base * 1.25 
+$font-size-sm=                $font-size-base * .875 
+
+$font-weight-lighter=         lighter 
+$font-weight-light=           300 
+$font-weight-normal=          400 
+$font-weight-bold=            700 
+$font-weight-bolder=          bolder 
+
+$font-weight-base=            $font-weight-normal 
+
+$line-height-base=            1.5 
+$line-height-lg=              2 
+$line-height-sm=              1.25 
+
+$h1-font-size=                $font-size-base * 2.5 
+$h2-font-size=                $font-size-base * 2 
+$h3-font-size=                $font-size-base * 1.75 
+$h4-font-size=                $font-size-base * 1.5 
+$h5-font-size=                $font-size-base * 1.25 
+$h6-font-size=                $font-size-base 
+
+$headings-margin-bottom=      $spacer/2 
+$headings-font-family=        null 
+$headings-font-style=         null 
+$headings-font-weight=        500 
+$headings-line-height=        1.2 
+$headings-color=              null 
+
+$display1-size=               6rem 
+$display2-size=               5.5rem 
+$display3-size=               4.5rem 
+$display4-size=               3.5rem 
+
+$display1-weight=             300 
+$display2-weight=             300 
+$display3-weight=             300 
+$display4-weight=             300 
+$display-line-height=         $headings-line-height 
+
+$lead-font-size=              $font-size-base * 1.25 
+$lead-font-weight=            300 
+
+$small-font-size=             .875em 
+
+$sub-sup-font-size=           .75em 
+
+$text-muted=                  $gray-600 
+
+$initialism-font-size=        $small-font-size 
+
+$blockquote-small-color=      $gray-600 
+$blockquote-small-font-size=  $small-font-size 
+$blockquote-font-size=        $font-size-base * 1.25 
+
+$hr-color=                    inherit 
+$hr-height=                   $border-width 
+$hr-opacity=                  .25 
+
+$legend-margin-bottom=        .5rem 
+$legend-font-size=            1.5rem 
+$legend-font-weight=          null 
+
+$mark-padding=                .2em 
+
+$dt-font-weight=              $font-weight-bold 
+
+$nested-kbd-font-weight=      $font-weight-bold 
+
+$list-inline-padding=         .5rem 
+
+$mark-bg=                     #fcf8e3 
+
+$hr-margin-y=                 $spacer 
