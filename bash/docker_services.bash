@@ -31,9 +31,9 @@ start() {
 }
 
 stop() {
-  NORMALIZATION="$(docker ps --all --quiet --filter=name=normalization_app)"
-  REDIS="$(docker ps --all --quiet --filter=name=normalization_redis)"
-  MONGO="$(docker ps --all --quiet --filter=name=normalization_mongo)"
+  NORMALIZATION="$(docker ps --all --quiet --filter=name=normalization)"
+  REDIS="$(docker ps --all --quiet --filter=name=product_collector_redis)"
+  MONGO="$(docker ps --all --quiet --filter=name=product_collector_mongo)"
 
   if [ -n "$NORMALIZATION" ]; then
     docker stop $NORMALIZATION

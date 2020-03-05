@@ -8,7 +8,7 @@
 ```
 #### Then dump the data
 ```console
-docker exec product_collector_mongo export ./mongo.bash dump
+docker exec product_collector_mongo ./mongo.bash dump
 ```
 #### At last restore the dumped data
 ```console

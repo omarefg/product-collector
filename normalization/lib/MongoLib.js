@@ -1,17 +1,21 @@
 /* eslint-disable no-console */
 const { MongoClient, ObjectId } = require('mongodb')
-const { config } = require('../config/index')
+const { config } = require('../config')
 
-const DB_USER = encodeURIComponent(config.dbUser)
-const DB_PASSWORD = encodeURIComponent(config.dbPassword)
-const DB_NAME = config.dbName
+const { dbUser, dbPassword, dbName, dbPort, dbHost, nodeEnv } = config
 
-const MONGO_URI = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${config.dbHost}/${DB_NAME}`
+const DB_USER = encodeURIComponent(dbUser)
+const DB_PASSWORD = encodeURIComponent(dbPassword)
+let MONGO_URI = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${dbHost}/${dbName}?retryWrites=true&w=majority`
+
+if (nodeEnv === 'development') {
+    MONGO_URI = `mongodb://${dbHost}:${dbPort}`
+}
 
 class MongoLib {
     constructor () {
         this.client = new MongoClient(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-        this.dbName = DB_NAME
+        this.dbName = dbName
     }
 
     connect () {
@@ -19,7 +23,7 @@ class MongoLib {
             MongoLib.connection = new Promise((resolve, reject) => {
                 this.client.connect(err => {
                     if (err) {
-                        reject(err)
+                        return reject(err)
                     }
 
                     console.log('MongoDB Conected')
@@ -33,9 +37,13 @@ class MongoLib {
 
     // METHODS
     getAll (collection, query) {
-        return this.connect().then(db => {
-            return db.collection(collection).find(query).toArray()
-        })
+        return this.connect()
+            .then(db => {
+                return db.collection(collection).find(query).toArray()
+            })
+            .catch(error => {
+                throw error
+            })
     }
 
     get (collection, id) {

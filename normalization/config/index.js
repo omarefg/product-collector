@@ -9,11 +9,15 @@ const config = {
     dbPassword: process.env.DB_PASSWORD,
     dbHost: process.env.DB_HOST,
     dbName: process.env.DB_NAME,
+    dbPort: process.env.DB_PORT,
 
-    authJwtSecret: process.env.AUTH_JWT_SECRET,
-    defaulAdminPassword: process.env.DEFAULT_ADMIN_PASSWORD,
-    defaulUserPassword: process.env.DEFAULT_USER_PASSWORD,
-    AuthJwtSecret: process.env.AUTH_JWT_SECRET
+    redisDbUser: process.env.REDIS_DB_USER,
+    redisDbPassword: process.env.REDIS_DB_PASSWORD,
+    redisDbHost: process.env.REDIS_DB_HOST,
+    redisDbPort: process.env.REDIS_DB_PORT,
+    redisDbName: process.env.REDIS_DB_NAME,
+
+    nodeEnv: process.env.NODE_ENV
 
 }
 
