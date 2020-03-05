@@ -7,7 +7,11 @@ const productsApi = require('./components/products/routes');
 const keywordsApi = require('./components/keywords/routes');
 const categoriesApi = require('./components/categories/routes');
 
+// body parser
+app.use(express.json());
 app.use(helmet());
+
+//Routes
 productsApi(app);
 keywordsApi(app);
 categoriesApi(app);
