@@ -1,13 +1,13 @@
 const express = require('express')
+const authApi = require('./routes/auth')
+const { config } = require('./config/index')
 
 const app = express()
 
-app.get('/', (req, res) => {
-    res.json({
-        hola: 'mundo cruel'
-    })
-})
+app.use(express.json())
 
-app.listen(3000, () => {
-    console.log('Server running on http://localhost:3000')
+authApi(app)
+
+app.listen(config.port, () => {
+    console.log(`Server running on http://localhost:${config.port}`)
 })
