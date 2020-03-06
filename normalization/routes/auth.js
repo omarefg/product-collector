@@ -17,7 +17,7 @@ function authApi (app) {
             const token = await authService.validateKey(authKey)
             res.status(200).send({ token })
         } catch (error) {
-            next(boom.internal(error))
+            next(boom.unauthorized())
         }
     })
 }

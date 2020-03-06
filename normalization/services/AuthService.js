@@ -13,7 +13,7 @@ class AuthService {
     }
 
     async validateKey (key) {
-        const [app] = await this.mongoDB.getAll(this.collection, { key })
+        const [app] = await this.mongoDB.getAll(this.collection, { token: key })
 
         if (!app) {
             throw boom.unauthorized()
