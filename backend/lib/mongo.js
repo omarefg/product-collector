@@ -49,13 +49,22 @@ class MongoLib {
       })
       .then(result => result.upsertedId || id);
   }
-
   delete(collection, id) {
     return this.connect()
       .then(db => {
         return db.collection(collection).deleteOne({ _id: ObjectId(id) });
       })
       .then(() => id);
+  }
+  getAll(collection, query){
+      return this.connect().then(db => {
+          return db.collection(collection).find(query).toArray();
+      })
+  }
+  get(collection, id) {
+      return this.connect().then(db => {
+          return db.collection(collection).findOne({ _id: ObjectId(id)});
+      })
   }
 }
 
