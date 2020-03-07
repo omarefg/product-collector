@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "DEBUG=app:* nodemon index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "helloworld": "node ./helloworld.js",
+    "dir": "ls"
   },
   "author": "",
   "license": "ISC",
