@@ -18,6 +18,19 @@ function productsApi(app) {
       next(error);
     }
   });
+
+  router.get('/:productId', async function(req, res, next) {
+    const { productId } = req.params;
+    try {
+      const products = await productsService.getProduct({ productId });
+      res.status(200).json({
+        data: products,
+        message: 'product retrieved'
+      });
+    } catch (error) {
+      next(error);
+    }
+  });
 }
 
 module.exports = productsApi;
