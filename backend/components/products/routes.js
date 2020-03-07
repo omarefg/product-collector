@@ -31,6 +31,19 @@ function productsApi(app) {
       next(error);
     }
   });
+
+  router.post('/', async function(req, res, next) {
+    const { body: product } = req;
+    try {
+      const createdProductId = await productsService.createProduct({ product });
+      res.status(201).json({
+        data: createdProductId,
+        message: 'product created'
+      });
+    } catch (error) {
+      next(error);
+    }
+  });
 }
 
 module.exports = productsApi;
