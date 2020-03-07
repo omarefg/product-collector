@@ -1,19 +1,21 @@
 const express = require('express');
-const { productsMock } = require('../../utils/mocks/productsMock');
+const ProductsService = require('./productsService');
 
 function productsApi(app) {
   const router = express.Router();
   app.use('/api/products', router);
+  const productsService = new ProductsService();
 
   router.get('/', async function(req, res, next) {
+    const { categories } = req.query;
     try {
-      const products = await Promise.resolve(productsMock);
+      const products = await productsService.getProducts({ categories });
       res.status(200).json({
         data: products,
-        message: 'products list'
+        message: 'products listed'
       });
-    } catch (err) {
-      next(err);
+    } catch (error) {
+      next(error);
     }
   });
 }
