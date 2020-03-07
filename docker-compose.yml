@@ -38,6 +38,18 @@ services:
     env_file:
       - .env
 
+  backend:
+    container_name: product_collector_backend
+    build:
+      context: ./
+      dockerfile: ./docker/backend/Dockerfile
+    volumes:
+      - ./backend:/var/www
+    working_dir: /var/www
+    command: /bin/sh -c "npm install && npm run dev"
+    ports:
+      - 3001:3000
+
 volumes:
   product_collector_mongo:
   product_collector_redis:
