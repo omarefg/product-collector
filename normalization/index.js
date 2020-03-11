@@ -1,14 +1,25 @@
 const express = require('express')
-const authApi = require('./routes/auth')
+const router = require('./network/routes');
+
 const notFound = require('./utils/middleware/notFoundHandler')
 const { logErrors, errorHandler, wrapErrors } = require('./utils/middleware/errorHandlers')
 const { config } = require('./config/index')
 
 const app = express()
-
+// CORS
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Headers', '*')
+    if (req.method === 'OPTIONS') {
+        res.header('Access-Control-Allow-Methods',
+            'PUT,POST,PATCH,DELETE, GET')
+        return res.status(200).json({})
+    }
+    next()
+})
 app.use(express.json())
 
-authApi(app)
+router(app)
 app.use(notFound)
 
 app.use(logErrors)
