@@ -1,7 +1,7 @@
-const MongoLib = require('../lib/MongoLib')
-const RedisLib = require('../lib/RedisLib')
+const MongoLib = require('../../lib/MongoLib')
+const RedisLib = require('../../lib/RedisLib')
 const boom = require('@hapi/boom')
-const { generateRandomToken } = require('../utils/token')
+const { generateRandomToken } = require('../../utils/token')
 const jwt = require('jsonwebtoken')
 const TWO_HOURS_IN_SEC = 7200
 
@@ -13,7 +13,7 @@ class AuthService {
     }
 
     async validateKey (key) {
-        const [app] = await this.mongoDB.getAll(this.collection, { key })
+        const [app] = await this.mongoDB.getAll(this.collection, { token: key })
 
         if (!app) {
             throw boom.unauthorized()
