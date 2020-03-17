@@ -11,14 +11,29 @@ router.post(
     '/normalize',
     tokenHandler,
     async function (req, res, next) {
-        const token = req.headers.authorization
-        const { data, source } = req.body
+        let tokenVerify = 1
+        let dataNormalize = 1
+        let dataId = 1
+
         try {
-            const { token: t, secret } = await dataManagerService.searchForSecretByToken(token)
-            response.success(req, res, { token: t, secret }, 201)
+            const token = req.headers.authorization
+            tokenVerify = await dataManagerService.searchForSecretByToken(token)
         } catch (error) {
             next(boom.unauthorized())
         }
-    })
+
+        if (!tokenVerify) {
+            dataNormalize = dataManagerService.normalize(req.body)
+        }
+
+        if (dataNormalize !== 1) {
+            dataId = await dataManagerService.save(dataNormalize)
+        }
+
+        if (dataId !== 1) {
+            response.success(req, res, dataId, 201)
+        }
+    }
+)
 
 module.exports = router

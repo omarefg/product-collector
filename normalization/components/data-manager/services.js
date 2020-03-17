@@ -10,27 +10,6 @@ class DataManagerService {
         this.redisDB = new RedisLib()
     }
 
-    async save () {
-        try {
-            const id = await this.mongoDB.create(this.collection, {
-                date: '2020-01-01',
-                keyword: 'xbox',
-                country: 'CO',
-                origin: 'mercadolibre',
-                categoryName: 'Categoria',
-                productName: 'Xbox One',
-                visits: 1420
-            })
-            return id
-        } catch (error) {
-            throw new Error(error)
-        }
-    }
-
-    normalize () {
-
-    }
-
     async searchForSecretByToken (token) {
         try {
             const secret = await this.redisDB.get(token)
@@ -38,11 +17,36 @@ class DataManagerService {
                 throw boom.unauthorized()
             }
             jwt.verify(token, secret)
-            await this.save()
-            return { token, secret }
+            return 0
         } catch (error) {
             throw new Error(error)
         }
+    }
+
+    async save (dataToSave) {
+        try {
+            const id = await this.mongoDB.create(this.collection, dataToSave)
+            return id
+        } catch (error) {
+            throw boom.internal(error.message)
+        }
+    }
+
+    normalize (dataReqBody) {
+        const countriesIdsMercadoLibre = {MCO: 'CO', MLA: 'AR'}
+        const { data, source } = dataReqBody
+
+        const dataNorm = {
+            date: data[3].date_from,
+            keyword: data[0].id,
+            country: countriesIdsMercadoLibre[data[0].site_id],
+            origin: source,
+            categoryName: data[1].category,
+            productName: data[0].title,
+            visits: data[3].total_visits
+        }
+
+        return dataNorm
     }
 }
 
