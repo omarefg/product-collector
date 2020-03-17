@@ -25,15 +25,14 @@ class DataManagerService {
 
     async save (dataToSave) {
         try {
-            const id = await this.mongoDB.create(this.collection, dataToSave)
-            return id
+            return await this.mongoDB.create(this.collection, dataToSave)
         } catch (error) {
             throw boom.internal(error.message)
         }
     }
 
-    normalize (dataReqBody) {
-        const countriesIdsMercadoLibre = {MCO: 'CO', MLA: 'AR'}
+    async normalize (dataReqBody) {
+        const countriesIdsMercadoLibre = { MCO: 'CO', MLA: 'AR' }
         const { data, source } = dataReqBody
 
         const dataNorm = {
@@ -46,7 +45,7 @@ class DataManagerService {
             visits: data[3].total_visits
         }
 
-        return dataNorm
+        return this.save(dataNorm)
     }
 }
 

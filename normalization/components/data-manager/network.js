@@ -3,6 +3,7 @@ const boom = require('@hapi/boom')
 const DataManagerService = require('./services')
 const response = require('../../network/response')
 const tokenHandler = require('../../utils/middleware/tokenHandler')
+const bodyDataHandler = require('../../utils/middleware/bodyDataHandler')
 const dataManagerService = new DataManagerService()
 
 const router = express.Router()
@@ -10,28 +11,20 @@ const router = express.Router()
 router.post(
     '/normalize',
     tokenHandler,
+    bodyDataHandler,
     async function (req, res, next) {
-        let tokenVerify = 1
-        let dataNormalize = 1
-        let dataId = 1
-
         try {
             const token = req.headers.authorization
-            tokenVerify = await dataManagerService.searchForSecretByToken(token)
+            await dataManagerService.searchForSecretByToken(token)
+
+            try {
+                const idDB = await dataManagerService.normalize(req.body)
+                response.success(req, res, idDB, 201)
+            } catch (error) {
+                next(boom.badImplementation(error.message))
+            }
         } catch (error) {
             next(boom.unauthorized())
-        }
-
-        if (!tokenVerify) {
-            dataNormalize = dataManagerService.normalize(req.body)
-        }
-
-        if (dataNormalize !== 1) {
-            dataId = await dataManagerService.save(dataNormalize)
-        }
-
-        if (dataId !== 1) {
-            response.success(req, res, dataId, 201)
         }
     }
 )

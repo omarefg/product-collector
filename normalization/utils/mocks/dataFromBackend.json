@@ -1,0 +1,1514 @@
+{
+  "source": "mercadolibre",
+  "normalizeType": "firstInput",
+  "data": [
+    {
+      "id": "MCO539375521",
+      "site_id": "MCO",
+      "title": "Celular Libre Xiaomi Redmi Note 8 64gb 48mpx 4g Lte",
+      "subtitle": null,
+      "seller_id": 42948375,
+      "category_id": "MCO1055",
+      "official_store_id": null,
+      "price": 649900,
+      "base_price": 649900,
+      "original_price": 799900,
+      "currency_id": "COP",
+      "initial_quantity": 1801,
+      "available_quantity": 100,
+      "sold_quantity": 1250,
+      "sale_terms": [
+        {
+          "id": "WARRANTY_TIME",
+          "name": "Tiempo de garantía",
+          "value_id": null,
+          "value_name": "6 meses",
+          "value_struct": {
+            "number": 6,
+            "unit": "meses"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "6 meses",
+              "struct": {
+                "number": 6,
+                "unit": "meses"
+              }
+            }
+          ]
+        },
+        {
+          "id": "WARRANTY_TYPE",
+          "name": "Tipo de garantía",
+          "value_id": "2230280",
+          "value_name": "Garantía del vendedor",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230280",
+              "name": "Garantía del vendedor",
+              "struct": null
+            }
+          ]
+        }
+      ],
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "start_time": "2019-10-25T23:27:28.000Z",
+      "stop_time": "2039-10-20T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.co/MCO-539375521-celular-libre-xiaomi-redmi-note-8-64gb-48mpx-4g-lte-_JM",
+      "thumbnail": "http://mco-s2-p.mlstatic.com/780593-MCO32664019418_102019-I.jpg",
+      "secure_thumbnail": "https://mco-s2-p.mlstatic.com/780593-MCO32664019418_102019-I.jpg",
+      "pictures": [
+        {
+          "id": "780593-MCO32664019418_102019",
+          "url": "http://mco-s2-p.mlstatic.com/780593-MCO32664019418_102019-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/780593-MCO32664019418_102019-O.jpg",
+          "size": "389x500",
+          "max_size": "828x1064",
+          "quality": ""
+        },
+        {
+          "id": "785927-MCO32664030099_102019",
+          "url": "http://mco-s2-p.mlstatic.com/785927-MCO32664030099_102019-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/785927-MCO32664030099_102019-O.jpg",
+          "size": "254x500",
+          "max_size": "536x1055",
+          "quality": ""
+        },
+        {
+          "id": "625564-MCO32663967959_102019",
+          "url": "http://mco-s2-p.mlstatic.com/625564-MCO32663967959_102019-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/625564-MCO32663967959_102019-O.jpg",
+          "size": "357x500",
+          "max_size": "756x1056",
+          "quality": ""
+        },
+        {
+          "id": "772217-MCO40319648137_012020",
+          "url": "http://mco-s2-p.mlstatic.com/772217-MCO40319648137_012020-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/772217-MCO40319648137_012020-O.jpg",
+          "size": "500x336",
+          "max_size": "988x664",
+          "quality": ""
+        },
+        {
+          "id": "762890-MCO32664019302_102019",
+          "url": "http://mco-s2-p.mlstatic.com/762890-MCO32664019302_102019-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/762890-MCO32664019302_102019-O.jpg",
+          "size": "392x500",
+          "max_size": "414x528",
+          "quality": ""
+        },
+        {
+          "id": "732979-MCO32663992749_102019",
+          "url": "http://mco-s2-p.mlstatic.com/732979-MCO32663992749_102019-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/732979-MCO32663992749_102019-O.jpg",
+          "size": "254x500",
+          "max_size": "546x1074",
+          "quality": ""
+        },
+        {
+          "id": "807040-MCO32664027151_102019",
+          "url": "http://mco-s2-p.mlstatic.com/807040-MCO32664027151_102019-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/807040-MCO32664027151_102019-O.jpg",
+          "size": "500x479",
+          "max_size": "1252x1200",
+          "quality": ""
+        },
+        {
+          "id": "914257-MCO40319651152_012020",
+          "url": "http://mco-s2-p.mlstatic.com/914257-MCO40319651152_012020-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/914257-MCO40319651152_012020-O.jpg",
+          "size": "500x336",
+          "max_size": "988x664",
+          "quality": ""
+        },
+        {
+          "id": "784830-MCO32664021466_102019",
+          "url": "http://mco-s2-p.mlstatic.com/784830-MCO32664021466_102019-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/784830-MCO32664021466_102019-O.jpg",
+          "size": "387x500",
+          "max_size": "834x1077",
+          "quality": ""
+        },
+        {
+          "id": "921640-MCO32663992787_102019",
+          "url": "http://mco-s2-p.mlstatic.com/921640-MCO32663992787_102019-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/921640-MCO32663992787_102019-O.jpg",
+          "size": "351x500",
+          "max_size": "756x1074",
+          "quality": ""
+        },
+        {
+          "id": "608235-MCO32664030230_102019",
+          "url": "http://mco-s2-p.mlstatic.com/608235-MCO32664030230_102019-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/608235-MCO32664030230_102019-O.jpg",
+          "size": "500x460",
+          "max_size": "1004x925",
+          "quality": ""
+        },
+        {
+          "id": "903001-MCO40319635526_012020",
+          "url": "http://mco-s2-p.mlstatic.com/903001-MCO40319635526_012020-O.jpg",
+          "secure_url": "https://mco-s2-p.mlstatic.com/903001-MCO40319635526_012020-O.jpg",
+          "size": "500x336",
+          "max_size": "988x664",
+          "quality": ""
+        }
+      ],
+      "video_id": "3qSofqgV9Xc",
+      "descriptions": [
+        {
+          "id": "MCO539375521-2359019505"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "non_mercado_pago_payment_methods": [
+      ],
+      "shipping": {
+        "mode": "me2",
+        "free_methods": [
+          {
+            "id": 501745,
+            "rule": {
+              "default": true,
+              "free_mode": "country",
+              "free_shipping_flag": true,
+              "value": null
+            }
+          }
+        ],
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "dimensions": null,
+        "local_pick_up": true,
+        "free_shipping": true,
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "international_delivery_mode": "none",
+      "seller_address": {
+        "city": {
+          "id": "TUNPQ1VTQTY3MTQ1",
+          "name": "Usaquén"
+        },
+        "state": {
+          "id": "CO-DC",
+          "name": "Bogotá D.C."
+        },
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "search_location": {
+          "city": {
+            "id": "TUNPQ1VTQTY3MTQ1",
+            "name": "Usaquén"
+          },
+          "state": {
+            "id": "TUNPUEJPR1gxMDljZA",
+            "name": "Bogotá D.C."
+          }
+        },
+        "latitude": 4.7005267,
+        "longitude": -74.04633,
+        "id": 162493259
+      },
+      "seller_contact": null,
+      "location": {
+      },
+      "geolocation": {
+        "latitude": 4.7005267,
+        "longitude": -74.04633
+      },
+      "coverage_areas": [
+      ],
+      "attributes": [
+        {
+          "id": "BATTERY_CAPACITY",
+          "name": "Capacidad de la batería",
+          "value_id": "106685",
+          "value_name": "4000 mAh",
+          "value_struct": {
+            "number": 4000,
+            "unit": "mAh"
+          },
+          "values": [
+            {
+              "id": "106685",
+              "name": "4000 mAh",
+              "struct": {
+                "number": 4000,
+                "unit": "mAh"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "BATTERY_TYPE",
+          "name": "Tipo de batería",
+          "value_id": "7573636",
+          "value_name": "Li-Po",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7573636",
+              "name": "Li-Po",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "59387",
+          "value_name": "Xiaomi",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "59387",
+              "name": "Xiaomi",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "CARRIER",
+          "name": "Compañía telefónica",
+          "value_id": "298335",
+          "value_name": "Liberado",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "298335",
+              "name": "Liberado",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "CPU_MODEL",
+          "name": "Modelo de CPU",
+          "value_id": "7671212",
+          "value_name": "4x2 GHz Kryo 260 Gold/4x1.8 GHz Kryo 260 Silver",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7671212",
+              "name": "4x2 GHz Kryo 260 Gold/4x1.8 GHz Kryo 260 Silver",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "DEPTH",
+          "name": "Profundidad",
+          "value_id": "7439462",
+          "value_name": "8.35 mm",
+          "value_struct": {
+            "number": 8.35,
+            "unit": "mm"
+          },
+          "values": [
+            {
+              "id": "7439462",
+              "name": "8.35 mm",
+              "struct": {
+                "number": 8.35,
+                "unit": "mm"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "DIGITAL_ZOOM",
+          "name": "Zoom digital",
+          "value_id": "7199637",
+          "value_name": "10x",
+          "value_struct": {
+            "number": 10,
+            "unit": "x"
+          },
+          "values": [
+            {
+              "id": "7199637",
+              "name": "10x",
+              "struct": {
+                "number": 10,
+                "unit": "x"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "DISPLAY_RESOLUTION",
+          "name": "Resolución de la pantalla",
+          "value_id": "7209646",
+          "value_name": "1080 px x 2340 px",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7209646",
+              "name": "1080 px x 2340 px",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "DISPLAY_SIZE",
+          "name": "Tamaño de la pantalla",
+          "value_id": null,
+          "value_name": "6.3 pulgadas",
+          "value_struct": {
+            "number": 6.3,
+            "unit": "pulgadas"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "6.3 pulgadas",
+              "struct": {
+                "number": 6.3,
+                "unit": "pulgadas"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "FRONT_CAMERAS_NUMBER",
+          "name": "Número de cámaras frontales",
+          "value_id": "7477216",
+          "value_name": "1",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7477216",
+              "name": "1",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "FRONT_CAMERA_APERTURE",
+          "name": "Apertura del diafragma de la cámara frontal",
+          "value_id": "7408577",
+          "value_name": "f 2.0",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7408577",
+              "name": "f 2.0",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "FRONT_CAMERA_RECORDING_RESOLUTION",
+          "name": "Resolución de video de la cámara frontal",
+          "value_id": "7173215",
+          "value_name": "1920 px x 1080 px",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7173215",
+              "name": "1920 px x 1080 px",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "GPU_MODEL",
+          "name": "Modelo de GPU",
+          "value_id": "7671213",
+          "value_name": "Adreno 610",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7671213",
+              "name": "Adreno 610",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "HEIGHT",
+          "name": "Altura",
+          "value_id": "6938049",
+          "value_name": "158.3 mm",
+          "value_struct": {
+            "number": 158.3,
+            "unit": "mm"
+          },
+          "values": [
+            {
+              "id": "6938049",
+              "name": "158.3 mm",
+              "struct": {
+                "number": 158.3,
+                "unit": "mm"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "INTERNAL_MEMORY",
+          "name": "Memoria interna",
+          "value_id": null,
+          "value_name": "64 GB",
+          "value_struct": {
+            "number": 64,
+            "unit": "GB"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "64 GB",
+              "struct": {
+                "number": 64,
+                "unit": "GB"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "IS_DUAL_SIM",
+          "name": "Es Dual SIM",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "IS_SPLASH_RESISTANT",
+          "name": "Es resistente a salpicaduras",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "IS_WATERPROOF",
+          "name": "Es a prueba de agua",
+          "value_id": "242084",
+          "value_name": "No",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242084",
+              "name": "No",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "IS_WATER_RESISTANT",
+          "name": "Es resistente al agua",
+          "value_id": "242084",
+          "value_name": "No",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242084",
+              "name": "No",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "LINE",
+          "name": "Línea",
+          "value_id": "199791",
+          "value_name": "Redmi",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "199791",
+              "name": "Redmi",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MAIN_FRONT_CAMERA_RESOLUTION",
+          "name": "Resolución de la cámara frontal principal",
+          "value_id": "7209645",
+          "value_name": "13 Mpx",
+          "value_struct": {
+            "number": 13,
+            "unit": "Mpx"
+          },
+          "values": [
+            {
+              "id": "7209645",
+              "name": "13 Mpx",
+              "struct": {
+                "number": 13,
+                "unit": "Mpx"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MAIN_REAR_CAMERA_RESOLUTION",
+          "name": "Resolución de la cámara trasera principal",
+          "value_id": "7340647",
+          "value_name": "48 Mpx",
+          "value_struct": {
+            "number": 48,
+            "unit": "Mpx"
+          },
+          "values": [
+            {
+              "id": "7340647",
+              "name": "48 Mpx",
+              "struct": {
+                "number": 48,
+                "unit": "Mpx"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MANUFACTURER_OPERATING_SYSTEM_SHELL",
+          "name": "Capa del sistema operativo del fabricante",
+          "value_id": "7410173",
+          "value_name": "MIUI 10",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7410173",
+              "name": "MIUI 10",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MAX_MEMORY_CARD_CAPACITY",
+          "name": "Capacidad máxima de la tarjeta de memoria",
+          "value_id": "2087792",
+          "value_name": "256 GB",
+          "value_struct": {
+            "number": 256,
+            "unit": "GB"
+          },
+          "values": [
+            {
+              "id": "2087792",
+              "name": "256 GB",
+              "struct": {
+                "number": 256,
+                "unit": "GB"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MEMORY_CARD_TYPES",
+          "name": "Tipos de tarjeta de memoria",
+          "value_id": "7199655",
+          "value_name": "microSD",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7199655",
+              "name": "microSD",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MOBILE_NETWORK",
+          "name": "Red",
+          "value_id": "367876",
+          "value_name": "4G/LTE",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "367876",
+              "name": "4G/LTE",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "3362707",
+          "value_name": "Note 8",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "3362707",
+              "name": "Note 8",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "NUMBER_OF_SIM_CARD_SLOTS",
+          "name": "Cantidad de ranuras para tarjeta SIM",
+          "value_id": "2087802",
+          "value_name": "2",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2087802",
+              "name": "2",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "OPERATING_SYSTEM_NAME",
+          "name": "Nombre del sistema operativo",
+          "value_id": "7403813",
+          "value_name": "Android",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7403813",
+              "name": "Android",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "OPERATING_SYSTEM_VERSION",
+          "name": "Versión del sistema operativo",
+          "value_id": "7207107",
+          "value_name": "9.0 Pie",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7207107",
+              "name": "9.0 Pie",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "OPTICAL_ZOOM",
+          "name": "Zoom óptico",
+          "value_id": "1344",
+          "value_name": "2x",
+          "value_struct": {
+            "number": 2,
+            "unit": "x"
+          },
+          "values": [
+            {
+              "id": "1344",
+              "name": "2x",
+              "struct": {
+                "number": 2,
+                "unit": "x"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "PIXELS_PER_INCH",
+          "name": "Píxeles por pulgada",
+          "value_id": "7075680",
+          "value_name": "409 ppi",
+          "value_struct": {
+            "number": 409,
+            "unit": "ppi"
+          },
+          "values": [
+            {
+              "id": "7075680",
+              "name": "409 ppi",
+              "struct": {
+                "number": 409,
+                "unit": "ppi"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "PROCESSOR_CORES_NUMBER",
+          "name": "Cantidad de núcleos del procesador",
+          "value_id": "7206961",
+          "value_name": "8",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7206961",
+              "name": "8",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "PROCESSOR_MODEL",
+          "name": "Modelo del procesador",
+          "value_id": "7671215",
+          "value_name": "Snapdragon 665",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7671215",
+              "name": "Snapdragon 665",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "PROCESSOR_SPEED",
+          "name": "Velocidad del procesador",
+          "value_id": "365995",
+          "value_name": "2 GHz",
+          "value_struct": {
+            "number": 2,
+            "unit": "GHz"
+          },
+          "values": [
+            {
+              "id": "365995",
+              "name": "2 GHz",
+              "struct": {
+                "number": 2,
+                "unit": "GHz"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "RAM",
+          "name": "Memoria RAM",
+          "value_id": null,
+          "value_name": "4 GB",
+          "value_struct": {
+            "number": 4,
+            "unit": "GB"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "4 GB",
+              "struct": {
+                "number": 4,
+                "unit": "GB"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "REAR_CAMERAS_NUMBER",
+          "name": "Número de cámaras traseras",
+          "value_id": "7505958",
+          "value_name": "4",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7505958",
+              "name": "4",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "REAR_CAMERAS_RESOLUTION",
+          "name": "Resolución de las cámaras traseras",
+          "value_id": "7844498",
+          "value_name": "48 Mpx/8 Mpx/2 Mpx/2 Mpx",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7844498",
+              "name": "48 Mpx/8 Mpx/2 Mpx/2 Mpx",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "REAR_CAMERA_APERTURE",
+          "name": "Apertura del diafragma de la cámara trasera",
+          "value_id": "7844499",
+          "value_name": "f 1.75/f 2.2/f 2.4/f 2.4",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7844499",
+              "name": "f 1.75/f 2.2/f 2.4/f 2.4",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "REAR_CAMERA_RECORDING_RESOLUTION",
+          "name": "Resolución de video de la cámara trasera",
+          "value_id": "7199630",
+          "value_name": "3840 px x 2160 px",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "7199630",
+              "name": "3840 px x 2160 px",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "RELEASE_YEAR",
+          "name": "Año de lanzamiento",
+          "value_id": "5057727",
+          "value_name": "2019",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "5057727",
+              "name": "2019",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "SCREEN_TECHNOLOGY",
+          "name": "Tecnología de pantalla",
+          "value_id": "80490",
+          "value_name": "IPS",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "80490",
+              "name": "IPS",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "SIM_SIZES",
+          "name": "Tamaños de tarjeta SIM compatibles",
+          "value_id": "80453",
+          "value_name": "Nano-SIM",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "80453",
+              "name": "Nano-SIM",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WEIGHT",
+          "name": "Peso",
+          "value_id": "1365",
+          "value_name": "190 g",
+          "value_struct": {
+            "number": 190,
+            "unit": "g"
+          },
+          "values": [
+            {
+              "id": "1365",
+              "name": "190 g",
+              "struct": {
+                "number": 190,
+                "unit": "g"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WIDTH",
+          "name": "Ancho",
+          "value_id": "6912945",
+          "value_name": "75.3 mm",
+          "value_struct": {
+            "number": 75.3,
+            "unit": "mm"
+          },
+          "values": [
+            {
+              "id": "6912945",
+              "name": "75.3 mm",
+              "struct": {
+                "number": 75.3,
+                "unit": "mm"
+              }
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_ACCELEROMETER",
+          "name": "Con acelerómetro",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_BLUETOOTH",
+          "name": "Con Bluetooth",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_CAMERA",
+          "name": "Con cámara",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_ESIM",
+          "name": "Con eSIM",
+          "value_id": "242084",
+          "value_name": "No",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242084",
+              "name": "No",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_FACIAL_RECOGNITION",
+          "name": "Con reconocimiento facial",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_FINGERPRINT_READER",
+          "name": "Con lector de huella digital",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_FRONT_CAMERA_FLASH",
+          "name": "Con flash en la cámara frontal",
+          "value_id": "242084",
+          "value_name": "No",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242084",
+              "name": "No",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_GPS",
+          "name": "Con GPS",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_GYROSCOPE",
+          "name": "Con giroscopio",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_MINI_HDMI",
+          "name": "Con mini HDMI",
+          "value_id": "242084",
+          "value_name": "No",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242084",
+              "name": "No",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_PHYSICAL_QWERTY_KEYBOARD",
+          "name": "Con teclado QWERTY físico",
+          "value_id": "242084",
+          "value_name": "No",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242084",
+              "name": "No",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_PROXIMITY_SENSOR",
+          "name": "Con sensor de proximidad",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_RADIO",
+          "name": "Con radio",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_REMOVABLE_BATTERY",
+          "name": "Con batería removible",
+          "value_id": "242084",
+          "value_name": "No",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242084",
+              "name": "No",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_SLOW_MOTION_CAMERA_FUNCTION",
+          "name": "Con función de cámara lenta",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_TOUCH_SCREEN",
+          "name": "Con pantalla táctil",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_TV_TUNER",
+          "name": "Con sintonizador de TV",
+          "value_id": "242084",
+          "value_name": "No",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242084",
+              "name": "No",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_USB_CONNECTOR",
+          "name": "Con conector USB",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "id": "WITH_WIFI",
+          "name": "Con Wi-Fi",
+          "value_id": "242085",
+          "value_name": "Sí",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "242085",
+              "name": "Sí",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "warnings": [
+      ],
+      "listing_source": "",
+      "variations": [
+        {
+          "id": 45426931019,
+          "price": 649900,
+          "attribute_combinations": [
+            {
+              "id": "COLOR",
+              "name": "Color",
+              "value_id": "52049",
+              "value_name": "Negro",
+              "value_struct": null,
+              "values": [
+                {
+                  "id": "52049",
+                  "name": "Negro",
+                  "struct": null
+                }
+              ]
+            }
+          ],
+          "available_quantity": 50,
+          "sold_quantity": 500,
+          "sale_terms": [
+          ],
+          "picture_ids": [
+            "780593-MCO32664019418_102019",
+            "785927-MCO32664030099_102019",
+            "625564-MCO32663967959_102019",
+            "772217-MCO40319648137_012020"
+          ],
+          "catalog_product_id": "MCO15188552"
+        },
+        {
+          "id": 45426931016,
+          "price": 649900,
+          "attribute_combinations": [
+            {
+              "id": "COLOR",
+              "name": "Color",
+              "value_id": "52055",
+              "value_name": "Blanco",
+              "value_struct": null,
+              "values": [
+                {
+                  "id": "52055",
+                  "name": "Blanco",
+                  "struct": null
+                }
+              ]
+            }
+          ],
+          "available_quantity": 0,
+          "sold_quantity": 250,
+          "sale_terms": [
+          ],
+          "picture_ids": [
+            "762890-MCO32664019302_102019",
+            "732979-MCO32663992749_102019",
+            "807040-MCO32664027151_102019",
+            "914257-MCO40319651152_012020"
+          ],
+          "catalog_product_id": "MCO15188553"
+        },
+        {
+          "id": 45426931022,
+          "price": 649900,
+          "attribute_combinations": [
+            {
+              "id": "COLOR",
+              "name": "Color",
+              "value_id": "52028",
+              "value_name": "Azul",
+              "value_struct": null,
+              "values": [
+                {
+                  "id": "52028",
+                  "name": "Azul",
+                  "struct": null
+                }
+              ]
+            }
+          ],
+          "available_quantity": 50,
+          "sold_quantity": 500,
+          "sale_terms": [
+          ],
+          "picture_ids": [
+            "784830-MCO32664021466_102019",
+            "921640-MCO32663992787_102019",
+            "608235-MCO32664030230_102019",
+            "903001-MCO40319635526_012020"
+          ],
+          "catalog_product_id": "MCO15188554"
+        }
+      ],
+      "status": "active",
+      "sub_status": [
+      ],
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment"
+      ],
+      "warranty": "Garantía del vendedor: 6 meses",
+      "catalog_product_id": "MCO15188551",
+      "domain_id": "MCO-CELLPHONES",
+      "parent_item_id": null,
+      "differential_pricing": null,
+      "deal_ids": [
+        "MCO124",
+        "MCO1142",
+        "MCO1143",
+        "MCO1104",
+        "MCO1192"
+      ],
+      "automatic_relist": false,
+      "date_created": "2019-10-25T23:27:29.000Z",
+      "last_updated": "2020-03-16T22:56:05.000Z",
+      "health": 0.88,
+      "catalog_listing": false
+    },
+    {
+      "category": "Smartphones"
+    },
+    {
+      "MCO539375521": 739271
+    },
+    {
+      "item_id": "MCO539375521",
+      "date_from": "2020-03-15T00:00:00Z",
+      "date_to": "2020-03-16T00:00:00Z",
+      "total_visits": 1245,
+      "last": 1,
+      "unit": "day",
+      "results": [
+        {
+          "date": "2020-03-15T00:00:00Z",
+          "total": 2375,
+          "visits_detail": [
+            {
+              "company": "mercadolibre",
+              "quantity": 2375
+            }
+          ]
+        }
+      ]
+    }
+	]
+}
