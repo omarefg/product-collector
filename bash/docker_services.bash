@@ -34,6 +34,7 @@ stop() {
   NORMALIZATION="$(docker ps --all --quiet --filter=name=normalization)"
   REDIS="$(docker ps --all --quiet --filter=name=product_collector_redis)"
   MONGO="$(docker ps --all --quiet --filter=name=product_collector_mongo)"
+  BAKEND="$(docker ps --all --quiet --filter=name=product_collector_backend)"
 
   if [ -n "$NORMALIZATION" ]; then
     docker stop $NORMALIZATION
@@ -45,6 +46,10 @@ stop() {
 
   if [ -n "$MONGO" ]; then
     docker stop $MONGO
+  fi
+
+  if [ -n "$BACKEND" ]; then
+    docker stop $BACKEND
   fi
 }
 

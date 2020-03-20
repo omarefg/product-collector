@@ -33,16 +33,6 @@ services:
     ports:
       - 27027:27017
 
-  redis:
-    container_name: product_collector_redis
-    image: redis
-    ports:
-      - "6389:6379"
-    volumes:
-      - product_collector_redis:/data/redis
-    env_file:
-      - .env
-
   backend:
     container_name: product_collector_backend
     build:
