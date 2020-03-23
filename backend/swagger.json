@@ -1,0 +1,226 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Esta es un api de una red social",
+    "version": "1.0.0",
+    "title": "Backend Analytix"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [{
+      "name": "products",
+      "description": "Operations about product",
+      "externalDocs": {
+        "description": "Find out more about our store",
+        "url": "http://swagger.io"
+      }
+    },
+    {
+      "name": "store",
+      "description": "Access to Petstore orders"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/api/products": {
+      "post": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Crear un producto",
+        "description": "Crear producto",
+        "operationId": "createProduct",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "body",
+          "name": "body",
+          "description": "Objeto producto",
+          "required": true,
+          "schema": {
+            "$ref": "#/definitions/Product"
+          }
+        }],
+        "responses": {
+          "default": {
+            "description": "objeto producto"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Obtener productos",
+        "description": "Retorna una lista de productos",
+        "operationId": "get",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "lista de productos",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          },
+          "400": {
+            "description": "Internal error"
+          },
+          "404": {
+            "description": "Product not found"
+          }
+        }
+      }
+    },
+    "/api/products/{productId}": {
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Buscar un producto",
+        "description": "Devuelve un producto",
+        "operationId": "getProduct",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "name": "productId",
+          "in": "path",
+          "description": "Id del product",
+          "required": true,
+          "type": "string",
+          "format": "int64"
+        }],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Product not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Elimina un product",
+        "description": "Elimina un producto",
+        "operationId": "deleteProduct",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "name": "productId",
+          "in": "path",
+          "description": "Id del producto",
+          "required": true,
+          "type": "string"
+        }],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Product not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Actualizar un producto",
+        "description": "",
+        "operationId": "updateProduct",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [{
+          "in": "body",
+          "name": "body",
+          "description": "Objeto producto",
+          "required": true,
+          "schema": {
+            "$ref": "#/definitions/Producto"
+          }
+        }],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Product not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "petstore_auth": {
+      "type": "oauth2",
+      "authorizationUrl": "http://petstore.swagger.io/oauth/dialog",
+      "flow": "implicit",
+      "scopes": {
+        "write:pets": "modify pets in your account",
+        "read:pets": "read your pets"
+      }
+    },
+    "api_key": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "Product": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "categoryName": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "visits": {
+          "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "Product"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}

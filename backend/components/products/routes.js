@@ -44,6 +44,38 @@ function productsApi(app) {
       next(error);
     }
   });
+
+  router.put('/:productId', async function(req, res, next) {
+    const { productId } = req.params;
+    const { body: keyword } = req;
+    try {
+      const updatedProductId = await productsService.updateProduct({
+        productId,
+        keyword
+      });
+
+      res.status(200).json({
+        data: updatedProductId,
+        message: 'keyword patched'
+      });
+    } catch (err) {
+      next(err);
+    }
+  });
+  router.delete('/:productId', async function(req, res, next) {
+    const { productId } = req.params;
+    try {
+      const deletedProductId = await productsService.deleteProduct({
+        productId
+      });
+      res.status(200).json({
+        data: deletedProductId,
+        message: 'keyword deleted'
+      });
+    } catch (err) {
+      next(err);
+    }
+  });
 }
 
 module.exports = productsApi;
