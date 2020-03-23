@@ -6,14 +6,13 @@ const authService = new AuthService()
 
 const router = express.Router()
 
-router.post('/token', async function (req, res, next) {
-    const { authKey } = req.body
+router.post('/token', async function ({ body: { authKey } }, res, next) {
     if (!authKey) {
         next(boom.unauthorized())
     }
     try {
         const token = await authService.validateKey(authKey)
-        response.success(req, res, token)
+        response.success({}, res, token)
     } catch (error) {
         next(boom.unauthorized())
     }
