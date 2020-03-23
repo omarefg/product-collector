@@ -21,6 +21,23 @@ class ProductsService {
     const createProductId = await this.mongoDB.create(this.collection, product);
     return createProductId;
   }
+
+  async updateProduct({ ProductId, product }) {
+    const updatedProductId = await this.mongoDB.update(
+      this.collection,
+      ProductId,
+      product
+    );
+    return updatedProductId;
+  }
+
+  async deleteProduct({ ProductId }) {
+    const deletedProductId = await this.mongoDB.delete(
+      this.collection,
+      ProductId
+    );
+    return deletedProductId;
+  }
 }
 
 module.exports = ProductsService;
