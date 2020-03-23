@@ -22,12 +22,6 @@ dump () {
     echo "Finished dumping"
 }
 
-create_user() {
-    echo "Creating user..."
-    mongo --eval "c = connect('product-collector-db'); if(c.getUser('test_user') === null) c.createUser({user: 'test_user', pwd: '12345', roles: [{role: 'readWrite', db: 'product-collector-db'}]})"
-    echo "Finished creating user..."
-}
-
 restore () {
     echo "Restoring..."
     mongorestore --drop
@@ -35,7 +29,6 @@ restore () {
 }
 
 if [ $1 = $DATA ]; then
-	create_user
     restore
 	exit
 fi

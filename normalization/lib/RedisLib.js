@@ -19,10 +19,7 @@ class RedisLib {
                 if (error) {
                     return reject(error)
                 }
-                let response = data || null
-                if (data) {
-                    response = JSON.parse(data)
-                }
+                const response = data || null
                 resolve(response)
             })
         })

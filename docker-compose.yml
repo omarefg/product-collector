@@ -21,22 +21,17 @@ services:
     build:
       context: ./
       dockerfile: ./docker/mongo/Dockerfile
-    ports:
-      - "27027:27017"
     volumes:
+      - ./docker/mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
       - product_collector_mongo:/data/mongodb
     env_file:
       - .env
-
-  redis:
-    container_name: product_collector_redis
-    image: redis
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: pc-user
+      MONGO_INITDB_ROOT_PASSWORD: pc-password
+      MONGO_INITDB_DATABASE: product-collector
     ports:
-      - "6389:6379"
-    volumes:
-      - product_collector_redis:/data/redis
-    env_file:
-      - .env
+      - 27027:27017
 
   backend:
     container_name: product_collector_backend
@@ -49,6 +44,8 @@ services:
     command: /bin/sh -c "npm install && npm run dev"
     ports:
       - 3001:3000
+    depends_on:
+      - mongo
 
 volumes:
   product_collector_mongo:
