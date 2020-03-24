@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken')
 const boom = require('@hapi/boom')
 const MongoLib = require('../../lib/MongoLib')
 const RedisLib = require('../../lib/RedisLib')
+const countriesML = require('../../utils/mocks/countriesMock.json')
 
 class DataManagerService {
     constructor () {
@@ -32,20 +33,37 @@ class DataManagerService {
     }
 
     async normalize (dataReqBody) {
-        const countriesIdsMercadoLibre = { MCO: 'CO', MLA: 'AR' }
-        const { data, source } = dataReqBody
+        const { data } = dataReqBody
 
-        const dataNorm = {
-            date: data[3].date_from,
-            keyword: data[0].id,
-            country: countriesIdsMercadoLibre[data[0].site_id],
-            origin: source,
-            categoryName: data[1].category,
-            productName: data[0].title,
-            visits: data[3].total_visits
-        }
+        const dataNorm = data.map(item => {
+            const {
+                id,
+                site_id: site,
+                title,
+                price,
+                currency_id: currency,
+                available_quantity: availableQuantity,
+                sold_quantity: soldQuantity,
+                attributes,
+                installments,
+                category_id: categoryId
+            } = item
 
-        return this.save(dataNorm)
+            return {
+                id,
+                site: countriesML.data.filter(item => item.id === site)[0].name,
+                title,
+                price,
+                currency,
+                availableQuantity,
+                soldQuantity,
+                productState: attributes[0].value_name,
+                installments,
+                categoryId
+            }
+        })
+
+        return dataNorm
     }
 }
 
