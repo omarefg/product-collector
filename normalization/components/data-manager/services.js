@@ -57,7 +57,7 @@ class DataManagerService {
                 currency,
                 availableQuantity,
                 soldQuantity,
-                product_state: attributes[0].value_name,
+                productState: attributes[0].value_name,
                 installments,
                 categoryId
             }
