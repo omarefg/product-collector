@@ -1,26 +1,25 @@
-const MongoLib = require('../../lib/MongoLib')
-const RedisLib = require('../../lib/RedisLib')
 const boom = require('@hapi/boom')
-const { generateRandomToken } = require('../../utils/token')
 const jwt = require('jsonwebtoken')
+
+const RedisLib = require('../../lib/RedisLib')
+const { generateRandomToken } = require('../../utils/token')
+const { authJwtKey } = require('../../config/index').config
+
 const TWO_HOURS_IN_SEC = 7200
 
 class AuthService {
     constructor () {
         this.collection = 'keys'
-        this.mongoDB = new MongoLib()
         this.redisDB = new RedisLib()
     }
 
     async validateKey (key) {
-        const [app] = await this.mongoDB.getAll(this.collection, { token: key })
-
-        if (!app) {
+        if (key !== authJwtKey) {
             throw boom.unauthorized()
         }
 
         const secret = generateRandomToken()
-        const token = jwt.sign({ id: app.id }, secret, { expiresIn: TWO_HOURS_IN_SEC })
+        const token = jwt.sign({ key: key }, secret, { expiresIn: TWO_HOURS_IN_SEC })
 
         const tokenSaved = await this.redisDB.set(token, secret)
 

@@ -1,13 +1,12 @@
 const jwt = require('jsonwebtoken')
 const boom = require('@hapi/boom')
-const MongoLib = require('../../lib/MongoLib')
+
 const RedisLib = require('../../lib/RedisLib')
 const countriesML = require('../../utils/mocks/countriesMock.json')
 
 class DataManagerService {
     constructor () {
         this.collection = 'products'
-        this.mongoDB = new MongoLib()
         this.redisDB = new RedisLib()
     }
 
@@ -21,14 +20,6 @@ class DataManagerService {
             return 0
         } catch (error) {
             throw new Error(error)
-        }
-    }
-
-    async save (dataToSave) {
-        try {
-            return await this.mongoDB.create(this.collection, dataToSave)
-        } catch (error) {
-            throw boom.internal(error.message)
         }
     }
 

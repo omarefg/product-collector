@@ -1,24 +1,22 @@
 {
   "name": "normalization",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "",
+  "description": "normalize raw data for different sources API / web scrapping",
   "main": "index.js",
   "scripts": {
     "dev": "DEBUG=express:*,app:* nodemon index",
     "start": "node index"
   },
   "keywords": [],
-  "author": "",
+  "author": "Omar Flores (@omarefg), Andres Santana (@rulo-code), Jorge Nemogá (@jhnemogap)",
   "license": "MIT",
   "dependencies": {
-    "@hapi/boom": "^9.0.0",
-    "bcrypt": "^4.0.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^3.5.4",
-    "redis": "^3.0.2"
+    "@hapi/boom": "9.0.0",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1",
+    "redis": "3.0.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

@@ -1,10 +1,11 @@
 const express = require('express')
 const boom = require('@hapi/boom')
+
 const AuthService = require('./services')
 const response = require('../../network/response')
-const authService = new AuthService()
 
 const router = express.Router()
+const authService = new AuthService()
 
 router.post('/token', async function ({ body: { authKey } }, res, next) {
     if (!authKey) {
