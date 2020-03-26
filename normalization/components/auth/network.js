@@ -20,4 +20,17 @@ router.post('/token', async function ({ body: { authKey } }, res, next) {
     }
 })
 
+router.get('/encrypt-data', async function ({ body: { encryptMyData } }, res, next) {
+    if (!encryptMyData || !encryptMyData.data) {
+        next(boom.badData())
+    }
+
+    try {
+        const encryptedPassword = await authService.encryptData(encryptMyData)
+        response.success({}, res, encryptedPassword, 200)
+    } catch (error) {
+        next(boom.badImplementation())
+    }
+})
+
 module.exports = router

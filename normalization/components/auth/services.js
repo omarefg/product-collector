@@ -2,7 +2,7 @@ const boom = require('@hapi/boom')
 const jwt = require('jsonwebtoken')
 
 const RedisLib = require('../../lib/RedisLib')
-const { generateRandomHex, isOkDecrypt } = require('../../utils/auxToken')
+const { generateRandomHex, isOkDecrypt, encryptDynamicHash } = require('../../utils/auxToken')
 const { authKey } = require('../../config/index').config
 
 const TWO_HOURS_IN_SEC = 7200
@@ -28,6 +28,12 @@ class AuthService {
         } else {
             throw boom.internal(tokenSaved)
         }
+    }
+
+    async encryptData (dataToEncrypt) {
+        const { data, rounds } = dataToEncrypt
+        const encryptedData = await encryptDynamicHash(data, rounds)
+        return encryptedData
     }
 }
 
