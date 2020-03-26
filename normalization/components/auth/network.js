@@ -11,6 +11,7 @@ router.post('/token', async function ({ body: { authKey } }, res, next) {
     if (!authKey) {
         next(boom.unauthorized())
     }
+
     try {
         const token = await authService.validateKey(authKey)
         response.success({}, res, token)

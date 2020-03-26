@@ -13,7 +13,7 @@ const config = {
 
     nodeEnv: process.env.NODE_ENV,
 
-    authJwtKey: process.env.AUTH_JWT_KEY
+    authKey: process.env.AUTH_KEY
 }
 
 module.exports = {
