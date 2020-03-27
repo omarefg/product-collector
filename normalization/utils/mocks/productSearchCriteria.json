@@ -1,0 +1,12 @@
+[
+  {
+    "id": "PCP900000000",
+    "category_id": "PCC102020",
+    "keyWord": "iPhone",
+    "regExp": ["64gb", "128gb"],
+    "filters": {
+      "conditions": ["new", "used", "refurbished"],
+      "model": ["iPhone 11", "iPhone 11 pro", "iPhone 11 pro Max"]
+    }
+  }
+]

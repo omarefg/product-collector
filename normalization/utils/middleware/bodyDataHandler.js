@@ -8,12 +8,12 @@ async function bodyDataHandler (req, res, next) {
             throw new Error('The key <data> not exist')
         }
 
-        if (!(data instanceof Array)) {
-            throw new Error('The key <data> should be an Array')
+        if (!(data.results instanceof Array)) {
+            throw new Error('The key <data.results> should be an Array')
         }
 
-        if (data.length === 0) {
-            throw new Error('<data> is an empty array')
+        if (data.results.length === 0) {
+            throw new Error('<data.results> is an empty array')
         }
 
         if (source === undefined) {

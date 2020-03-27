@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken')
 const boom = require('@hapi/boom')
 
 const RedisLib = require('../../lib/RedisLib')
-const countriesML = require('../../utils/mocks/countriesMock.json')
+const countries = require('../../utils/mocks/countriesMock.json')
 
 class DataManagerService {
     constructor () {
@@ -24,35 +24,36 @@ class DataManagerService {
     }
 
     async normalize (dataReqBody) {
-        const { data } = dataReqBody
+        const { data, source } = dataReqBody
+        let dataNorm = []
 
-        const dataNorm = data.map(item => {
-            const {
-                id,
-                site_id: site,
-                title,
-                price,
-                currency_id: currency,
-                available_quantity: availableQuantity,
-                sold_quantity: soldQuantity,
-                attributes,
-                installments,
-                category_id: categoryId
-            } = item
+        try {
+            dataNorm = data.results.map(item => {
+                const {
+                    site_id: site,
+                    title,
+                    price,
+                    currency_id: currency,
+                    available_quantity: availableQuantity,
+                    sold_quantity: soldQuantity,
+                    condition,
+                    category_id: categoryId
+                } = item
 
-            return {
-                id,
-                site: countriesML.data.filter(item => item.id === site)[0].name,
-                title,
-                price,
-                currency,
-                availableQuantity,
-                soldQuantity,
-                productState: attributes[0].value_name,
-                installments,
-                categoryId
-            }
-        })
+                return {
+                    country: countries[source].data.filter(item => item.id === site)[0].name,
+                    title,
+                    price,
+                    currency,
+                    availableQuantity,
+                    soldQuantity,
+                    condition,
+                    categoryId
+                }
+            })
+        } catch (error) {
+            boom.badRequest(error.message)
+        }
 
         return dataNorm
     }
