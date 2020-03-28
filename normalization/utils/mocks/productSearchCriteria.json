@@ -1,17 +1,17 @@
 [
   {
     "id": "PCP900000000",
-    "keyWord": "iPhone",
+    "keyWord": "iphone",
     "categoryId": "PCC102020",
     "filters": {
       "conditions": ["new", "used", "refurbished"],
-      "model": ["iPhone 11", "iPhone 11 pro", "iPhone 11 pro Max"],
+      "model": ["iphone 11", "iphone 11 pro", "iphone 11 pro Max"],
       "variants": ["64gb", "128gb", "256gb"]
     }
   },
   {
     "id": "PCP987654321",
-    "keyWord": "Tapabocas",
+    "keyWord": "tapabocas",
     "categoryId": "PCC201010",
     "filters": {
       "conditions": ["new"],
