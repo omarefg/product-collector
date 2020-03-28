@@ -24,31 +24,30 @@ class DataManagerService {
     }
 
     async normalize (dataReqBody) {
-        const { data, source } = dataReqBody
+        const { data, source, id, date } = dataReqBody
         let dataNorm = []
 
         try {
             dataNorm = data.results.map(item => {
                 const {
                     site_id: site,
-                    title,
+                    address: { state_name: city },
                     price,
                     currency_id: currency,
-                    available_quantity: availableQuantity,
                     sold_quantity: soldQuantity,
-                    condition,
-                    category_id: categoryId
+                    condition
                 } = item
 
                 return {
+                    id,
+                    keyWord: data.query,
                     country: countries[source].data.filter(item => item.id === site)[0].name,
-                    title,
-                    price,
+                    city,
                     currency,
-                    availableQuantity,
-                    soldQuantity,
                     condition,
-                    categoryId
+                    price,
+                    soldQuantity,
+                    date
                 }
             })
         } catch (error) {

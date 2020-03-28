@@ -1,12 +1,21 @@
 [
   {
     "id": "PCP900000000",
-    "category_id": "PCC102020",
     "keyWord": "iPhone",
-    "regExp": ["64gb", "128gb"],
+    "categoryId": "PCC102020",
     "filters": {
       "conditions": ["new", "used", "refurbished"],
-      "model": ["iPhone 11", "iPhone 11 pro", "iPhone 11 pro Max"]
+      "model": ["iPhone 11", "iPhone 11 pro", "iPhone 11 pro Max"],
+      "variants": ["64gb", "128gb", "256gb"]
+    }
+  },
+  {
+    "id": "PCP987654321",
+    "keyWord": "Tapabocas",
+    "categoryId": "PCC201010",
+    "filters": {
+      "conditions": ["new"],
+      "model": ["n95"]
     }
   }
 ]

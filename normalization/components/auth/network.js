@@ -21,8 +21,8 @@ router.post('/token', async function ({ body: { authKey } }, res, next) {
 })
 
 router.get('/encrypt-data', async function ({ body: { encryptMyData } }, res, next) {
-    if (!encryptMyData || !encryptMyData.data) {
-        next(boom.badData())
+    if (!encryptMyData.data) {
+        next(boom.badRequest('No exist data to encrypt'))
     }
 
     try {

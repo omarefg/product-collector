@@ -1,12 +1,7 @@
 {
     "source": "PCML",
-    "fecha": "2020-03-22T06:36:44.892Z",
-    "keyWord": "iPhone",
-    "regExp": [],
-    "filters": {
-        "conditions": "",
-        "model": ""
-    },
+    "date": "2020-03-22T06:36:44.892Z",
+    "id": "PCP900000000",
     "data": {
         "site_id": "MCO",
         "query": "iphone",
@@ -10420,4 +10415,3 @@
         ]
     }
 }
-

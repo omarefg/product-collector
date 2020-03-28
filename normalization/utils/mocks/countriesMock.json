@@ -1,9 +1,9 @@
 {
   "message": "countries listed",
   "sources": {
-    "PC-ML": "mercado libre",
-    "PC-AMZ": "amazon",
-    "PC-GOOGLE": "google"
+    "PCML": "mercado libre",
+    "PCAMZ": "amazon",
+    "PCGOOGLE": "google"
   },
   "PCML": {
     "fecha": "2020-03-26T18:00:12.911Z",
