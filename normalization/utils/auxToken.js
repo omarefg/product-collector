@@ -16,11 +16,7 @@ async function encryptDynamicHash (data, rounds = 7) {
     const minRounds = 4
     const defaultRounds = 7
 
-    if (typeof der === 'number') {
-        rounds = defaultRounds
-    } else {
-        rounds = (maxRounds >= rounds && rounds >= minRounds) ? rounds : defaultRounds
-    }
+    rounds = (maxRounds >= rounds && rounds >= minRounds) ? rounds : defaultRounds
 
     const hash = await bcrypt.hash(data, rounds)
     return hash

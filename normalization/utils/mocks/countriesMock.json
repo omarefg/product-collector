@@ -1,107 +1,131 @@
 {
-  "source": "ML",
-  "fecha": "2020-03-21T21:51:12.911Z",
-  "data": [
-    {
-      "default_currency_id": "HNL",
-      "id": "MHN",
-      "name": "Honduras"
-    },
-    {
-      "default_currency_id": "MXN",
-      "id": "MLM",
-      "name": "Mexico"
-    },
-    {
-      "default_currency_id": "VES",
-      "id": "MLV",
-      "name": "Venezuela"
-    },
-    {
-      "default_currency_id": "BRL",
-      "id": "MLB",
-      "name": "Brasil"
-    },
-    {
-      "default_currency_id": "CRC",
-      "id": "MCR",
-      "name": "Costa Rica"
-    },
-    {
-      "default_currency_id": "BOB",
-      "id": "MBO",
-      "name": "Bolivia"
-    },
-    {
-      "default_currency_id": "USD",
-      "id": "MSV",
-      "name": "El Salvador"
-    },
-    {
-      "default_currency_id": "COP",
-      "id": "MCO",
-      "name": "Colombia"
-    },
-    {
-      "default_currency_id": "UYU",
-      "id": "MLU",
-      "name": "Uruguay"
-    },
-    {
-      "default_currency_id": "PEN",
-      "id": "MPE",
-      "name": "Perú"
-    },
-    {
-      "default_currency_id": "CUP",
-      "id": "MCU",
-      "name": "Cuba"
-    },
-    {
-      "default_currency_id": "CLP",
-      "id": "MLC",
-      "name": "Chile"
-    },
-    {
-      "default_currency_id": "PAB",
-      "id": "MPA",
-      "name": "Panamá"
-    },
-    {
-      "default_currency_id": "ARS",
-      "id": "MLA",
-      "name": "Argentina"
-    },
-    {
-      "default_currency_id": "NIO",
-      "id": "MNI",
-      "name": "Nicaragua"
-    },
-    {
-      "default_currency_id": "USD",
-      "id": "MEC",
-      "name": "Ecuador"
-    },
-    {
-      "default_currency_id": "DOP",
-      "id": "MRD",
-      "name": "Dominicana"
-    },
-    {
-      "default_currency_id": "GTQ",
-      "id": "MGT",
-      "name": "Guatemala"
-    },
-    {
-      "default_currency_id": "EUR",
-      "id": "MPT",
-      "name": "Portugal"
-    },
-    {
-      "default_currency_id": "PYG",
-      "id": "MPY",
-      "name": "Paraguay"
-    }
-  ],
-  "message": "countries listed"
+  "message": "countries listed",
+  "sources": {
+    "PCML": "mercado libre",
+    "PCAMZ": "amazon",
+    "PCGOOGLE": "google"
+  },
+  "PCML": {
+    "fecha": "2020-03-26T18:00:12.911Z",
+    "data": [
+      {
+        "default_currency_id": "HNL",
+        "id": "MHN",
+        "name": "Honduras"
+      },
+      {
+        "default_currency_id": "MXN",
+        "id": "MLM",
+        "name": "Mexico"
+      },
+      {
+        "default_currency_id": "VES",
+        "id": "MLV",
+        "name": "Venezuela"
+      },
+      {
+        "default_currency_id": "BRL",
+        "id": "MLB",
+        "name": "Brasil"
+      },
+      {
+        "default_currency_id": "CRC",
+        "id": "MCR",
+        "name": "Costa Rica"
+      },
+      {
+        "default_currency_id": "BOB",
+        "id": "MBO",
+        "name": "Bolivia"
+      },
+      {
+        "default_currency_id": "USD",
+        "id": "MSV",
+        "name": "El Salvador"
+      },
+      {
+        "default_currency_id": "COP",
+        "id": "MCO",
+        "name": "Colombia"
+      },
+      {
+        "default_currency_id": "UYU",
+        "id": "MLU",
+        "name": "Uruguay"
+      },
+      {
+        "default_currency_id": "PEN",
+        "id": "MPE",
+        "name": "Perú"
+      },
+      {
+        "default_currency_id": "CUP",
+        "id": "MCU",
+        "name": "Cuba"
+      },
+      {
+        "default_currency_id": "CLP",
+        "id": "MLC",
+        "name": "Chile"
+      },
+      {
+        "default_currency_id": "PAB",
+        "id": "MPA",
+        "name": "Panamá"
+      },
+      {
+        "default_currency_id": "ARS",
+        "id": "MLA",
+        "name": "Argentina"
+      },
+      {
+        "default_currency_id": "NIO",
+        "id": "MNI",
+        "name": "Nicaragua"
+      },
+      {
+        "default_currency_id": "USD",
+        "id": "MEC",
+        "name": "Ecuador"
+      },
+      {
+        "default_currency_id": "DOP",
+        "id": "MRD",
+        "name": "Dominicana"
+      },
+      {
+        "default_currency_id": "GTQ",
+        "id": "MGT",
+        "name": "Guatemala"
+      },
+      {
+        "default_currency_id": "EUR",
+        "id": "MPT",
+        "name": "Portugal"
+      },
+      {
+        "default_currency_id": "PYG",
+        "id": "MPY",
+        "name": "Paraguay"
+      }
+    ]
+  },
+  "PCAMZ": {
+    "fecha": "2020-03-26T00:00:00.911Z",
+    "data": [
+      {
+        "id": "MXN",
+        "name": "Mexico"
+      }
+    ]
+  },
+  "PCGOOGLE": {
+    "fecha": "2020-03-26T00:00:00.911Z",
+    "data": [
+      {
+        "id": "MXN",
+        "name": "Mexico"
+      }
+    ]
+  }
 }
