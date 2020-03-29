@@ -1,16 +1,17 @@
 const redis = require('redis')
 const { config } = require('../config')
+
 const { redisDbHost, redisDbPort, redisDbPassword, redisDbName } = config
 
 class RedisLib {
-    constructor () {
+    constructor (expireTimeInSec = 7200) {
         this.client = redis.createClient({
             host: redisDbHost,
             port: redisDbPort,
             password: redisDbPassword
         })
         this.dbName = redisDbName
-        this.expireTime = 60 * 60 * 2
+        this.expireTime = expireTimeInSec
     }
 
     get (key) {

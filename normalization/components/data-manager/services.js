@@ -1,12 +1,12 @@
 const jwt = require('jsonwebtoken')
 const boom = require('@hapi/boom')
-const MongoLib = require('../../lib/MongoLib')
+
 const RedisLib = require('../../lib/RedisLib')
+const countries = require('../../utils/mocks/countriesMock.json')
 
 class DataManagerService {
     constructor () {
         this.collection = 'products'
-        this.mongoDB = new MongoLib()
         this.redisDB = new RedisLib()
     }
 
@@ -23,29 +23,38 @@ class DataManagerService {
         }
     }
 
-    async save (dataToSave) {
-        try {
-            return await this.mongoDB.create(this.collection, dataToSave)
-        } catch (error) {
-            throw boom.internal(error.message)
-        }
-    }
-
     async normalize (dataReqBody) {
-        const countriesIdsMercadoLibre = { MCO: 'CO', MLA: 'AR' }
-        const { data, source } = dataReqBody
+        const { data, source, id, date } = dataReqBody
+        let dataNorm = []
 
-        const dataNorm = {
-            date: data[3].date_from,
-            keyword: data[0].id,
-            country: countriesIdsMercadoLibre[data[0].site_id],
-            origin: source,
-            categoryName: data[1].category,
-            productName: data[0].title,
-            visits: data[3].total_visits
+        try {
+            dataNorm = data.results.map(item => {
+                const {
+                    site_id: site,
+                    address: { state_name: city },
+                    price,
+                    currency_id: currency,
+                    sold_quantity: soldQuantity,
+                    condition
+                } = item
+
+                return {
+                    id,
+                    keyWord: data.query,
+                    country: countries[source].data.filter(item => item.id === site)[0].name,
+                    city,
+                    currency,
+                    condition,
+                    price,
+                    soldQuantity,
+                    date
+                }
+            })
+        } catch (error) {
+            boom.badRequest(error.message)
         }
 
-        return this.save(dataNorm)
+        return dataNorm
     }
 }
 
