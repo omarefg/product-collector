@@ -1,27 +1,8 @@
-const express = require('express');
-const helmet = require('helmet');
-const app = express();
+import { server } from './server';
+import db from './database';
 
-// Documentacion swagger
-const swaggerUi = require('swagger-ui-express');
+db();
 
-const { config } = require('./config/index');
-const productsApi = require('./components/products/routes');
-const keywordsApi = require('./components/keywords/routes');
-const categoriesApi = require('./components/categories/routes');
-
-// body parser
-app.use(express.json());
-app.use(helmet());
-
-const swaggerDoc = require('./swagger.json');
-
-//Routes
-productsApi(app);
-keywordsApi(app);
-categoriesApi(app);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
-
-app.listen(config.port, function() {
-  console.log(`Listen http://localhost:${config.port}`);
+server.start({ port: 3000 }, ({ port }) => {
+  console.log('Server on port', port);
 });
