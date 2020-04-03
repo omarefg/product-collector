@@ -14,8 +14,16 @@ const Query = {
     return product;
   },
 
-  product: async (__, { _id }) => {
-    return prepare(await Products.findOne(ObjectId(_id)));
+  productsCount: async (__, args, context, info) => {
+    const where = args.filter
+      ? {
+          $or: [{ keyWord: args.filter }, { country: args.filter }]
+        }
+      : {};
+
+    const product = await Products.find(where).countDocuments();
+    console.log(where);
+    return product;
   }
 };
 

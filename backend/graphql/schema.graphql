@@ -1,6 +1,6 @@
 type Query {
-  product(_id: String): [Product!]
   products(filter: String): [Product!]
+  productsCount(filter: String): Int
 }
 
 type Mutation {

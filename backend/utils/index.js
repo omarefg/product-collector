@@ -3,6 +3,4 @@ const prepare = o => {
   return o;
 };
 
-export default {
-  prepare
-};
+export default prepare;
