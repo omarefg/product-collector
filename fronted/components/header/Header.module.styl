@@ -1,0 +1,48 @@
+@import '../../styles/libstyle/index.styl'
+
+header
+    margin 1rem 1rem
+    padding-bottom .5rem
+    display flex
+    justify-content space-between
+    align-items center
+    border-bottom 1px solid $gray-400
+
+    nav ul 
+        display flex
+        list-style-type none
+        font-weight 500
+        font-size .75rem
+        margin-bottom 0
+
+        li 
+            margin-left 1rem
+
+            a
+                color $body-color
+
+                &:hover
+                    color $yellow
+                    text-decoration none
+                
+.active
+    color $link-color
+    font-weight 600
+
+
+@media $md
+    header
+        margin 1rem 1.5rem
+        padding-bottom .75rem
+
+        nav ul li 
+            margin-left 1.5rem
+
+
+@media $lg
+    header
+        margin 1rem 3rem
+        padding-bottom 1rem
+
+        nav ul li 
+            margin-left 3rem
