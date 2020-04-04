@@ -4,7 +4,7 @@
     "categoryId": "PCC102020",
     "filters": {
       "conditions": ["new", "used", "refurbished"],
-      "model": ["iphone 11", "iphone 11 pro", "iphone 11 pro Max"],
+      "models": ["iphone 11", "iphone 11 pro", "iphone 11 pro Max"],
       "variants": ["64gb", "128gb", "256gb"]
     }
   },
@@ -13,7 +13,8 @@
     "categoryId": "PCC201010",
     "filters": {
       "conditions": ["new"],
-      "model": ["n95"]
+      "models": ["n95"],
+      "variants": []
     }
   }
 }

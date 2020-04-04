@@ -5,16 +5,6 @@ const RedisLib = require('../../lib/RedisLib')
 const countries = require('../../utils/mocks/countriesMock.json')
 const productSearchCriteria = require('../../utils/mocks/productSearchCriteria.json')
 
-// new - iphone11 - 64
-// new - iphone11 - 128
-// new - iphone11 - 256
-// new - iphone11 pro - 64
-// new - iphone11 pro - 128
-// new - iphone11 pro - 256
-// new - iphone11 pro max - 64
-// new - iphone11 pro max - 128
-// new - iphone11 pro max - 256
-
 class DataManagerService {
     constructor () {
         this.collection = 'products'
@@ -34,49 +24,68 @@ class DataManagerService {
         }
     }
 
-    async normalizeFromML ({ data, id, date, source }) {
-        try {
-            const criteria = productSearchCriteria[id]
-            const normalized = data.results.map(item => {
-                const {
-                    address: { state_name: countryState },
-                    price,
-                    currency_id: currency,
-                    sold_quantity: soldQuantity,
-                    condition
-                } = item
+    async normalize (dataReqBody) {
+        const { id, source, data, date } = dataReqBody
+        const criteria = productSearchCriteria[id]
+        switch (source) {
+        case 'PCML': {
+            try {
+                return this.normalizeFromML(criteria, id, source, data, date)
+            } catch (error) {
+                throw boom.badRequest(error.message)
+            }
+        }
+        default: return {}
+        }
+    }
 
-                return {
-                    countryState,
-                    currency,
-                    condition,
-                    price,
-                    soldQuantity,
-                    date
-                }
-            })
+    async normalizeFromML (criteria, id, source, data, date) {
+        // const dataToResponse = this.reduceByFiltersFromML(data, criteria.filters)
+        let dataToResponse = this._simplifyDataFromML(id, source, data, date)
+        dataToResponse = this._getVariantFromML(dataToResponse, criteria.filters.variants)
+        return dataToResponse
+    }
+
+    _simplifyDataFromML (id, source, data, date) {
+        try {
+            const results = data.results.map(item => ({
+                title: item.title.toLowerCase(),
+                // countryState: item.address.state_name.toLowerCase(),
+                currency: item.currency_id.toLowerCase(),
+                condition: item.attributes.filter(item => item.id === 'ITEM_CONDITION')[0],
+                model: item.attributes.filter(item => item.id === 'MODEL')[0],
+                price: item.price,
+                soldQuantity: item.sold_quantity,
+                date
+            }))
+
             return {
                 id,
                 keyWord: data.query,
                 country: countries[source].data.filter(item => item.id === data.site_id)[0].name,
-                normalized
+                results: results.map(item => ({
+                    ...item,
+                    condition: item.condition ? item.condition.value_name.toLowerCase() : 'undefined',
+                    model: item.model ? item.model.value_name.toLowerCase() : 'undefined'
+                }))
             }
         } catch (error) {
             throw boom.badRequest(error.message)
         }
     }
 
-    async normalize (dataReqBody) {
-        const { data, source, id, date } = dataReqBody
-        switch (source) {
-        case 'PCML': {
-            try {
-                return this.normalizeFromML({ data, source, id, date })
-            } catch (error) {
-                throw boom.badRequest(error.message)
-            }
-        }
-        default: return []
+    _getVariantFromML (data, optionsToFind) {
+        const regExpVariants = new RegExp(optionsToFind.join('|'))
+        return {
+            ...data,
+            results:
+            data.results
+                .filter(item => regExpVariants.test(item.title))
+                .map(item => ({
+                    ...item,
+                    variant: item.title.match(regExpVariants)[0],
+                    title: undefined
+                }))
         }
     }
 }
