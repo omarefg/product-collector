@@ -9,32 +9,22 @@
   "basePath": "/",
   "tags": [{
       "name": "products",
-      "description": "Operations about product",
-      "externalDocs": {
-        "description": "Find out more about our store",
-        "url": "http://swagger.io"
-      }
+      "description": "Operations about product"
     },
     {
-      "name": "store",
-      "description": "Access to Petstore orders"
+      "name": "categories",
+      "description": "Operations about categories"
     }
   ],
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/api/products": {
       "post": {
-        "tags": [
-          "products"
-        ],
+        "tags": ["products"],
         "summary": "Crear un producto",
         "description": "Crear producto",
         "operationId": "createProduct",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [{
           "in": "body",
           "name": "body",
@@ -51,15 +41,11 @@
         }
       },
       "get": {
-        "tags": [
-          "products"
-        ],
+        "tags": ["products"],
         "summary": "Obtener productos",
         "description": "Retorna una lista de productos",
         "operationId": "get",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "lista de productos",
@@ -78,15 +64,11 @@
     },
     "/api/products/{productId}": {
       "get": {
-        "tags": [
-          "products"
-        ],
+        "tags": ["products"],
         "summary": "Buscar un producto",
         "description": "Devuelve un producto",
         "operationId": "getProduct",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [{
           "name": "productId",
           "in": "path",
@@ -111,15 +93,11 @@
         }
       },
       "delete": {
-        "tags": [
-          "products"
-        ],
+        "tags": ["products"],
         "summary": "Elimina un product",
         "description": "Elimina un producto",
         "operationId": "deleteProduct",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [{
           "name": "productId",
           "in": "path",
@@ -136,19 +114,13 @@
           }
         }
       },
-      "put": {
-        "tags": [
-          "products"
-        ],
+      "patch": {
+        "tags": ["products"],
         "summary": "Actualizar un producto",
         "description": "",
         "operationId": "updateProduct",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "parameters": [{
           "in": "body",
           "name": "body",
@@ -156,6 +128,131 @@
           "required": true,
           "schema": {
             "$ref": "#/definitions/Producto"
+          }
+        }],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Product not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        }
+      }
+    },
+    "/api/categories": {
+      "post": {
+        "tags": ["categories"],
+        "summary": "Crear una categoria",
+        "description": "Crear categoria",
+        "operationId": "createCategory",
+        "produces": ["application/json"],
+        "parameters": [{
+          "in": "body",
+          "name": "body",
+          "description": "Objeto categoria",
+          "required": true,
+          "schema": {
+            "$ref": "#/definitions/Categories"
+          }
+        }],
+        "responses": {
+          "default": {
+            "description": "objeto categoria"
+          }
+        }
+      },
+      "get": {
+        "tags": ["categories"],
+        "summary": "Obtener categorias",
+        "description": "Retorna una lista de categorias",
+        "operationId": "get",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "lista de categorias",
+            "schema": {
+              "$ref": "#/definitions/Categories"
+            }
+          },
+          "400": {
+            "description": "Internal error"
+          },
+          "404": {
+            "description": "Categories not found"
+          }
+        }
+      }
+    },
+    "/api/categoryId/{categoryId}": {
+      "get": {
+        "tags": ["categories"],
+        "summary": "Buscar una categoria",
+        "description": "Devuelve una categoria",
+        "operationId": "getCategory",
+        "produces": ["application/json"],
+        "parameters": [{
+          "name": "categoryId",
+          "in": "path",
+          "description": "Id de la categoria",
+          "required": true,
+          "type": "string",
+          "format": "int64"
+        }],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Categories"
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Categorie not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["categories"],
+        "summary": "Elimina una categoria",
+        "description": "Elimina una categoria",
+        "operationId": "deleteCategory",
+        "produces": ["application/json"],
+        "parameters": [{
+          "name": "categoryId",
+          "in": "path",
+          "description": "Id de la categoria",
+          "required": true,
+          "type": "string"
+        }],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Categorie not found"
+          }
+        }
+      },
+      "patch": {
+        "tags": ["categories"],
+        "summary": "Actualizar una categoria",
+        "description": "",
+        "operationId": "updateCategory",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [{
+          "in": "body",
+          "name": "body",
+          "description": "Objeto categoria",
+          "required": true,
+          "schema": {
+            "$ref": "#/definitions/Categories"
           }
         }],
         "responses": {
@@ -190,6 +287,35 @@
   },
   "definitions": {
     "Product": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "categoryName": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "visits": {
+          "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "Product"
+      }
+    },
+    "Categories": {
       "type": "object",
       "properties": {
         "date": {
