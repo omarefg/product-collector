@@ -1,6 +1,5 @@
-[
-  {
-    "id": "PCP900000000",
+{
+  "PCP900000000": {
     "keyWord": "iphone",
     "categoryId": "PCC102020",
     "filters": {
@@ -9,8 +8,7 @@
       "variants": ["64gb", "128gb", "256gb"]
     }
   },
-  {
-    "id": "PCP987654321",
+  "PCP987654321": {
     "keyWord": "tapabocas",
     "categoryId": "PCC201010",
     "filters": {
@@ -18,4 +16,4 @@
       "model": ["n95"]
     }
   }
-]
+}

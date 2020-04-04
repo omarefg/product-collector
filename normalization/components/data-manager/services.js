@@ -3,6 +3,17 @@ const boom = require('@hapi/boom')
 
 const RedisLib = require('../../lib/RedisLib')
 const countries = require('../../utils/mocks/countriesMock.json')
+const productSearchCriteria = require('../../utils/mocks/productSearchCriteria.json')
+
+// new - iphone11 - 64
+// new - iphone11 - 128
+// new - iphone11 - 256
+// new - iphone11 pro - 64
+// new - iphone11 pro - 128
+// new - iphone11 pro - 256
+// new - iphone11 pro max - 64
+// new - iphone11 pro max - 128
+// new - iphone11 pro max - 256
 
 class DataManagerService {
     constructor () {
@@ -23,15 +34,12 @@ class DataManagerService {
         }
     }
 
-    async normalize (dataReqBody) {
-        const { data, source, id, date } = dataReqBody
-        let dataNorm = []
-
+    async normalizeFromML ({ data, id, date, source }) {
         try {
-            dataNorm = data.results.map(item => {
+            const criteria = productSearchCriteria[id]
+            const normalized = data.results.map(item => {
                 const {
-                    site_id: site,
-                    address: { state_name: city },
+                    address: { state_name: countryState },
                     price,
                     currency_id: currency,
                     sold_quantity: soldQuantity,
@@ -39,10 +47,7 @@ class DataManagerService {
                 } = item
 
                 return {
-                    id,
-                    keyWord: data.query,
-                    country: countries[source].data.filter(item => item.id === site)[0].name,
-                    city,
+                    countryState,
                     currency,
                     condition,
                     price,
@@ -50,11 +55,29 @@ class DataManagerService {
                     date
                 }
             })
+            return {
+                id,
+                keyWord: data.query,
+                country: countries[source].data.filter(item => item.id === data.site_id)[0].name,
+                normalized
+            }
         } catch (error) {
-            boom.badRequest(error.message)
+            throw boom.badRequest(error.message)
         }
+    }
 
-        return dataNorm
+    async normalize (dataReqBody) {
+        const { data, source, id, date } = dataReqBody
+        switch (source) {
+        case 'PCML': {
+            try {
+                return this.normalizeFromML({ data, source, id, date })
+            } catch (error) {
+                throw boom.badRequest(error.message)
+            }
+        }
+        default: return []
+        }
     }
 }
 
