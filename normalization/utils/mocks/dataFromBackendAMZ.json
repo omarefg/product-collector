@@ -1,0 +1,35 @@
+{
+  "source": "PCAMZ",
+  "date": "2020-04-04T21:20:46.802Z",
+  "id": "PCP900000000",
+  "data": {
+    "site_id": "AmazonMX",
+    "query": "iphone",
+    "results": [
+      {
+        "brand": "Amazon Renewed",
+        "price": 10398.98,
+        "name": "Apple iPhone XR, 64GB, Black - Fully Unlocked (Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/81FyKX6ml6L._AC_UY218_ML3_.jpg",
+        "page": "/Apple-iPhone-Totalmente-Desbloqueado-renovado/dp/B07P6Y7954/ref=sr_1_1?keywords=iphone&qid=1586035247&sr=8-1"
+      },
+      {
+        "brand": "Amazon Renewed",
+        "price": 11499,
+        "name": "Apple iPhone X, 64GB, Space Gray - Fully unlocked- Desbloqueado(Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/719knfTwPvL._AC_UY218_ML3_.jpg",
+        "page": "/Apple-iPhone-desbloqueado-Refurbished-espacial/dp/B07757R58W/ref=sr_1_2?keywords=iphone&qid=1586035247&sr=8-2"
+      },
+      {
+        "brand": "Amazon Renewed",
+        "price": 5699,
+        "name": "Apple iPhone 7 Negro 128 GB (Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/81wjy3vd8+L._AC_UY218_ML3_.jpg",
+        "page": "/Apple-Desbloqueado-Unlocked-Reacondicionado-Refurbished/dp/B076JKVKD4/ref=sr_1_3?keywords=iphone&qid=1586035247&sr=8-3"
+      }
+    ]
+  }
+}
