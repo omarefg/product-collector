@@ -1,14 +1,15 @@
 {
-  "name": "amazon",
+  "name": "datamanager",
   "version": "1.0.0",
-  "description": "find a product and get data",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Erik",
+  "author": "backend - team",
   "license": "ISC",
   "dependencies": {
+    "google-trends-api": "^4.9.0",
     "puppeteer": "^2.1.1",
     "yargs": "^15.3.1"
   }
