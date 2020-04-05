@@ -48,30 +48,6 @@ async function start(country, product, firstRun) {
     console.error(e);
   }
 }
-/*
-googleTrends.interestByRegion({keyword: argv.product, geo: argv.country, startTime: new Date(new Date().setMonth(1))})
-.then(function(results){
-    fs.writeFileSync(`database/product-InterestByRegion-${ Date.now() }.json`, results);
-})
-.catch(function(err){
-  console.log('hubo un problema', err);
-});
-
-googleTrends.relatedQueries({keyword: argv.product, geo: argv.country, startTime: new Date(new Date().setMonth(1))})
-.then(function(results){
-    fs.writeFileSync(`database/product-RelatedQueries-${ Date.now() }.json`, results);
-})
-.catch(function(err){
-  console.log('hubo un problema', err);
-});
-
-googleTrends.relatedTopics({keyword: argv.product, geo: argv.country, startTime: new Date(new Date().setMonth(1))})
-.then(function(results){
-    fs.writeFileSync(`database/product-RelatedTopics-${ Date.now() }.json`, results);
-})
-.catch(function(err){
-  console.log('hubo un problema', err);
-});*/
 
 module.exports = (country, product, arguments) => {
   start(country, product, arguments.firstRun === undefined);
