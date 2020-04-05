@@ -3,12 +3,14 @@ const boom = require('@hapi/boom')
 
 const RedisLib = require('../../lib/RedisLib')
 const MercadoLibreLib = require('../../lib/MercadoLibreLib')
+const AmazonLib = require('../../lib/AmazonLib')
 
 class DataManagerService {
     constructor () {
         this.collection = 'products'
         this.redisDB = new RedisLib()
         this.mercadoLibre = new MercadoLibreLib()
+        this.amazon = new AmazonLib()
     }
 
     async searchForSecretByToken (token) {
@@ -31,7 +33,7 @@ class DataManagerService {
             return this.mercadoLibre.normalize(id, source, data, date)
         }
         case 'PCAMZ': {
-            return {}
+            return this.amazon.normalize(id, source, data, date)
         }
         default: return {}
         }
