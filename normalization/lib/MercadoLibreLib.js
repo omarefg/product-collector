@@ -11,12 +11,13 @@ class MercadoLibreLib {
     }
 
     _simplifyData (id, source, data, date) {
+        const conditionsToReplace = { nuevo: 'new', usado: 'used', reacondicionado: 'refurbished' }
+
         const results = data.results.map(item => ({
             title: item.title.toLowerCase(),
             countryState: item.address.state_name,
             currency: item.currency_id.toLowerCase(),
             condition: item.attributes.filter(item => item.id === 'ITEM_CONDITION')[0],
-            conditions: item.attributes.filter(item => item.id === 'ITEM_CONDITION')[0],
             model: item.attributes.filter(item => item.id === 'MODEL')[0],
             price: item.price,
             soldQuantity: item.sold_quantity,
@@ -29,16 +30,18 @@ class MercadoLibreLib {
             country: countries[source].data.filter(item => item.id === data.site_id)[0].name,
             results: results.map(item => ({
                 ...item,
-                condition: item.condition ? item.condition.value_name.toLowerCase() : '',
-                conditions: item.condition ? item.condition.value_name.toLowerCase() : '',
-                model: item.model ? item.model.value_name.toLowerCase() : '',
-                models: item.model ? item.model.value_name.toLowerCase() : ''
+                condition: item.condition ? this._normCondition(item.condition.value_name, conditionsToReplace) : '',
+                model: item.model ? item.model.value_name.toLowerCase() : ''
             }))
         }
     }
 
+    _normCondition (nameToChange, conditionsToReplace) {
+        return conditionsToReplace[nameToChange.toLowerCase()] || ''
+    }
+
     _getVariant (data, optionsToFind) {
-        const regExpVariants = new RegExp(optionsToFind.join('|'))
+        const regExpVariants = new RegExp(optionsToFind.join('|', 'i'))
         return {
             ...data,
             results: data.results
@@ -46,8 +49,7 @@ class MercadoLibreLib {
                 .map(item => {
                     const itemObj = {
                         ...item,
-                        variant: item.title.match(regExpVariants)[0],
-                        variants: item.title.match(regExpVariants)[0]
+                        variant: item.title.match(regExpVariants)[0]
                     }
                     delete itemObj.title
                     return itemObj
@@ -56,19 +58,18 @@ class MercadoLibreLib {
     }
 
     _applyCriteria (data, filters) {
-        const keys = Object.keys(filters)
-        filters.conditions = ['nuevo', 'usado', 'reacondicionado']
+        const keysFilters = Object.keys(filters)
+        // Example -> itemAttributes = [ 'condition', 'model', 'variant' ] without 's' in the end
+        const itemAttributes = keysFilters.map(item => item.slice(0, -1))
+        const regExpList = keysFilters.map(keyFilter => new RegExp(filters[keyFilter].join('|'), 'i'))
+
         return {
             ...data,
             results: data.results.filter(item => {
-                let itsGoingToBeReturned = true
-                for (let i = 0; i < keys.length; i++) {
-                    if (filters[keys[i]].length > 0 && !filters[keys[i]].includes(item[keys[i]])) {
-                        itsGoingToBeReturned = false
-                    }
-                    delete item[keys[i]]
-                }
-                return itsGoingToBeReturned
+                const testList = itemAttributes.filter((attribute, index) =>
+                    regExpList[index].test(item[attribute])
+                )
+                return testList.length === itemAttributes.length
             })
         }
     }

@@ -4,8 +4,8 @@
     "categoryId": "PCC102020",
     "filters": {
       "conditions": ["new", "used", "refurbished"],
-      "models": ["iphone 11", "iphone 11 pro", "iphone 11 pro Max"],
-      "variants": ["64gb", "128gb", "256gb"]
+      "models": ["iphone[ ]?11", "iphone[ ]?11[ ]?pro", "iphone[ ]?11[ ]?pro[ ]?max"],
+      "variants": ["64[ ]?gb", "128[ ]?gb", "256[ ]?gb"]
     }
   },
   "PCP987654321": {
@@ -13,7 +13,7 @@
     "categoryId": "PCC201010",
     "filters": {
       "conditions": ["new"],
-      "models": ["n95"],
+      "models": ["n[ ]?95"],
       "variants": []
     }
   }

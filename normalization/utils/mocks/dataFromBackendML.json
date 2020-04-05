@@ -5312,7 +5312,7 @@
             {
                 "id": "MCO538940714",
                 "site_id": "MCO",
-                "title": "iPhone 7 + Cable Cargador Reacondicionado 128gb Envío Gratis",
+                "title": "iPhone 11 + Cable Cargador Reacondicionado 128gb Envío Gratis",
                 "seller": {
                     "id": 29242781,
                     "permalink": null,
@@ -5473,7 +5473,7 @@
                             {
                                 "source": 6808261514773724,
                                 "id": "27251",
-                                "name": "7",
+                                "name": "iPhone 11",
                                 "struct": null
                             }
                         ],
@@ -5481,7 +5481,7 @@
                         "attribute_group_name": "Otros",
                         "name": "Modelo",
                         "value_id": "27251",
-                        "value_name": "7"
+                        "value_name": "iPhone 11"
                     },
                     {
                         "id": "PROCESSOR_MODEL",
@@ -9709,7 +9709,7 @@
                             {
                                 "source": 1572,
                                 "id": "2230284",
-                                "name": "Nuevo",
+                                "name": "Usado",
                                 "struct": null
                             }
                         ],
@@ -9717,7 +9717,7 @@
                         "source": 1572,
                         "id": "ITEM_CONDITION",
                         "name": "Condición del ítem",
-                        "value_name": "Nuevo"
+                        "value_name": "Usado"
                     },
                     {
                         "id": "LINE",
