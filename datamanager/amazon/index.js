@@ -1,9 +1,9 @@
 const puppeteer = require('puppeteer');
-const argv = require('yargs').argv
 const fs = require('fs');
 const base_url = 'https://www.amazon.com.mx';
 
-async function start(search) {
+async function start(country, search, search_product) {
+    const date = new Date();
     const browser = await puppeteer.launch();
     try {
         const page = await browser.newPage();
@@ -43,7 +43,18 @@ async function start(search) {
             products.push(result);
         }
         //TODO push to normalizer API
-        fs.writeFileSync(`database/product-${ Math.round(new Date() / 1000)}.json`, JSON.stringify(products));
+        const result = {
+            source: 'PCAMZ',
+            date: date,
+            //TODO: get id from criteria or product
+            id: "PCP900000000",
+            data :{
+                site_id: "AmazonMX",
+                query: search_product,
+                results: products,
+            }
+        }
+        fs.writeFileSync(`database/Amazon-${country}-product-${ Date.now() }.json`, JSON.stringify(result));
     } catch (e){
         console.log('-----error-----');
         console.log(e)
@@ -52,11 +63,9 @@ async function start(search) {
     }
 }
 
-if(argv.search && argv.search != '') {
-    console.log(`to search "${argv.search}"`);
-    start(argv.search.replace(' ', '+'));
-} else {
-    console.log('run the command with search argument')
-}
 
 const currencyToNumber = currency => Number(currency.replace(/[^0-9.-]+/g,""));
+
+module.exports = (country, product) => {
+    start(country, product.replace(' ', '+'), product);
+}
