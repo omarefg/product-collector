@@ -1,28 +1,52 @@
 import Products from '../../models/Products';
-import { prepare } from '../../utils/index';
 
 const Query = {
   products: async (__, args, context, info) => {
-    const where = args.filter
-      ? {
-          $or: [{ keyWord: args.filter }, { country: args.filter }]
-        }
-      : {};
+    const criterias = Object.keys(args);
+    console.log('criterias', criterias);
+    const search = criterias.map(criteria => ({ [criteria]: args[criteria] }));
+    console.log('search', search);
+    const where =
+      search.length > 0
+        ? {
+            $and: search
+          }
+        : {};
+
+    console.log('where', where);
 
     const product = await Products.find(where);
-    console.log(where);
     return product;
   },
 
   productsCount: async (__, args, context, info) => {
-    const where = args.filter
-      ? {
-          $or: [{ keyWord: args.filter }, { country: args.filter }]
-        }
-      : {};
+    const criterias = Object.keys(args);
+    console.log('criterias', criterias);
+    const search = criterias.map(criteria => ({ [criteria]: args[criteria] }));
+    console.log('search', search);
+    const where =
+      search.length > 0
+        ? {
+            $and: search
+          }
+        : {};
 
-    const product = await Products.find(where).countDocuments();
-    console.log(where);
+    console.log('where', where);
+
+    const product = await Products.aggregate([
+      // First Stage
+      {
+        $match: where
+      },
+      // Second Stage
+      {
+        $group: {
+          _id: '$country',
+          count: { $sum: 1 }
+        }
+      }
+    ]);
+    console.log(product);
     return product;
   }
 };
