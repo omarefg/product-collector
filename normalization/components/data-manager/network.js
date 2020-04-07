@@ -19,7 +19,7 @@ router.post(
 
             try {
                 const idDB = await dataManagerService.normalize(body)
-                response.success({}, res, idDB, 201)
+                response.success({}, res, idDB, 200)
             } catch (error) {
                 next(boom.badImplementation(error.message))
             }

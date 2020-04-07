@@ -16,7 +16,7 @@
       {
         "default_currency_id": "MXN",
         "id": "MLM",
-        "name": "Mexico"
+        "name": "México"
       },
       {
         "default_currency_id": "VES",
@@ -114,8 +114,8 @@
     "fecha": "2020-03-26T00:00:00.911Z",
     "data": [
       {
-        "id": "MXN",
-        "name": "Mexico"
+        "id": "AmazonMX",
+        "name": "México"
       }
     ]
   },
@@ -124,7 +124,7 @@
     "data": [
       {
         "id": "MXN",
-        "name": "Mexico"
+        "name": "México"
       }
     ]
   }

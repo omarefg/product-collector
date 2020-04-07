@@ -1,0 +1,89 @@
+{
+  "source": "PCAMZ",
+  "date": "2020-04-04T21:20:46.802Z",
+  "id": "PCP900000000",
+  "data": {
+    "site_id": "AmazonMX",
+    "query": "iphone",
+    "results": [
+      {
+        "brand": "Amazon",
+        "price": 6000,
+        "name": "Apple iPhone 11, 128 GB, Black - Fully Unlocked (Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/81FyKX6ml6L._AC_UY218_ML3_.jpg",
+        "page": "/Apple-iPhone-Totalmente-Desbloqueado-renovado/dp/B07P6Y7954/ref=sr_1_1?keywords=iphone&qid=1586035247&sr=8-1",
+        "condition": "used",
+        "model": "iPhone 11"
+      },
+      {
+        "brand": "Amazon",
+        "price": 5230,
+        "name": "Apple iPhone 11, 128 GB, Black - Fully Unlocked (Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/81FyKX6ml6L._AC_UY218_ML3_.jpg",
+        "page": "/Apple-iPhone-Totalmente-Desbloqueado-renovado/dp/B07P6Y7954/ref=sr_1_1?keywords=iphone&qid=1586035247&sr=8-1",
+        "model": "iPhone 11 pro"
+      },
+      {
+        "brand": "Amazon",
+        "price": 4000,
+        "name": "Apple iPhone 11, 128 GB, Black (Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/81FyKX6ml6L._AC_UY218_ML3_.jpg",
+        "page": "/Apple-iPhone-Totalmente-Desbloqueado-renovado/dp/B07P6Y7954/ref=sr_1_1?keywords=iphone&qid=1586035247&sr=8-1",
+        "condition": "Renewed",
+        "model": "iPhone 11"
+      },
+      {
+        "brand": "Amazon Renewed",
+        "price": 10398.98,
+        "name": "Apple iPhone XR, 64GB, Black - Fully Unlocked (Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/81FyKX6ml6L._AC_UY218_ML3_.jpg",
+        "page": "/Apple-iPhone-Totalmente-Desbloqueado-renovado/dp/B07P6Y7954/ref=sr_1_1?keywords=iphone&qid=1586035247&sr=8-1",
+        "condition": "new",
+        "model": "iphone XR"
+      },
+      {
+        "brand": "Amazon Renewed",
+        "price": 11499,
+        "name": "Apple iPhone X, 64GB, Space Gray - Fully unlocked- Desbloqueado(Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/719knfTwPvL._AC_UY218_ML3_.jpg",
+        "page": "/Apple-iPhone-desbloqueado-Refurbished-espacial/dp/B07757R58W/ref=sr_1_2?keywords=iphone&qid=1586035247&sr=8-2",
+        "condition": "new"
+      },
+      {
+        "brand": "Amazon",
+        "price": 5699,
+        "name": "Apple iPhone 7 Negro 128 GB (Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/81wjy3vd8+L._AC_UY218_ML3_.jpg",
+        "page": "/Apple-Desbloqueado-Unlocked-Reacondicionado-Refurbished/dp/B076JKVKD4/ref=sr_1_3?keywords=iphone&qid=1586035247&sr=8-3",
+        "condition": "used",
+        "model": "iphone 7"
+      },
+      {
+        "brand": "Amazon",
+        "price": 10398.98,
+        "name": "Apple iPhone 11 pro max, 128GB, Black - Fully Unlocked (Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/81FyKX6ml6L._AC_UY218_ML3_.jpg",
+        "page": "/Apple-iPhone-Totalmente-Desbloqueado-renovado/dp/B07P6Y7954/ref=sr_1_1?keywords=iphone&qid=1586035247&sr=8-1",
+        "condition": "new",
+        "model": "iPhone 11 PRO Max"
+      },
+      {
+        "brand": "Amazon",
+        "price": 5000,
+        "name": "Apple iPhone 11, 64 GB, Black - Fully Unlocked (Renewed)",
+        "currency": "MXN",
+        "image": "https://m.media-amazon.com/images/I/81FyKX6ml6L._AC_UY218_ML3_.jpg",
+        "page": "/Apple-iPhone-Totalmente-Desbloqueado-renovado/dp/B07P6Y7954/ref=sr_1_1?keywords=iphone&qid=1586035247&sr=8-1",
+        "condition": "new",
+        "model": "iPhone 11"
+      }
+    ]
+  }
+}
