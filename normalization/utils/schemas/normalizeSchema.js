@@ -1,4 +1,4 @@
-const normalizeChema = {
+export const itemSchema = {
     title: 'string',
     countryState: 'string',
     currency: 'string',
@@ -9,4 +9,9 @@ const normalizeChema = {
     data: 'string'
 }
 
-export default normalizeChema
+export const normalizeChema = {
+    id: 'string',
+    keyWord: 'string',
+    country: 'string',
+    results: [itemSchema]
+}
