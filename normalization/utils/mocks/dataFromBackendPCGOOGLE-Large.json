@@ -1,0 +1,4062 @@
+{
+  "source":"PCGTrends",
+  "date":"2020-04-05T00:51:13.453Z",
+  "id":"PCP900000000",
+  "data":{
+      "site_id":"GoogleTrends",
+      "query":"iphone",
+      "results":{
+          "interestOverTime":{
+              "default":{
+                  "timelineData":[
+                      {
+                          "time":"1072915200",
+                          "formattedTime":"Jan 2004",
+                          "formattedAxisTime":"Jan 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1075593600",
+                          "formattedTime":"Feb 2004",
+                          "formattedAxisTime":"Feb 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1078099200",
+                          "formattedTime":"Mar 2004",
+                          "formattedAxisTime":"Mar 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1080777600",
+                          "formattedTime":"Apr 2004",
+                          "formattedAxisTime":"Apr 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1083369600",
+                          "formattedTime":"May 2004",
+                          "formattedAxisTime":"May 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1086048000",
+                          "formattedTime":"Jun 2004",
+                          "formattedAxisTime":"Jun 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1088640000",
+                          "formattedTime":"Jul 2004",
+                          "formattedAxisTime":"Jul 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1091318400",
+                          "formattedTime":"Aug 2004",
+                          "formattedAxisTime":"Aug 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1093996800",
+                          "formattedTime":"Sep 2004",
+                          "formattedAxisTime":"Sep 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1096588800",
+                          "formattedTime":"Oct 2004",
+                          "formattedAxisTime":"Oct 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1099267200",
+                          "formattedTime":"Nov 2004",
+                          "formattedAxisTime":"Nov 1, 2004",
+                          "value":[
+                              1
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "1"
+                          ]
+                      },
+                      {
+                          "time":"1101859200",
+                          "formattedTime":"Dec 2004",
+                          "formattedAxisTime":"Dec 1, 2004",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1104537600",
+                          "formattedTime":"Jan 2005",
+                          "formattedAxisTime":"Jan 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1107216000",
+                          "formattedTime":"Feb 2005",
+                          "formattedAxisTime":"Feb 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1109635200",
+                          "formattedTime":"Mar 2005",
+                          "formattedAxisTime":"Mar 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1112313600",
+                          "formattedTime":"Apr 2005",
+                          "formattedAxisTime":"Apr 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1114905600",
+                          "formattedTime":"May 2005",
+                          "formattedAxisTime":"May 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1117584000",
+                          "formattedTime":"Jun 2005",
+                          "formattedAxisTime":"Jun 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1120176000",
+                          "formattedTime":"Jul 2005",
+                          "formattedAxisTime":"Jul 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1122854400",
+                          "formattedTime":"Aug 2005",
+                          "formattedAxisTime":"Aug 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1125532800",
+                          "formattedTime":"Sep 2005",
+                          "formattedAxisTime":"Sep 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1128124800",
+                          "formattedTime":"Oct 2005",
+                          "formattedAxisTime":"Oct 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1130803200",
+                          "formattedTime":"Nov 2005",
+                          "formattedAxisTime":"Nov 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1133395200",
+                          "formattedTime":"Dec 2005",
+                          "formattedAxisTime":"Dec 1, 2005",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1136073600",
+                          "formattedTime":"Jan 2006",
+                          "formattedAxisTime":"Jan 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1138752000",
+                          "formattedTime":"Feb 2006",
+                          "formattedAxisTime":"Feb 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1141171200",
+                          "formattedTime":"Mar 2006",
+                          "formattedAxisTime":"Mar 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1143849600",
+                          "formattedTime":"Apr 2006",
+                          "formattedAxisTime":"Apr 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1146441600",
+                          "formattedTime":"May 2006",
+                          "formattedAxisTime":"May 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1149120000",
+                          "formattedTime":"Jun 2006",
+                          "formattedAxisTime":"Jun 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1151712000",
+                          "formattedTime":"Jul 2006",
+                          "formattedAxisTime":"Jul 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1154390400",
+                          "formattedTime":"Aug 2006",
+                          "formattedAxisTime":"Aug 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "<1"
+                          ]
+                      },
+                      {
+                          "time":"1157068800",
+                          "formattedTime":"Sep 2006",
+                          "formattedAxisTime":"Sep 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              false
+                          ],
+                          "formattedValue":[
+                              "0"
+                          ]
+                      },
+                      {
+                          "time":"1159660800",
+                          "formattedTime":"Oct 2006",
+                          "formattedAxisTime":"Oct 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "<1"
+                          ]
+                      },
+                      {
+                          "time":"1162339200",
+                          "formattedTime":"Nov 2006",
+                          "formattedAxisTime":"Nov 1, 2006",
+                          "value":[
+                              0
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "<1"
+                          ]
+                      },
+                      {
+                          "time":"1164931200",
+                          "formattedTime":"Dec 2006",
+                          "formattedAxisTime":"Dec 1, 2006",
+                          "value":[
+                              1
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "1"
+                          ]
+                      },
+                      {
+                          "time":"1167609600",
+                          "formattedTime":"Jan 2007",
+                          "formattedAxisTime":"Jan 1, 2007",
+                          "value":[
+                              14
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "14"
+                          ]
+                      },
+                      {
+                          "time":"1170288000",
+                          "formattedTime":"Feb 2007",
+                          "formattedAxisTime":"Feb 1, 2007",
+                          "value":[
+                              5
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "5"
+                          ]
+                      },
+                      {
+                          "time":"1172707200",
+                          "formattedTime":"Mar 2007",
+                          "formattedAxisTime":"Mar 1, 2007",
+                          "value":[
+                              3
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "3"
+                          ]
+                      },
+                      {
+                          "time":"1175385600",
+                          "formattedTime":"Apr 2007",
+                          "formattedAxisTime":"Apr 1, 2007",
+                          "value":[
+                              2
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "2"
+                          ]
+                      },
+                      {
+                          "time":"1177977600",
+                          "formattedTime":"May 2007",
+                          "formattedAxisTime":"May 1, 2007",
+                          "value":[
+                              3
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "3"
+                          ]
+                      },
+                      {
+                          "time":"1180656000",
+                          "formattedTime":"Jun 2007",
+                          "formattedAxisTime":"Jun 1, 2007",
+                          "value":[
+                              10
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "10"
+                          ]
+                      },
+                      {
+                          "time":"1183248000",
+                          "formattedTime":"Jul 2007",
+                          "formattedAxisTime":"Jul 1, 2007",
+                          "value":[
+                              16
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "16"
+                          ]
+                      },
+                      {
+                          "time":"1185926400",
+                          "formattedTime":"Aug 2007",
+                          "formattedAxisTime":"Aug 1, 2007",
+                          "value":[
+                              6
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "6"
+                          ]
+                      },
+                      {
+                          "time":"1188604800",
+                          "formattedTime":"Sep 2007",
+                          "formattedAxisTime":"Sep 1, 2007",
+                          "value":[
+                              9
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "9"
+                          ]
+                      },
+                      {
+                          "time":"1191196800",
+                          "formattedTime":"Oct 2007",
+                          "formattedAxisTime":"Oct 1, 2007",
+                          "value":[
+                              13
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "13"
+                          ]
+                      },
+                      {
+                          "time":"1193875200",
+                          "formattedTime":"Nov 2007",
+                          "formattedAxisTime":"Nov 1, 2007",
+                          "value":[
+                              17
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "17"
+                          ]
+                      },
+                      {
+                          "time":"1196467200",
+                          "formattedTime":"Dec 2007",
+                          "formattedAxisTime":"Dec 1, 2007",
+                          "value":[
+                              22
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "22"
+                          ]
+                      },
+                      {
+                          "time":"1199145600",
+                          "formattedTime":"Jan 2008",
+                          "formattedAxisTime":"Jan 1, 2008",
+                          "value":[
+                              19
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "19"
+                          ]
+                      },
+                      {
+                          "time":"1201824000",
+                          "formattedTime":"Feb 2008",
+                          "formattedAxisTime":"Feb 1, 2008",
+                          "value":[
+                              18
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "18"
+                          ]
+                      },
+                      {
+                          "time":"1204329600",
+                          "formattedTime":"Mar 2008",
+                          "formattedAxisTime":"Mar 1, 2008",
+                          "value":[
+                              17
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "17"
+                          ]
+                      },
+                      {
+                          "time":"1207008000",
+                          "formattedTime":"Apr 2008",
+                          "formattedAxisTime":"Apr 1, 2008",
+                          "value":[
+                              16
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "16"
+                          ]
+                      },
+                      {
+                          "time":"1209600000",
+                          "formattedTime":"May 2008",
+                          "formattedAxisTime":"May 1, 2008",
+                          "value":[
+                              15
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "15"
+                          ]
+                      },
+                      {
+                          "time":"1212278400",
+                          "formattedTime":"Jun 2008",
+                          "formattedAxisTime":"Jun 1, 2008",
+                          "value":[
+                              29
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "29"
+                          ]
+                      },
+                      {
+                          "time":"1214870400",
+                          "formattedTime":"Jul 2008",
+                          "formattedAxisTime":"Jul 1, 2008",
+                          "value":[
+                              32
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "32"
+                          ]
+                      },
+                      {
+                          "time":"1217548800",
+                          "formattedTime":"Aug 2008",
+                          "formattedAxisTime":"Aug 1, 2008",
+                          "value":[
+                              38
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "38"
+                          ]
+                      },
+                      {
+                          "time":"1220227200",
+                          "formattedTime":"Sep 2008",
+                          "formattedAxisTime":"Sep 1, 2008",
+                          "value":[
+                              30
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "30"
+                          ]
+                      },
+                      {
+                          "time":"1222819200",
+                          "formattedTime":"Oct 2008",
+                          "formattedAxisTime":"Oct 1, 2008",
+                          "value":[
+                              21
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "21"
+                          ]
+                      },
+                      {
+                          "time":"1225497600",
+                          "formattedTime":"Nov 2008",
+                          "formattedAxisTime":"Nov 1, 2008",
+                          "value":[
+                              18
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "18"
+                          ]
+                      },
+                      {
+                          "time":"1228089600",
+                          "formattedTime":"Dec 2008",
+                          "formattedAxisTime":"Dec 1, 2008",
+                          "value":[
+                              23
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "23"
+                          ]
+                      },
+                      {
+                          "time":"1230768000",
+                          "formattedTime":"Jan 2009",
+                          "formattedAxisTime":"Jan 1, 2009",
+                          "value":[
+                              20
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "20"
+                          ]
+                      },
+                      {
+                          "time":"1233446400",
+                          "formattedTime":"Feb 2009",
+                          "formattedAxisTime":"Feb 1, 2009",
+                          "value":[
+                              19
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "19"
+                          ]
+                      },
+                      {
+                          "time":"1235865600",
+                          "formattedTime":"Mar 2009",
+                          "formattedAxisTime":"Mar 1, 2009",
+                          "value":[
+                              15
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "15"
+                          ]
+                      },
+                      {
+                          "time":"1238544000",
+                          "formattedTime":"Apr 2009",
+                          "formattedAxisTime":"Apr 1, 2009",
+                          "value":[
+                              18
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "18"
+                          ]
+                      },
+                      {
+                          "time":"1241136000",
+                          "formattedTime":"May 2009",
+                          "formattedAxisTime":"May 1, 2009",
+                          "value":[
+                              18
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "18"
+                          ]
+                      },
+                      {
+                          "time":"1243814400",
+                          "formattedTime":"Jun 2009",
+                          "formattedAxisTime":"Jun 1, 2009",
+                          "value":[
+                              27
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "27"
+                          ]
+                      },
+                      {
+                          "time":"1246406400",
+                          "formattedTime":"Jul 2009",
+                          "formattedAxisTime":"Jul 1, 2009",
+                          "value":[
+                              28
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "28"
+                          ]
+                      },
+                      {
+                          "time":"1249084800",
+                          "formattedTime":"Aug 2009",
+                          "formattedAxisTime":"Aug 1, 2009",
+                          "value":[
+                              24
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "24"
+                          ]
+                      },
+                      {
+                          "time":"1251763200",
+                          "formattedTime":"Sep 2009",
+                          "formattedAxisTime":"Sep 1, 2009",
+                          "value":[
+                              22
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "22"
+                          ]
+                      },
+                      {
+                          "time":"1254355200",
+                          "formattedTime":"Oct 2009",
+                          "formattedAxisTime":"Oct 1, 2009",
+                          "value":[
+                              21
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "21"
+                          ]
+                      },
+                      {
+                          "time":"1257033600",
+                          "formattedTime":"Nov 2009",
+                          "formattedAxisTime":"Nov 1, 2009",
+                          "value":[
+                              22
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "22"
+                          ]
+                      },
+                      {
+                          "time":"1259625600",
+                          "formattedTime":"Dec 2009",
+                          "formattedAxisTime":"Dec 1, 2009",
+                          "value":[
+                              28
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "28"
+                          ]
+                      },
+                      {
+                          "time":"1262304000",
+                          "formattedTime":"Jan 2010",
+                          "formattedAxisTime":"Jan 1, 2010",
+                          "value":[
+                              27
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "27"
+                          ]
+                      },
+                      {
+                          "time":"1264982400",
+                          "formattedTime":"Feb 2010",
+                          "formattedAxisTime":"Feb 1, 2010",
+                          "value":[
+                              22
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "22"
+                          ]
+                      },
+                      {
+                          "time":"1267401600",
+                          "formattedTime":"Mar 2010",
+                          "formattedAxisTime":"Mar 1, 2010",
+                          "value":[
+                              21
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "21"
+                          ]
+                      },
+                      {
+                          "time":"1270080000",
+                          "formattedTime":"Apr 2010",
+                          "formattedAxisTime":"Apr 1, 2010",
+                          "value":[
+                              20
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "20"
+                          ]
+                      },
+                      {
+                          "time":"1272672000",
+                          "formattedTime":"May 2010",
+                          "formattedAxisTime":"May 1, 2010",
+                          "value":[
+                              19
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "19"
+                          ]
+                      },
+                      {
+                          "time":"1275350400",
+                          "formattedTime":"Jun 2010",
+                          "formattedAxisTime":"Jun 1, 2010",
+                          "value":[
+                              33
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "33"
+                          ]
+                      },
+                      {
+                          "time":"1277942400",
+                          "formattedTime":"Jul 2010",
+                          "formattedAxisTime":"Jul 1, 2010",
+                          "value":[
+                              27
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "27"
+                          ]
+                      },
+                      {
+                          "time":"1280620800",
+                          "formattedTime":"Aug 2010",
+                          "formattedAxisTime":"Aug 1, 2010",
+                          "value":[
+                              28
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "28"
+                          ]
+                      },
+                      {
+                          "time":"1283299200",
+                          "formattedTime":"Sep 2010",
+                          "formattedAxisTime":"Sep 1, 2010",
+                          "value":[
+                              33
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "33"
+                          ]
+                      },
+                      {
+                          "time":"1285891200",
+                          "formattedTime":"Oct 2010",
+                          "formattedAxisTime":"Oct 1, 2010",
+                          "value":[
+                              27
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "27"
+                          ]
+                      },
+                      {
+                          "time":"1288569600",
+                          "formattedTime":"Nov 2010",
+                          "formattedAxisTime":"Nov 1, 2010",
+                          "value":[
+                              27
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "27"
+                          ]
+                      },
+                      {
+                          "time":"1291161600",
+                          "formattedTime":"Dec 2010",
+                          "formattedAxisTime":"Dec 1, 2010",
+                          "value":[
+                              39
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "39"
+                          ]
+                      },
+                      {
+                          "time":"1293840000",
+                          "formattedTime":"Jan 2011",
+                          "formattedAxisTime":"Jan 1, 2011",
+                          "value":[
+                              32
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "32"
+                          ],
+                          "axisNote":{
+                              "text":"An improvement to our geographical assignment was applied from 1/1/2011."
+                          }
+                      },
+                      {
+                          "time":"1296518400",
+                          "formattedTime":"Feb 2011",
+                          "formattedAxisTime":"Feb 1, 2011",
+                          "value":[
+                              25
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "25"
+                          ]
+                      },
+                      {
+                          "time":"1298937600",
+                          "formattedTime":"Mar 2011",
+                          "formattedAxisTime":"Mar 1, 2011",
+                          "value":[
+                              25
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "25"
+                          ]
+                      },
+                      {
+                          "time":"1301616000",
+                          "formattedTime":"Apr 2011",
+                          "formattedAxisTime":"Apr 1, 2011",
+                          "value":[
+                              26
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "26"
+                          ]
+                      },
+                      {
+                          "time":"1304208000",
+                          "formattedTime":"May 2011",
+                          "formattedAxisTime":"May 1, 2011",
+                          "value":[
+                              30
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "30"
+                          ]
+                      },
+                      {
+                          "time":"1306886400",
+                          "formattedTime":"Jun 2011",
+                          "formattedAxisTime":"Jun 1, 2011",
+                          "value":[
+                              32
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "32"
+                          ]
+                      },
+                      {
+                          "time":"1309478400",
+                          "formattedTime":"Jul 2011",
+                          "formattedAxisTime":"Jul 1, 2011",
+                          "value":[
+                              32
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "32"
+                          ]
+                      },
+                      {
+                          "time":"1312156800",
+                          "formattedTime":"Aug 2011",
+                          "formattedAxisTime":"Aug 1, 2011",
+                          "value":[
+                              34
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "34"
+                          ]
+                      },
+                      {
+                          "time":"1314835200",
+                          "formattedTime":"Sep 2011",
+                          "formattedAxisTime":"Sep 1, 2011",
+                          "value":[
+                              41
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "41"
+                          ]
+                      },
+                      {
+                          "time":"1317427200",
+                          "formattedTime":"Oct 2011",
+                          "formattedAxisTime":"Oct 1, 2011",
+                          "value":[
+                              51
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "51"
+                          ]
+                      },
+                      {
+                          "time":"1320105600",
+                          "formattedTime":"Nov 2011",
+                          "formattedAxisTime":"Nov 1, 2011",
+                          "value":[
+                              45
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "45"
+                          ]
+                      },
+                      {
+                          "time":"1322697600",
+                          "formattedTime":"Dec 2011",
+                          "formattedAxisTime":"Dec 1, 2011",
+                          "value":[
+                              56
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "56"
+                          ]
+                      },
+                      {
+                          "time":"1325376000",
+                          "formattedTime":"Jan 2012",
+                          "formattedAxisTime":"Jan 1, 2012",
+                          "value":[
+                              55
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "55"
+                          ]
+                      },
+                      {
+                          "time":"1328054400",
+                          "formattedTime":"Feb 2012",
+                          "formattedAxisTime":"Feb 1, 2012",
+                          "value":[
+                              45
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "45"
+                          ]
+                      },
+                      {
+                          "time":"1330560000",
+                          "formattedTime":"Mar 2012",
+                          "formattedAxisTime":"Mar 1, 2012",
+                          "value":[
+                              51
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "51"
+                          ]
+                      },
+                      {
+                          "time":"1333238400",
+                          "formattedTime":"Apr 2012",
+                          "formattedAxisTime":"Apr 1, 2012",
+                          "value":[
+                              52
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "52"
+                          ]
+                      },
+                      {
+                          "time":"1335830400",
+                          "formattedTime":"May 2012",
+                          "formattedAxisTime":"May 1, 2012",
+                          "value":[
+                              50
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "50"
+                          ]
+                      },
+                      {
+                          "time":"1338508800",
+                          "formattedTime":"Jun 2012",
+                          "formattedAxisTime":"Jun 1, 2012",
+                          "value":[
+                              61
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "61"
+                          ]
+                      },
+                      {
+                          "time":"1341100800",
+                          "formattedTime":"Jul 2012",
+                          "formattedAxisTime":"Jul 1, 2012",
+                          "value":[
+                              65
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "65"
+                          ]
+                      },
+                      {
+                          "time":"1343779200",
+                          "formattedTime":"Aug 2012",
+                          "formattedAxisTime":"Aug 1, 2012",
+                          "value":[
+                              60
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "60"
+                          ]
+                      },
+                      {
+                          "time":"1346457600",
+                          "formattedTime":"Sep 2012",
+                          "formattedAxisTime":"Sep 1, 2012",
+                          "value":[
+                              92
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "92"
+                          ]
+                      },
+                      {
+                          "time":"1349049600",
+                          "formattedTime":"Oct 2012",
+                          "formattedAxisTime":"Oct 1, 2012",
+                          "value":[
+                              61
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "61"
+                          ]
+                      },
+                      {
+                          "time":"1351728000",
+                          "formattedTime":"Nov 2012",
+                          "formattedAxisTime":"Nov 1, 2012",
+                          "value":[
+                              69
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "69"
+                          ]
+                      },
+                      {
+                          "time":"1354320000",
+                          "formattedTime":"Dec 2012",
+                          "formattedAxisTime":"Dec 1, 2012",
+                          "value":[
+                              81
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "81"
+                          ]
+                      },
+                      {
+                          "time":"1356998400",
+                          "formattedTime":"Jan 2013",
+                          "formattedAxisTime":"Jan 1, 2013",
+                          "value":[
+                              83
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "83"
+                          ]
+                      },
+                      {
+                          "time":"1359676800",
+                          "formattedTime":"Feb 2013",
+                          "formattedAxisTime":"Feb 1, 2013",
+                          "value":[
+                              69
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "69"
+                          ]
+                      },
+                      {
+                          "time":"1362096000",
+                          "formattedTime":"Mar 2013",
+                          "formattedAxisTime":"Mar 1, 2013",
+                          "value":[
+                              66
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "66"
+                          ]
+                      },
+                      {
+                          "time":"1364774400",
+                          "formattedTime":"Apr 2013",
+                          "formattedAxisTime":"Apr 1, 2013",
+                          "value":[
+                              57
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "57"
+                          ]
+                      },
+                      {
+                          "time":"1367366400",
+                          "formattedTime":"May 2013",
+                          "formattedAxisTime":"May 1, 2013",
+                          "value":[
+                              59
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "59"
+                          ]
+                      },
+                      {
+                          "time":"1370044800",
+                          "formattedTime":"Jun 2013",
+                          "formattedAxisTime":"Jun 1, 2013",
+                          "value":[
+                              61
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "61"
+                          ]
+                      },
+                      {
+                          "time":"1372636800",
+                          "formattedTime":"Jul 2013",
+                          "formattedAxisTime":"Jul 1, 2013",
+                          "value":[
+                              62
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "62"
+                          ]
+                      },
+                      {
+                          "time":"1375315200",
+                          "formattedTime":"Aug 2013",
+                          "formattedAxisTime":"Aug 1, 2013",
+                          "value":[
+                              58
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ]
+                      },
+                      {
+                          "time":"1377993600",
+                          "formattedTime":"Sep 2013",
+                          "formattedAxisTime":"Sep 1, 2013",
+                          "value":[
+                              89
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "89"
+                          ]
+                      },
+                      {
+                          "time":"1380585600",
+                          "formattedTime":"Oct 2013",
+                          "formattedAxisTime":"Oct 1, 2013",
+                          "value":[
+                              67
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "67"
+                          ]
+                      },
+                      {
+                          "time":"1383264000",
+                          "formattedTime":"Nov 2013",
+                          "formattedAxisTime":"Nov 1, 2013",
+                          "value":[
+                              68
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "68"
+                          ]
+                      },
+                      {
+                          "time":"1385856000",
+                          "formattedTime":"Dec 2013",
+                          "formattedAxisTime":"Dec 1, 2013",
+                          "value":[
+                              76
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "76"
+                          ]
+                      },
+                      {
+                          "time":"1388534400",
+                          "formattedTime":"Jan 2014",
+                          "formattedAxisTime":"Jan 1, 2014",
+                          "value":[
+                              74
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "74"
+                          ]
+                      },
+                      {
+                          "time":"1391212800",
+                          "formattedTime":"Feb 2014",
+                          "formattedAxisTime":"Feb 1, 2014",
+                          "value":[
+                              58
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ]
+                      },
+                      {
+                          "time":"1393632000",
+                          "formattedTime":"Mar 2014",
+                          "formattedAxisTime":"Mar 1, 2014",
+                          "value":[
+                              56
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "56"
+                          ]
+                      },
+                      {
+                          "time":"1396310400",
+                          "formattedTime":"Apr 2014",
+                          "formattedAxisTime":"Apr 1, 2014",
+                          "value":[
+                              58
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ]
+                      },
+                      {
+                          "time":"1398902400",
+                          "formattedTime":"May 2014",
+                          "formattedAxisTime":"May 1, 2014",
+                          "value":[
+                              50
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "50"
+                          ]
+                      },
+                      {
+                          "time":"1401580800",
+                          "formattedTime":"Jun 2014",
+                          "formattedAxisTime":"Jun 1, 2014",
+                          "value":[
+                              51
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "51"
+                          ]
+                      },
+                      {
+                          "time":"1404172800",
+                          "formattedTime":"Jul 2014",
+                          "formattedAxisTime":"Jul 1, 2014",
+                          "value":[
+                              53
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "53"
+                          ]
+                      },
+                      {
+                          "time":"1406851200",
+                          "formattedTime":"Aug 2014",
+                          "formattedAxisTime":"Aug 1, 2014",
+                          "value":[
+                              56
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "56"
+                          ]
+                      },
+                      {
+                          "time":"1409529600",
+                          "formattedTime":"Sep 2014",
+                          "formattedAxisTime":"Sep 1, 2014",
+                          "value":[
+                              91
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "91"
+                          ]
+                      },
+                      {
+                          "time":"1412121600",
+                          "formattedTime":"Oct 2014",
+                          "formattedAxisTime":"Oct 1, 2014",
+                          "value":[
+                              53
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "53"
+                          ]
+                      },
+                      {
+                          "time":"1414800000",
+                          "formattedTime":"Nov 2014",
+                          "formattedAxisTime":"Nov 1, 2014",
+                          "value":[
+                              62
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "62"
+                          ]
+                      },
+                      {
+                          "time":"1417392000",
+                          "formattedTime":"Dec 2014",
+                          "formattedAxisTime":"Dec 1, 2014",
+                          "value":[
+                              81
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "81"
+                          ]
+                      },
+                      {
+                          "time":"1420070400",
+                          "formattedTime":"Jan 2015",
+                          "formattedAxisTime":"Jan 1, 2015",
+                          "value":[
+                              67
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "67"
+                          ]
+                      },
+                      {
+                          "time":"1422748800",
+                          "formattedTime":"Feb 2015",
+                          "formattedAxisTime":"Feb 1, 2015",
+                          "value":[
+                              58
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ]
+                      },
+                      {
+                          "time":"1425168000",
+                          "formattedTime":"Mar 2015",
+                          "formattedAxisTime":"Mar 1, 2015",
+                          "value":[
+                              62
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "62"
+                          ]
+                      },
+                      {
+                          "time":"1427846400",
+                          "formattedTime":"Apr 2015",
+                          "formattedAxisTime":"Apr 1, 2015",
+                          "value":[
+                              59
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "59"
+                          ]
+                      },
+                      {
+                          "time":"1430438400",
+                          "formattedTime":"May 2015",
+                          "formattedAxisTime":"May 1, 2015",
+                          "value":[
+                              57
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "57"
+                          ]
+                      },
+                      {
+                          "time":"1433116800",
+                          "formattedTime":"Jun 2015",
+                          "formattedAxisTime":"Jun 1, 2015",
+                          "value":[
+                              60
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "60"
+                          ]
+                      },
+                      {
+                          "time":"1435708800",
+                          "formattedTime":"Jul 2015",
+                          "formattedAxisTime":"Jul 1, 2015",
+                          "value":[
+                              60
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "60"
+                          ]
+                      },
+                      {
+                          "time":"1438387200",
+                          "formattedTime":"Aug 2015",
+                          "formattedAxisTime":"Aug 1, 2015",
+                          "value":[
+                              59
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "59"
+                          ]
+                      },
+                      {
+                          "time":"1441065600",
+                          "formattedTime":"Sep 2015",
+                          "formattedAxisTime":"Sep 1, 2015",
+                          "value":[
+                              67
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "67"
+                          ]
+                      },
+                      {
+                          "time":"1443657600",
+                          "formattedTime":"Oct 2015",
+                          "formattedAxisTime":"Oct 1, 2015",
+                          "value":[
+                              62
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "62"
+                          ]
+                      },
+                      {
+                          "time":"1446336000",
+                          "formattedTime":"Nov 2015",
+                          "formattedAxisTime":"Nov 1, 2015",
+                          "value":[
+                              60
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "60"
+                          ]
+                      },
+                      {
+                          "time":"1448928000",
+                          "formattedTime":"Dec 2015",
+                          "formattedAxisTime":"Dec 1, 2015",
+                          "value":[
+                              74
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "74"
+                          ]
+                      },
+                      {
+                          "time":"1451606400",
+                          "formattedTime":"Jan 2016",
+                          "formattedAxisTime":"Jan 1, 2016",
+                          "value":[
+                              62
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "62"
+                          ],
+                          "axisNote":{
+                              "text":"An improvement to our data collection system was applied from 1/1/16."
+                          }
+                      },
+                      {
+                          "time":"1454284800",
+                          "formattedTime":"Feb 2016",
+                          "formattedAxisTime":"Feb 1, 2016",
+                          "value":[
+                              52
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "52"
+                          ]
+                      },
+                      {
+                          "time":"1456790400",
+                          "formattedTime":"Mar 2016",
+                          "formattedAxisTime":"Mar 1, 2016",
+                          "value":[
+                              58
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ]
+                      },
+                      {
+                          "time":"1459468800",
+                          "formattedTime":"Apr 2016",
+                          "formattedAxisTime":"Apr 1, 2016",
+                          "value":[
+                              55
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "55"
+                          ]
+                      },
+                      {
+                          "time":"1462060800",
+                          "formattedTime":"May 2016",
+                          "formattedAxisTime":"May 1, 2016",
+                          "value":[
+                              49
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "49"
+                          ]
+                      },
+                      {
+                          "time":"1464739200",
+                          "formattedTime":"Jun 2016",
+                          "formattedAxisTime":"Jun 1, 2016",
+                          "value":[
+                              52
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "52"
+                          ]
+                      },
+                      {
+                          "time":"1467331200",
+                          "formattedTime":"Jul 2016",
+                          "formattedAxisTime":"Jul 1, 2016",
+                          "value":[
+                              57
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "57"
+                          ]
+                      },
+                      {
+                          "time":"1470009600",
+                          "formattedTime":"Aug 2016",
+                          "formattedAxisTime":"Aug 1, 2016",
+                          "value":[
+                              50
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "50"
+                          ]
+                      },
+                      {
+                          "time":"1472688000",
+                          "formattedTime":"Sep 2016",
+                          "formattedAxisTime":"Sep 1, 2016",
+                          "value":[
+                              76
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "76"
+                          ]
+                      },
+                      {
+                          "time":"1475280000",
+                          "formattedTime":"Oct 2016",
+                          "formattedAxisTime":"Oct 1, 2016",
+                          "value":[
+                              61
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "61"
+                          ]
+                      },
+                      {
+                          "time":"1477958400",
+                          "formattedTime":"Nov 2016",
+                          "formattedAxisTime":"Nov 1, 2016",
+                          "value":[
+                              59
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "59"
+                          ]
+                      },
+                      {
+                          "time":"1480550400",
+                          "formattedTime":"Dec 2016",
+                          "formattedAxisTime":"Dec 1, 2016",
+                          "value":[
+                              73
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "73"
+                          ]
+                      },
+                      {
+                          "time":"1483228800",
+                          "formattedTime":"Jan 2017",
+                          "formattedAxisTime":"Jan 1, 2017",
+                          "value":[
+                              64
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "64"
+                          ]
+                      },
+                      {
+                          "time":"1485907200",
+                          "formattedTime":"Feb 2017",
+                          "formattedAxisTime":"Feb 1, 2017",
+                          "value":[
+                              51
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "51"
+                          ]
+                      },
+                      {
+                          "time":"1488326400",
+                          "formattedTime":"Mar 2017",
+                          "formattedAxisTime":"Mar 1, 2017",
+                          "value":[
+                              50
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "50"
+                          ]
+                      },
+                      {
+                          "time":"1491004800",
+                          "formattedTime":"Apr 2017",
+                          "formattedAxisTime":"Apr 1, 2017",
+                          "value":[
+                              53
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "53"
+                          ]
+                      },
+                      {
+                          "time":"1493596800",
+                          "formattedTime":"May 2017",
+                          "formattedAxisTime":"May 1, 2017",
+                          "value":[
+                              53
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "53"
+                          ]
+                      },
+                      {
+                          "time":"1496275200",
+                          "formattedTime":"Jun 2017",
+                          "formattedAxisTime":"Jun 1, 2017",
+                          "value":[
+                              58
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ]
+                      },
+                      {
+                          "time":"1498867200",
+                          "formattedTime":"Jul 2017",
+                          "formattedAxisTime":"Jul 1, 2017",
+                          "value":[
+                              56
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "56"
+                          ]
+                      },
+                      {
+                          "time":"1501545600",
+                          "formattedTime":"Aug 2017",
+                          "formattedAxisTime":"Aug 1, 2017",
+                          "value":[
+                              55
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "55"
+                          ]
+                      },
+                      {
+                          "time":"1504224000",
+                          "formattedTime":"Sep 2017",
+                          "formattedAxisTime":"Sep 1, 2017",
+                          "value":[
+                              83
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "83"
+                          ]
+                      },
+                      {
+                          "time":"1506816000",
+                          "formattedTime":"Oct 2017",
+                          "formattedAxisTime":"Oct 1, 2017",
+                          "value":[
+                              61
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "61"
+                          ]
+                      },
+                      {
+                          "time":"1509494400",
+                          "formattedTime":"Nov 2017",
+                          "formattedAxisTime":"Nov 1, 2017",
+                          "value":[
+                              74
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "74"
+                          ]
+                      },
+                      {
+                          "time":"1512086400",
+                          "formattedTime":"Dec 2017",
+                          "formattedAxisTime":"Dec 1, 2017",
+                          "value":[
+                              88
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "88"
+                          ]
+                      },
+                      {
+                          "time":"1514764800",
+                          "formattedTime":"Jan 2018",
+                          "formattedAxisTime":"Jan 1, 2018",
+                          "value":[
+                              75
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "75"
+                          ]
+                      },
+                      {
+                          "time":"1517443200",
+                          "formattedTime":"Feb 2018",
+                          "formattedAxisTime":"Feb 1, 2018",
+                          "value":[
+                              59
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "59"
+                          ]
+                      },
+                      {
+                          "time":"1519862400",
+                          "formattedTime":"Mar 2018",
+                          "formattedAxisTime":"Mar 1, 2018",
+                          "value":[
+                              58
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ]
+                      },
+                      {
+                          "time":"1522540800",
+                          "formattedTime":"Apr 2018",
+                          "formattedAxisTime":"Apr 1, 2018",
+                          "value":[
+                              58
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ]
+                      },
+                      {
+                          "time":"1525132800",
+                          "formattedTime":"May 2018",
+                          "formattedAxisTime":"May 1, 2018",
+                          "value":[
+                              56
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "56"
+                          ]
+                      },
+                      {
+                          "time":"1527811200",
+                          "formattedTime":"Jun 2018",
+                          "formattedAxisTime":"Jun 1, 2018",
+                          "value":[
+                              59
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "59"
+                          ]
+                      },
+                      {
+                          "time":"1530403200",
+                          "formattedTime":"Jul 2018",
+                          "formattedAxisTime":"Jul 1, 2018",
+                          "value":[
+                              63
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "63"
+                          ]
+                      },
+                      {
+                          "time":"1533081600",
+                          "formattedTime":"Aug 2018",
+                          "formattedAxisTime":"Aug 1, 2018",
+                          "value":[
+                              60
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "60"
+                          ]
+                      },
+                      {
+                          "time":"1535760000",
+                          "formattedTime":"Sep 2018",
+                          "formattedAxisTime":"Sep 1, 2018",
+                          "value":[
+                              72
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "72"
+                          ]
+                      },
+                      {
+                          "time":"1538352000",
+                          "formattedTime":"Oct 2018",
+                          "formattedAxisTime":"Oct 1, 2018",
+                          "value":[
+                              64
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "64"
+                          ]
+                      },
+                      {
+                          "time":"1541030400",
+                          "formattedTime":"Nov 2018",
+                          "formattedAxisTime":"Nov 1, 2018",
+                          "value":[
+                              74
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "74"
+                          ]
+                      },
+                      {
+                          "time":"1543622400",
+                          "formattedTime":"Dec 2018",
+                          "formattedAxisTime":"Dec 1, 2018",
+                          "value":[
+                              87
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "87"
+                          ]
+                      },
+                      {
+                          "time":"1546300800",
+                          "formattedTime":"Jan 2019",
+                          "formattedAxisTime":"Jan 1, 2019",
+                          "value":[
+                              70
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "70"
+                          ]
+                      },
+                      {
+                          "time":"1548979200",
+                          "formattedTime":"Feb 2019",
+                          "formattedAxisTime":"Feb 1, 2019",
+                          "value":[
+                              59
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "59"
+                          ]
+                      },
+                      {
+                          "time":"1551398400",
+                          "formattedTime":"Mar 2019",
+                          "formattedAxisTime":"Mar 1, 2019",
+                          "value":[
+                              55
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "55"
+                          ]
+                      },
+                      {
+                          "time":"1554076800",
+                          "formattedTime":"Apr 2019",
+                          "formattedAxisTime":"Apr 1, 2019",
+                          "value":[
+                              61
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "61"
+                          ]
+                      },
+                      {
+                          "time":"1556668800",
+                          "formattedTime":"May 2019",
+                          "formattedAxisTime":"May 1, 2019",
+                          "value":[
+                              59
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "59"
+                          ]
+                      },
+                      {
+                          "time":"1559347200",
+                          "formattedTime":"Jun 2019",
+                          "formattedAxisTime":"Jun 1, 2019",
+                          "value":[
+                              61
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "61"
+                          ]
+                      },
+                      {
+                          "time":"1561939200",
+                          "formattedTime":"Jul 2019",
+                          "formattedAxisTime":"Jul 1, 2019",
+                          "value":[
+                              62
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "62"
+                          ]
+                      },
+                      {
+                          "time":"1564617600",
+                          "formattedTime":"Aug 2019",
+                          "formattedAxisTime":"Aug 1, 2019",
+                          "value":[
+                              60
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "60"
+                          ]
+                      },
+                      {
+                          "time":"1567296000",
+                          "formattedTime":"Sep 2019",
+                          "formattedAxisTime":"Sep 1, 2019",
+                          "value":[
+                              94
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "94"
+                          ]
+                      },
+                      {
+                          "time":"1569888000",
+                          "formattedTime":"Oct 2019",
+                          "formattedAxisTime":"Oct 1, 2019",
+                          "value":[
+                              76
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "76"
+                          ]
+                      },
+                      {
+                          "time":"1572566400",
+                          "formattedTime":"Nov 2019",
+                          "formattedAxisTime":"Nov 1, 2019",
+                          "value":[
+                              79
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "79"
+                          ]
+                      },
+                      {
+                          "time":"1575158400",
+                          "formattedTime":"Dec 2019",
+                          "formattedAxisTime":"Dec 1, 2019",
+                          "value":[
+                              100
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "100"
+                          ]
+                      },
+                      {
+                          "time":"1577836800",
+                          "formattedTime":"Jan 2020",
+                          "formattedAxisTime":"Jan 1, 2020",
+                          "value":[
+                              86
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "86"
+                          ]
+                      },
+                      {
+                          "time":"1580515200",
+                          "formattedTime":"Feb 2020",
+                          "formattedAxisTime":"Feb 1, 2020",
+                          "value":[
+                              70
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "70"
+                          ]
+                      },
+                      {
+                          "time":"1583020800",
+                          "formattedTime":"Mar 2020",
+                          "formattedAxisTime":"Mar 1, 2020",
+                          "value":[
+                              58
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ]
+                      },
+                      {
+                          "time":"1585699200",
+                          "formattedTime":"Apr 2020",
+                          "formattedAxisTime":"Apr 1, 2020",
+                          "value":[
+                              50
+                          ],
+                          "hasData":[
+                              true
+                          ],
+                          "formattedValue":[
+                              "50"
+                          ],
+                          "isPartial":true
+                      }
+                  ],
+                  "averages":[
+
+                  ]
+              }
+          },
+          "interestByRegion":{
+              "default":{
+                  "geoMapData":[
+                      {
+                          "geoCode":"CO-SAP",
+                          "geoName":"San Andrés and Providencia",
+                          "value":[
+                              100
+                          ],
+                          "formattedValue":[
+                              "100"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-RIS",
+                          "geoName":"Risaralda",
+                          "value":[
+                              68
+                          ],
+                          "formattedValue":[
+                              "68"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-AMA",
+                          "geoName":"Amazonas Department",
+                          "value":[
+                              68
+                          ],
+                          "formattedValue":[
+                              "68"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-GUA",
+                          "geoName":"Guainia",
+                          "value":[
+                              68
+                          ],
+                          "formattedValue":[
+                              "68"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-DC",
+                          "geoName":"Bogota",
+                          "value":[
+                              68
+                          ],
+                          "formattedValue":[
+                              "68"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-CHO",
+                          "geoName":"Choco",
+                          "value":[
+                              67
+                          ],
+                          "formattedValue":[
+                              "67"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-VAC",
+                          "geoName":"Valle del Cauca",
+                          "value":[
+                              67
+                          ],
+                          "formattedValue":[
+                              "67"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-ATL",
+                          "geoName":"Atlantico",
+                          "value":[
+                              65
+                          ],
+                          "formattedValue":[
+                              "65"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-GUV",
+                          "geoName":"Guaviare",
+                          "value":[
+                              65
+                          ],
+                          "formattedValue":[
+                              "65"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-QUI",
+                          "geoName":"Quindio",
+                          "value":[
+                              64
+                          ],
+                          "formattedValue":[
+                              "64"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-MAG",
+                          "geoName":"Magdalena",
+                          "value":[
+                              63
+                          ],
+                          "formattedValue":[
+                              "63"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-CAL",
+                          "geoName":"Caldas",
+                          "value":[
+                              60
+                          ],
+                          "formattedValue":[
+                              "60"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-ANT",
+                          "geoName":"Antioquia",
+                          "value":[
+                              59
+                          ],
+                          "formattedValue":[
+                              "59"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-LAG",
+                          "geoName":"La Guajira",
+                          "value":[
+                              58
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-MET",
+                          "geoName":"Meta",
+                          "value":[
+                              58
+                          ],
+                          "formattedValue":[
+                              "58"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-CAQ",
+                          "geoName":"Caquetá",
+                          "value":[
+                              57
+                          ],
+                          "formattedValue":[
+                              "57"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-BOL",
+                          "geoName":"Bolivar",
+                          "value":[
+                              56
+                          ],
+                          "formattedValue":[
+                              "56"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-SAN",
+                          "geoName":"Santander Department",
+                          "value":[
+                              56
+                          ],
+                          "formattedValue":[
+                              "56"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-CES",
+                          "geoName":"Cesar",
+                          "value":[
+                              55
+                          ],
+                          "formattedValue":[
+                              "55"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-NSA",
+                          "geoName":"North Santander",
+                          "value":[
+                              53
+                          ],
+                          "formattedValue":[
+                              "53"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-CUN",
+                          "geoName":"Cundinamarca",
+                          "value":[
+                              52
+                          ],
+                          "formattedValue":[
+                              "52"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-ARA",
+                          "geoName":"Arauca",
+                          "value":[
+                              51
+                          ],
+                          "formattedValue":[
+                              "51"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-HUI",
+                          "geoName":"Huila",
+                          "value":[
+                              50
+                          ],
+                          "formattedValue":[
+                              "50"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-CAS",
+                          "geoName":"Casanare",
+                          "value":[
+                              49
+                          ],
+                          "formattedValue":[
+                              "49"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-CAU",
+                          "geoName":"Cauca Department",
+                          "value":[
+                              47
+                          ],
+                          "formattedValue":[
+                              "47"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-TOL",
+                          "geoName":"Tolima",
+                          "value":[
+                              47
+                          ],
+                          "formattedValue":[
+                              "47"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-BOY",
+                          "geoName":"Boyaca",
+                          "value":[
+                              47
+                          ],
+                          "formattedValue":[
+                              "47"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-SUC",
+                          "geoName":"Sucre",
+                          "value":[
+                              46
+                          ],
+                          "formattedValue":[
+                              "46"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-PUT",
+                          "geoName":"Putumayo",
+                          "value":[
+                              45
+                          ],
+                          "formattedValue":[
+                              "45"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-COR",
+                          "geoName":"Cordoba",
+                          "value":[
+                              44
+                          ],
+                          "formattedValue":[
+                              "44"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-NAR",
+                          "geoName":"Narino",
+                          "value":[
+                              42
+                          ],
+                          "formattedValue":[
+                              "42"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-VID",
+                          "geoName":"Vichada",
+                          "value":[
+                              42
+                          ],
+                          "formattedValue":[
+                              "42"
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              true
+                          ]
+                      },
+                      {
+                          "geoCode":"CO-VAU",
+                          "geoName":"Vaupes",
+                          "value":[
+                              0
+                          ],
+                          "formattedValue":[
+                              ""
+                          ],
+                          "maxValueIndex":0,
+                          "hasData":[
+                              false
+                          ]
+                      }
+                  ]
+              }
+          },
+          "relatedQueries":{
+              "default":{
+                  "rankedList":[
+                      {
+                          "rankedKeyword":[
+                              {
+                                  "query":"iphone colombia",
+                                  "value":100,
+                                  "formattedValue":"100",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+colombia&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone se",
+                                  "value":81,
+                                  "formattedValue":"81",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+se&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 5s",
+                                  "value":60,
+                                  "formattedValue":"60",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+5s&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 4s",
+                                  "value":59,
+                                  "formattedValue":"59",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+4s&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 6s",
+                                  "value":44,
+                                  "formattedValue":"44",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+6s&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone claro",
+                                  "value":43,
+                                  "formattedValue":"43",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+claro&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"whatsapp iphone",
+                                  "value":41,
+                                  "formattedValue":"41",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=whatsapp+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"apple",
+                                  "value":39,
+                                  "formattedValue":"39",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=apple&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 11",
+                                  "value":36,
+                                  "formattedValue":"36",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+11&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"celular iphone",
+                                  "value":33,
+                                  "formattedValue":"33",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=celular+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 7 plus",
+                                  "value":31,
+                                  "formattedValue":"31",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+7+plus&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"ios",
+                                  "value":29,
+                                  "formattedValue":"29",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=ios&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 6 plus",
+                                  "value":28,
+                                  "formattedValue":"28",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+6+plus&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"itunes",
+                                  "value":27,
+                                  "formattedValue":"27",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=itunes&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"aplicaciones iphone",
+                                  "value":25,
+                                  "formattedValue":"25",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=aplicaciones+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 3g",
+                                  "value":25,
+                                  "formattedValue":"25",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+3g&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone facebook",
+                                  "value":24,
+                                  "formattedValue":"24",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+facebook&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 8 plus",
+                                  "value":22,
+                                  "formattedValue":"22",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+8+plus&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"movistar iphone",
+                                  "value":20,
+                                  "formattedValue":"20",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=movistar+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"celulares iphone",
+                                  "value":19,
+                                  "formattedValue":"19",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=celulares+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"icloud",
+                                  "value":19,
+                                  "formattedValue":"19",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=icloud&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone tigo",
+                                  "value":19,
+                                  "formattedValue":"19",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+tigo&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 6 colombia",
+                                  "value":18,
+                                  "formattedValue":"18",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+6+colombia&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone xs",
+                                  "value":17,
+                                  "formattedValue":"17",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=iphone+xs&date=2004-01-1+2020-04-5&geo=CO"
+                              }
+                          ]
+                      },
+                      {
+                          "rankedKeyword":[
+                              {
+                                  "query":"iphone colombia",
+                                  "value":711800,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+colombia&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone se",
+                                  "value":576200,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+se&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 5s",
+                                  "value":426600,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+5s&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 4s",
+                                  "value":417650,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+4s&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 6s",
+                                  "value":313000,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+6s&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone claro",
+                                  "value":306800,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+claro&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"whatsapp iphone",
+                                  "value":293650,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=whatsapp+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"apple",
+                                  "value":275900,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=apple&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 11",
+                                  "value":255300,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+11&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"celular iphone",
+                                  "value":232800,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=celular+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 7 plus",
+                                  "value":223100,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+7+plus&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"ios",
+                                  "value":204650,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=ios&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 6 plus",
+                                  "value":198250,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+6+plus&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"itunes",
+                                  "value":192500,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=itunes&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"aplicaciones iphone",
+                                  "value":180850,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=aplicaciones+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 3g",
+                                  "value":174400,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+3g&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone facebook",
+                                  "value":167500,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+facebook&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 8 plus",
+                                  "value":154800,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+8+plus&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"movistar iphone",
+                                  "value":142250,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=movistar+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"celulares iphone",
+                                  "value":137200,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=celulares+iphone&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"icloud",
+                                  "value":134950,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=icloud&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone tigo",
+                                  "value":133350,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+tigo&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone 6 colombia",
+                                  "value":129800,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+6+colombia&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "query":"iphone xs",
+                                  "value":123950,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=iphone+xs&date=2004-01-1+2020-04-5&geo=CO"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          },
+          "relatedTopics":{
+              "default":{
+                  "rankedList":[
+                      {
+                          "rankedKeyword":[
+                              {
+                                  "topic":{
+                                      "mid":"/m/027lnzs",
+                                      "title":"iPhone",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":100,
+                                  "formattedValue":"100",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/027lnzs&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/15dpp6zh",
+                                      "title":"iPhone",
+                                      "type":"Topic"
+                                  },
+                                  "value":100,
+                                  "formattedValue":"100",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/15dpp6zh&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/011sm55g",
+                                      "title":"iPhone 6",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":15,
+                                  "formattedValue":"15",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/011sm55g&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0h6jq73",
+                                      "title":"iPhone 4S",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":15,
+                                  "formattedValue":"15",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/0h6jq73&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11bbxqmhsd",
+                                      "title":"iPhone 6 Plus",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":13,
+                                  "formattedValue":"13",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11bbxqmhsd&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0w_ghcf",
+                                      "title":"iPhone 5s",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":13,
+                                  "formattedValue":"13",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/0w_ghcf&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0gg4gh4",
+                                      "title":"iPhone 5",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":13,
+                                  "formattedValue":"13",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/0gg4gh4&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0c0bg9c",
+                                      "title":"iPhone 4",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":10,
+                                  "formattedValue":"10",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/0c0bg9c&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11f0wxpnn4",
+                                      "title":"iPhone X",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":10,
+                                  "formattedValue":"10",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11f0wxpnn4&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11b6q39m1y",
+                                      "title":"Apple iPhone 5",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":9,
+                                  "formattedValue":"9",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11b6q39m1y&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11c1nbb8w8",
+                                      "title":"iPhone 7",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":8,
+                                  "formattedValue":"8",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11c1nbb8w8&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11b6q3htyx",
+                                      "title":"Apple iPhone 4",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":6,
+                                  "formattedValue":"6",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11b6q3htyx&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0h94y36",
+                                      "title":"Mobile app",
+                                      "type":"Topic"
+                                  },
+                                  "value":5,
+                                  "formattedValue":"5",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/0h94y36&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11c2659rn_",
+                                      "title":"Apple iPhone 8",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":4,
+                                  "formattedValue":"4",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11c2659rn_&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11bw3d_g_3",
+                                      "title":"iPhone 6S",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":4,
+                                  "formattedValue":"4",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11bw3d_g_3&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11cs46mwwy",
+                                      "title":"Apple iPhone 6s",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":3,
+                                  "formattedValue":"3",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11cs46mwwy&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0k8z",
+                                      "title":"Apple",
+                                      "type":"Technology company"
+                                  },
+                                  "value":3,
+                                  "formattedValue":"3",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/0k8z&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11bw4s0rln",
+                                      "title":"iPhone 6s Plus",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":3,
+                                  "formattedValue":"3",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11bw4s0rln&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11c1q0tgpv",
+                                      "title":"Apple iPhone 7 Plus",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":2,
+                                  "formattedValue":"2",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11c1q0tgpv&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/02522",
+                                      "title":"Computer monitor",
+                                      "type":"Topic"
+                                  },
+                                  "value":2,
+                                  "formattedValue":"2",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/02522&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0cc8kq4",
+                                      "title":"iPhone 3G",
+                                      "type":"Computing platform"
+                                  },
+                                  "value":2,
+                                  "formattedValue":"2",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/0cc8kq4&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/03wbl14",
+                                      "title":"iOS",
+                                      "type":"Operating system"
+                                  },
+                                  "value":2,
+                                  "formattedValue":"2",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/m/03wbl14&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11c3zr6jgs",
+                                      "title":"iPhone SE",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":2,
+                                  "formattedValue":"2",
+                                  "hasData":true,
+                                  "link":"/trends/explore?q=/g/11c3zr6jgs&date=2004-01-1+2020-04-5&geo=CO"
+                              }
+                          ]
+                      },
+                      {
+                          "rankedKeyword":[
+                              {
+                                  "topic":{
+                                      "mid":"/m/027lnzs",
+                                      "title":"iPhone",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":9722500,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/027lnzs&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/15dpp6zh",
+                                      "title":"iPhone",
+                                      "type":"Topic"
+                                  },
+                                  "value":9700550,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/15dpp6zh&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/011sm55g",
+                                      "title":"iPhone 6",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":1468600,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/011sm55g&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0h6jq73",
+                                      "title":"iPhone 4S",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":1435950,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/0h6jq73&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11bbxqmhsd",
+                                      "title":"iPhone 6 Plus",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":1251450,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11bbxqmhsd&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0w_ghcf",
+                                      "title":"iPhone 5s",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":1235150,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/0w_ghcf&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0gg4gh4",
+                                      "title":"iPhone 5",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":1218600,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/0gg4gh4&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0c0bg9c",
+                                      "title":"iPhone 4",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":980600,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/0c0bg9c&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11f0wxpnn4",
+                                      "title":"iPhone X",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":926850,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11f0wxpnn4&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11b6q39m1y",
+                                      "title":"Apple iPhone 5",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":890900,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11b6q39m1y&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11c1nbb8w8",
+                                      "title":"iPhone 7",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":735550,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11c1nbb8w8&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11b6q3htyx",
+                                      "title":"Apple iPhone 4",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":618600,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11b6q3htyx&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0h94y36",
+                                      "title":"Mobile app",
+                                      "type":"Topic"
+                                  },
+                                  "value":519450,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/0h94y36&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11c2659rn_",
+                                      "title":"Apple iPhone 8",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":382750,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11c2659rn_&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11bw3d_g_3",
+                                      "title":"iPhone 6S",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":375350,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11bw3d_g_3&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11cs46mwwy",
+                                      "title":"Apple iPhone 6s",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":317450,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11cs46mwwy&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0k8z",
+                                      "title":"Apple",
+                                      "type":"Technology company"
+                                  },
+                                  "value":285850,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/0k8z&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11bw4s0rln",
+                                      "title":"iPhone 6s Plus",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":254850,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11bw4s0rln&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11c1q0tgpv",
+                                      "title":"Apple iPhone 7 Plus",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":239300,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11c1q0tgpv&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/02522",
+                                      "title":"Computer monitor",
+                                      "type":"Topic"
+                                  },
+                                  "value":238250,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/02522&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/0cc8kq4",
+                                      "title":"iPhone 3G",
+                                      "type":"Computing platform"
+                                  },
+                                  "value":228700,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/0cc8kq4&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/m/03wbl14",
+                                      "title":"iOS",
+                                      "type":"Operating system"
+                                  },
+                                  "value":218500,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/m/03wbl14&date=2004-01-1+2020-04-5&geo=CO"
+                              },
+                              {
+                                  "topic":{
+                                      "mid":"/g/11c3zr6jgs",
+                                      "title":"iPhone SE",
+                                      "type":"Mobile phone"
+                                  },
+                                  "value":203350,
+                                  "formattedValue":"Breakout",
+                                  "link":"/trends/explore?q=/g/11c3zr6jgs&date=2004-01-1+2020-04-5&geo=CO"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          }
+      }
+  }
+}
