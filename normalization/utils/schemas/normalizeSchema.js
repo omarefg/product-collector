@@ -9,7 +9,7 @@ export const itemSchema = {
     data: 'string'
 }
 
-export const normalizeChema = {
+export const normalizeSchema = {
     id: 'string',
     keyWord: 'string',
     country: 'string',

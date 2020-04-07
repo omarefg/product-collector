@@ -1,7 +1,7 @@
-const MercadoLibreLib = require('./MercadoLibreLib')
+const SourceLib = require('./SourceLib')
 const countries = require('../utils/mocks/countriesMock.json')
 
-class AmazonLib extends MercadoLibreLib {
+class AmazonLib extends SourceLib {
     _simplifyData (id, source, data, date) {
         const conditionsToReplace = { new: 'new', used: 'used', renewed: 'refurbished' }
 
