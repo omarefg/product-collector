@@ -15,19 +15,16 @@ class SourceLib {
 
     _getVariant (data, optionsToFind) {
         const regExpVariants = new RegExp(optionsToFind.join('|', 'i'))
-        return {
-            ...data,
-            results: data.results
-                .filter(item => regExpVariants.test(item.title))
-                .map(item => {
-                    const itemObj = {
-                        ...item,
-                        variant: item.title.match(regExpVariants)[0]
-                    }
-                    delete itemObj.title
-                    return itemObj
-                })
-        }
+
+        return data.filter(item => regExpVariants.test(item.title))
+            .map(item => {
+                const itemObj = {
+                    ...item,
+                    variant: item.title.match(regExpVariants)[0]
+                }
+                delete itemObj.title
+                return itemObj
+            })
     }
 
     _applyCriteria (data, filters) {
@@ -36,15 +33,12 @@ class SourceLib {
         const itemAttributes = keysFilters.map(item => item.slice(0, -1))
         const regExpList = keysFilters.map(keyFilter => new RegExp(filters[keyFilter].join('|'), 'i'))
 
-        return {
-            ...data,
-            results: data.results.filter(item => {
-                const testList = itemAttributes.filter((attribute, index) =>
-                    regExpList[index].test(item[attribute])
-                )
-                return testList.length === itemAttributes.length
-            })
-        }
+        return data.filter(item => {
+            const testList = itemAttributes.filter((attribute, index) =>
+                regExpList[index].test(item[attribute])
+            )
+            return testList.length === itemAttributes.length
+        })
     }
 }
 
