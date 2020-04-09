@@ -2,12 +2,15 @@ const jwt = require('jsonwebtoken')
 const boom = require('@hapi/boom')
 
 const RedisLib = require('../../lib/RedisLib')
-const countries = require('../../utils/mocks/countriesMock.json')
+const MercadoLibreLib = require('../../lib/MercadoLibreLib')
+const AmazonLib = require('../../lib/AmazonLib')
 
 class DataManagerService {
     constructor () {
         this.collection = 'products'
         this.redisDB = new RedisLib()
+        this.mercadoLibre = new MercadoLibreLib()
+        this.amazon = new AmazonLib()
     }
 
     async searchForSecretByToken (token) {
@@ -23,38 +26,17 @@ class DataManagerService {
         }
     }
 
-    async normalize (dataReqBody) {
-        const { data, source, id, date } = dataReqBody
-        let dataNorm = []
-
-        try {
-            dataNorm = data.results.map(item => {
-                const {
-                    site_id: site,
-                    address: { state_name: city },
-                    price,
-                    currency_id: currency,
-                    sold_quantity: soldQuantity,
-                    condition
-                } = item
-
-                return {
-                    id,
-                    keyWord: data.query,
-                    country: countries[source].data.filter(item => item.id === site)[0].name,
-                    city,
-                    currency,
-                    condition,
-                    price,
-                    soldQuantity,
-                    date
-                }
-            })
-        } catch (error) {
-            boom.badRequest(error.message)
+    normalize (dataReqBody) {
+        const { id, source, data, date } = dataReqBody
+        switch (source) {
+        case 'PCML': {
+            return this.mercadoLibre.normalize(id, source, data, date)
         }
-
-        return dataNorm
+        case 'PCAMZ': {
+            return this.amazon.normalize(id, source, data, date)
+        }
+        default: return {}
+        }
     }
 }
 
