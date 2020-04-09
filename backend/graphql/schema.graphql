@@ -1,6 +1,11 @@
 type Query {
-  products(filter: String): [Product!]
-  productsCount(filter: String): Int
+  products(country: String, keyWord: String): [Product!]
+  productsCount(keyWord: String): [Search!]
+}
+
+type Search {
+  _id: String
+  count: Int
 }
 
 type Mutation {
