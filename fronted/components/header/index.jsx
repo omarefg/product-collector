@@ -1,5 +1,6 @@
 import Link from "../link";
 import Logo from "../logo";
+
 import styles from "./Header.module.styl";
 
 const Header = () => (

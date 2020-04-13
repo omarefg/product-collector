@@ -1,6 +1,6 @@
 @import "./libstyle/index.styl"
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Lato&display=swap')
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Lato&display=swap')
     
 
 body
@@ -14,8 +14,10 @@ body
     flex-direction column
     
 input 
-    font-family: 'Lato', sans-serif
+    remove-outline-focus()
+    font-family 'Lato', sans-serif
 
-button 
-    font-family: 'Lato', sans-serif
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2)
+button
+    remove-outline-focus()
+    box-shadow 2px 2px 5px 0px rgba(0,0,0,0.2)
+    

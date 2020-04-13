@@ -1,15 +1,10 @@
-import Header from "../components/header";
-import SearchTrends from '../components/search-trends'
+import Page from '../components/page';
+import SearchTrends from '../components/search-trends';
 
-import styles from "../styles/app.styl";
-
-const IndexPage = () => (
-  <div className={styles.container}>
-    <Header />
-    <main>
+export default function IndexPage() {
+  return (
+    <Page>
       <SearchTrends />
-    </main>
-  </div>
-);
-
-export default IndexPage;
+    </Page>
+  );
+}

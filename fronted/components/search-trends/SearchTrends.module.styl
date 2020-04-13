@@ -33,16 +33,25 @@
         button
             height 45px
             width 100%
+            margin-bottom .5rem
             font-size .85rem
+            font-weight 600
             background $primary
             color $white
             border none
-        
+            border-radius 0
+            text-transform capitalize
+
             &:hover
                 background $yellow
+        
+        .error
+            color $warning
+            font-weight 600
+            text-align center
 
     .footer img
-        height calc(2 * 80px)
+        height calc(2.5 * 80px)
 
 
 @media $md
@@ -63,9 +72,10 @@
             
             button
                 width 144px
+                margin-bottom 0
 
         .footer img
-            height calc(2 * 80px)
+            height calc(3 * 80px)
 
 @media $lg
     .searchTrends
