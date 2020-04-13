@@ -34,9 +34,26 @@ async function executeLinks(){
     console.log('Se ha terminado de cargar los productos ... ');
 
 }
-
-module.exports = {
-  insertLinks,
-  executeLinks
+async function sendToNormalization(){
+  const productsService = new ProductsService();
+  try{
+      const data = await productsService.executeURLsToNormalization();
+      if(data){
+            console.log('Products sent');
+          }
+        else {
+         console.error('error getting products');
+          }
+        }
+  catch(error){
+      console.error(`Se ha encontrado un error: ${error} `);
+  }
+  console.log('Se ha terminado de enviar los productos ... ');
 }
+async function main() {
+  const insert = await insertLinks();
+  const execute = await executeLinks();
+}
+main();
+
 
