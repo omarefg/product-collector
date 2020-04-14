@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: lib/MercadoLibreLib.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: lib/MercadoLibreLib.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const SourceLib = require('./SourceLib')
+const countries = require('../utils/mocks/countriesMock.json')
+
+/**
+ * Esta clase basada en [SourceLib](https://documentacion-normalizacion.now.sh/SourceLib.html "SourceLib")  nos permite definir los metodos simpliticar la estructura de los datos que nos llega de Mercado libre
+ * haciendo uso de filtros y transformaciones.
+ */
+class MercadoLibreLib extends SourceLib {
+    /**
+     * Metodo para simplificar la estructura de los datos según los requerimeintos de proyecto.
+     * @param {number} id - ID de los datos
+     * @param {string} source - Fuente de los datos
+     * @param {array} data - Los datos
+     * @param {string} date - Fecha de consulta
+     * @returns {object} - El objeto con los datos que nos interesan, agregandole el pais de donde se hiso la consulta
+     */
+    _simplifyData (id, source, data, date) {
+        const conditionsToReplace = { nuevo: 'new', usado: 'used', reacondicionado: 'refurbished' }
+
+        const results = data.results.map(item => ({
+            title: item.title.toLowerCase(),
+            countryState: item.address.state_name,
+            currency: item.currency_id.toLowerCase(),
+            condition: item.attributes.filter(item => item.id === 'ITEM_CONDITION')[0],
+            model: item.attributes.filter(item => item.id === 'MODEL')[0],
+            price: item.price,
+            soldQuantity: item.sold_quantity,
+            date
+        }))
+
+        return {
+            id,
+            keyWord: data.query,
+            country: countries[source].data.filter(item => item.id === data.site_id)[0].name,
+            results: results.map(item => ({
+                ...item,
+                condition: item.condition ? this._normCondition(item.condition.value_name, conditionsToReplace) : '',
+                model: item.model ? item.model.value_name.toLowerCase() : ''
+            }))
+        }
+    }
+}
+
+module.exports = MercadoLibreLib
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Estructura del proceso</a></h2><h3>Modules</h3><ul><li><a href="module-bodyDataHandler.html">bodyDataHandler</a></li><li><a href="module-Data-manager.html">Data-manager</a></li><li><a href="module-router.html">router</a></li><li><a href="module-tokenHandler.html">tokenHandler</a></li></ul><h3>Classes</h3><ul><li><a href="DataManagerService.html">DataManagerService</a></li><li><a href="MercadoLibreLib.html">MercadoLibreLib</a></li><li><a href="SourceLib.html">SourceLib</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Estoy docuementando a lo Pro <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Mon Apr 13 2020 19:40:20 GMT-0500 (GMT-05:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

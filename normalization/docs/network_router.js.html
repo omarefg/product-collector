@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: network/router.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: network/router.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * ## Enrrutador del API
+ * @module router
+ */
+
+/**
+ * Requerimos el enrrutador del componente de autorización
+ */
+const normalizationAuth = require('../components/auth/network')
+/**
+ * Requerimos el enrrutador del componente de nuestro manejador de datos
+ * para ver su funcionamiento ve al siguiente link
+* para ver su funcionamiento ve al siguiente link
+ * [dataManager](https://documentacion-normalizacion.now.sh/DataManagerService.html "dataManager")
+ */
+const normalizationDataManager = require('../components/data-manager/network')
+
+/**
+ * Declaramos la función para enrrutar el componente al path expecifico.
+
+ * @param {string} server - el servidor de express
+ * @return {string} - La ruta exacta del API
+ */
+const routes = function (server) {
+    server.use('/normalization/auth', normalizationAuth)
+    server.use('/normalization/data-manager', normalizationDataManager)
+}
+
+module.exports = routes
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Estructura del proceso</a></h2><h3>Modules</h3><ul><li><a href="module-bodyDataHandler.html">bodyDataHandler</a></li><li><a href="module-Data-manager.html">Data-manager</a></li><li><a href="module-router.html">router</a></li><li><a href="module-tokenHandler.html">tokenHandler</a></li></ul><h3>Classes</h3><ul><li><a href="DataManagerService.html">DataManagerService</a></li><li><a href="MercadoLibreLib.html">MercadoLibreLib</a></li><li><a href="SourceLib.html">SourceLib</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Estoy docuementando a lo Pro <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Mon Apr 13 2020 19:40:20 GMT-0500 (GMT-05:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

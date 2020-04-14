@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/data-manager/network.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/data-manager/network.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * ## Componente para el manejo de datos
+ * @module Data-manager
+ */
+const express = require('express')
+const boom = require('@hapi/boom')
+
+const DataManagerService = require('./services')
+
+const response = require('../../network/response')
+/**
+ * Middleware para validar la existencia del token dentro del request
+ * lo puedes ver en el siguiente link
+ * [tokenHandler](https://documentacion-normalizacion.now.sh/module-tokenHandler.html "tokenHandler")
+ */
+const tokenHandler = require('../../utils/middleware/tokenHandler')
+/**
+ * Middleware para validar que el request tiene los datos que esperamos recibir.
+ * [bodyDataHandler](https://documentacion-normalizacion.now.sh/module-bodyDataHandler.html "bodyDataHandler")
+ */
+const bodyDataHandler = require('../../utils/middleware/bodyDataHandler')
+
+const router = express.Router()
+/**
+ * Creamos a instancia a los servicios para el manejo de los datos
+ *  {@link DataManagerService }
+ */
+const dataManagerService = new DataManagerService()
+
+router.post(
+    '/normalize',
+    tokenHandler,
+    bodyDataHandler,
+    async function ({ headers: { authorization }, body }, res, next) {
+        try {
+            await dataManagerService.searchForSecretByToken(authorization)
+
+            try {
+                const idDB = await dataManagerService.normalize(body)
+                response.success({}, res, idDB, 200)
+            } catch (error) {
+                next(boom.badImplementation(error.message))
+            }
+        } catch (error) {
+            next(boom.unauthorized())
+        }
+    }
+)
+
+module.exports = router
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Estructura del proceso</a></h2><h3>Modules</h3><ul><li><a href="module-bodyDataHandler.html">bodyDataHandler</a></li><li><a href="module-Data-manager.html">Data-manager</a></li><li><a href="module-router.html">router</a></li><li><a href="module-tokenHandler.html">tokenHandler</a></li></ul><h3>Classes</h3><ul><li><a href="DataManagerService.html">DataManagerService</a></li><li><a href="MercadoLibreLib.html">MercadoLibreLib</a></li><li><a href="SourceLib.html">SourceLib</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Estoy docuementando a lo Pro <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Mon Apr 13 2020 19:40:20 GMT-0500 (GMT-05:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: utils/middleware/bodyDataHandler.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: utils/middleware/bodyDataHandler.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ *
+ * @module bodyDataHandler
+ */
+const boom = require('@hapi/boom')
+
+/**
+ * Esta función se encarga de verificar si el body
+ * de la petición contiene la información que nos interesa,
+ * en este caso necesitamos el source el cual nos indica la procedencia de los datos.
+ * tambien verificamos si los datos están contenidos dentro de un array
+ * @param {object} req - La petición
+ * @param {object} res - La respuesta
+ * @param {object} next - El siguiente middleware
+ */
+async function bodyDataHandler (req, res, next) {
+    const { source, data } = req.body
+
+    const errorSource = !(typeof source === 'string')
+    const errorDataResult = !Array.isArray(data.results)
+
+    if (errorSource || errorDataResult) {
+        next(boom.badRequest('The key &lt;source> or &lt;data.result> has a error'))
+    }
+
+    next()
+}
+
+module.exports = bodyDataHandler
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Estructura del proceso</a></h2><h3>Modules</h3><ul><li><a href="module-bodyDataHandler.html">bodyDataHandler</a></li><li><a href="module-Data-manager.html">Data-manager</a></li><li><a href="module-router.html">router</a></li><li><a href="module-tokenHandler.html">tokenHandler</a></li></ul><h3>Classes</h3><ul><li><a href="DataManagerService.html">DataManagerService</a></li><li><a href="MercadoLibreLib.html">MercadoLibreLib</a></li><li><a href="SourceLib.html">SourceLib</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Estoy docuementando a lo Pro <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Mon Apr 13 2020 19:40:20 GMT-0500 (GMT-05:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
