@@ -1,0 +1,14 @@
+{
+  "name": "pc-normalization",
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
+  "env": {
+      "REDIS_DB_USER": "@pcn_redis_db_user",
+      "REDIS_DB_PASSWORD": "@pcn_redis_db_password",
+      "REDIS_DB_HOST": "@pcn_redis_db_host",
+      "REDIS_DB_PORT": "@pcn_redis_db_port",
+      "REDIS_DB_NAME": "@pcn_redis_db_name",
+      "AUTH_KEY": "@pcn_auth_key"
+  }
+}
