@@ -7,7 +7,7 @@ type Query {
 }
 
 type Search {
-  _id: Date!
+  _id: String
   count: Int
 }
 

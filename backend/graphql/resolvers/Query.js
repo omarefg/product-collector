@@ -53,30 +53,80 @@ const Query = {
   daysAgo: async (__, args) => {
     const diff = Math.trunc((Date.now() - args.when) / 1000 / 60 / 60 / 24);
     console.log(diff);
-    const product = await Products.aggregate([
-      // First Stage
-      {
-        $match: {
-          date: {
-            // $gte: new Date(Date.now()),
-            $gte: new Date(args.when)
+    if (diff <= 30) {
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: {
+            date: {
+              // $gte: new Date(Date.now()),
+              $gte: new Date(args.when)
+            }
           }
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: { $dateToString: { format: '%Y-%m-%d', date: '$date' } },
+            count: { $sum: 1 }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { totalSaleAmount: -1 }
         }
-      },
-      // Second Stage
-      {
-        $group: {
-          _id: { $dateToString: { format: '%Y-%m-%d', date: '$date' } },
-          count: { $sum: 1 }
+      ]);
+      return product;
+    } else if (diff > 30 && diff <= 365) {
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: {
+            date: {
+              // $gte: new Date(Date.now()),
+              $gte: new Date(args.when)
+            }
+          }
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: { $dateToString: { format: '%m', date: '$date' } },
+            count: { $sum: 1 }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { totalSaleAmount: -1 }
         }
-      },
-      // Third Stage
-      {
-        $sort: { totalSaleAmount: -1 }
-      }
-    ]);
+      ]);
+      return product;
+    } else if (diff > 365) {
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: {
+            date: {
+              // $gte: new Date(Date.now()),
+              $gte: new Date(args.when)
+            }
+          }
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: { $dateToString: { format: '%Y', date: '$date' } },
+            count: { $sum: 1 }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { totalSaleAmount: -1 }
+        }
+      ]);
+      return product;
+    }
     console.log(product);
-    return product;
   }
 };
 
