@@ -10,7 +10,7 @@ const productsMock = [
     variants: '64gb',
     price: 3200000,
     soldQuantity: 253,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 26
   },
   {
@@ -24,7 +24,7 @@ const productsMock = [
     variants: '128gb',
     price: 3600000,
     soldQuantity: 128,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 20
   },
   {
@@ -38,7 +38,7 @@ const productsMock = [
     variants: '64gb',
     price: 4000000,
     soldQuantity: 64,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 20
   },
   {
@@ -52,7 +52,7 @@ const productsMock = [
     variants: '128gb',
     price: 4400000,
     soldQuantity: 48,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 18
   },
   {
@@ -66,7 +66,7 @@ const productsMock = [
     variants: '256gb',
     price: 4800000,
     soldQuantity: 32,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 10
   },
   {
@@ -80,7 +80,7 @@ const productsMock = [
     variants: '128gb',
     price: 5200000,
     soldQuantity: 27,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 8
   },
   {
@@ -94,7 +94,7 @@ const productsMock = [
     variants: '256gb',
     price: 5600000,
     soldQuantity: 14,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 7
   },
   {
@@ -106,9 +106,9 @@ const productsMock = [
     condition: 'used',
     model: 'iphone 11',
     variants: '64gb',
-    price: 2200000,
+    price: 0400000,
     soldQuantity: 21,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 6
   },
   {
@@ -122,7 +122,7 @@ const productsMock = [
     variants: '128gb',
     price: 3000000,
     soldQuantity: 12,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 4
   },
   {
@@ -136,7 +136,7 @@ const productsMock = [
     variants: '128gb',
     price: 400000,
     soldQuantity: 4,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 3
   },
   {
@@ -150,7 +150,7 @@ const productsMock = [
     variants: '256gb',
     price: 500000,
     soldQuantity: 1,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 2
   },
   {
@@ -164,7 +164,7 @@ const productsMock = [
     variants: '64gb',
     price: 3000000,
     soldQuantity: 125,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 40
   },
   {
@@ -178,7 +178,7 @@ const productsMock = [
     variants: '128gb',
     price: 3400000,
     soldQuantity: 156,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 38
   },
   {
@@ -192,7 +192,7 @@ const productsMock = [
     variants: '128gb',
     price: 4200000,
     soldQuantity: 40,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 4
   },
   {
@@ -206,7 +206,7 @@ const productsMock = [
     variants: '256gb',
     price: 4600000,
     soldQuantity: 30,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 2
   },
   {
@@ -220,7 +220,7 @@ const productsMock = [
     variants: '128gb',
     price: 5000000,
     soldQuantity: 17,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 10
   },
   {
@@ -234,7 +234,7 @@ const productsMock = [
     variants: '256gb',
     price: 5400000,
     soldQuantity: 13,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 4
   },
   {
@@ -248,7 +248,7 @@ const productsMock = [
     variants: '64gb',
     price: 1800000,
     soldQuantity: 5,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 12
   },
   {
@@ -262,7 +262,7 @@ const productsMock = [
     variants: '64gb',
     price: 3100000,
     soldQuantity: 89,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 23
   },
   {
@@ -276,7 +276,7 @@ const productsMock = [
     variants: '128gb',
     price: 3300000,
     soldQuantity: 96,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 6
   },
   {
@@ -290,7 +290,7 @@ const productsMock = [
     variants: '128gb',
     price: 4300000,
     soldQuantity: 54,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 5
   },
   {
@@ -304,7 +304,7 @@ const productsMock = [
     variants: '64gb',
     price: 2100000,
     soldQuantity: 2,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 8
   },
   {
@@ -318,7 +318,7 @@ const productsMock = [
     variants: '64gb',
     price: 3150000,
     soldQuantity: 36,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 15
   },
   {
@@ -332,7 +332,7 @@ const productsMock = [
     variants: '64gb',
     price: 3000000,
     soldQuantity: 3,
-    date: '2020-03-22T06:36:44.892Z',
+    date: new Date('2020-04-06T06:36:44.892Z'),
     analyzedResults: 1
   }
 ];

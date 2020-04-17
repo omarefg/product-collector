@@ -1,10 +1,13 @@
+scalar Date
+
 type Query {
   products(country: String, keyWord: String): [Product!]
   productsCount(keyWord: String): [Search!]
+  daysAgo(when: Date!): [Search!]
 }
 
 type Search {
-  _id: String
+  _id: Date!
   count: Int
 }
 
@@ -37,6 +40,6 @@ type Product {
   variants: String!
   price: Int!
   soldQuantity: Int!
-  date: String!
+  date: Date!
   analyzedResults: Int!
 }

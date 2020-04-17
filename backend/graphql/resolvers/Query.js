@@ -1,6 +1,7 @@
 import Products from '../../models/Products';
 
 const Query = {
+  // Date: GraphQLDate,
   products: async (__, args, context, info) => {
     const criterias = Object.keys(args);
     console.log('criterias', criterias);
@@ -44,6 +45,34 @@ const Query = {
           _id: '$country',
           count: { $sum: 1 }
         }
+      }
+    ]);
+    console.log(product);
+    return product;
+  },
+  daysAgo: async (__, args) => {
+    const diff = Math.trunc((Date.now() - args.when) / 1000 / 60 / 60 / 24);
+    console.log(diff);
+    const product = await Products.aggregate([
+      // First Stage
+      {
+        $match: {
+          date: {
+            // $gte: new Date(Date.now()),
+            $gte: new Date(args.when)
+          }
+        }
+      },
+      // Second Stage
+      {
+        $group: {
+          _id: { $dateToString: { format: '%Y-%m-%d', date: '$date' } },
+          count: { $sum: 1 }
+        }
+      },
+      // Third Stage
+      {
+        $sort: { totalSaleAmount: -1 }
       }
     ]);
     console.log(product);
