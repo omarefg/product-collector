@@ -93,11 +93,15 @@ const Query = {
         },
         // Third Stage
         {
-          $sort: { _id: -1 }
+          $sort: { '_id.date': -1 }
         }
       ]);
       return product;
     } else if (diff > 30 && diff <= 365) {
+      search.date = {
+        $gte: new Date(args.when)
+      };
+      console.log('search', search);
       const product = await Products.aggregate([
         // First Stage
         {
@@ -107,19 +111,23 @@ const Query = {
         {
           $group: {
             _id: {
-              keyWord: '$keyWord',
-              date: { $dateToString: { format: '%m', date: '$date' } }
+              date: { $dateToString: { format: '%m', date: '$date' } },
+              keyWord: '$keyWord'
             },
             count: { $sum: 1 }
           }
         },
         // Third Stage
         {
-          $sort: { _id: -1 }
+          $sort: { '_id.date': -1 }
         }
       ]);
       return product;
     } else if (diff > 365) {
+      search.date = {
+        $gte: new Date(args.when)
+      };
+      console.log('search', search);
       const product = await Products.aggregate([
         // First Stage
         {
@@ -137,7 +145,7 @@ const Query = {
         },
         // Third Stage
         {
-          $sort: { _id: -1 }
+          $sort: { '_id.date': -1 }
         }
       ]);
       return product;

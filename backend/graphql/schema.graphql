@@ -40,6 +40,6 @@ type Product {
   variants: String!
   price: Int!
   soldQuantity: Int!
-  date: Date!
+  date: String!
   analyzedResults: Int!
 }
