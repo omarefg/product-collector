@@ -210,5 +210,81 @@ class ProductsService {
         throw new Error(error);
       }
     }
+    /* 
+      Comenzamos con el envio de información  a Normalización
+    */
+    async executeURLsToNormalization(){
+      //get Links
+      console.log('Enviando informacion a normalizacion');
+      try{
+       const URLs = await this.getURLs();
+       const token = await this.getAuth();
+       //obtenemos autorizacion 
+       console.log(URLs);
+       URLs.map(async (item) => {
+         console.log(`procesando ... ${item.url}`)
+         const result = await this.sendURL(item.url, token);
+       })
+       console.log('Sending data finished ...');
+       return URLs;
+      }catch(error){
+        console.log(error);
+        return error;
+      }
+      //deleteProducts DB only development 
+      //create map  
+   }
+   async sendURL(url, token){
+    const dateGet = new Date();
+    let allData = {
+      "source": "PCML",
+      "fecha": dateGet,
+      "Catalogue": "products"
+    }
+    try{
+      const products =  await axios.get(url);
+      //console.log(products);
+      allData = {
+        ...allData,
+        data: products.data,
+      }
+      this.sendProducts(allData, token);
+    }catch(error){
+      console.log(error);
+      return error;
+    }
+
+      //execute axios 1 by 1
+     //save in bd in the future send to normalization 
+  }
+  async sendProducts(data, token){
+    //generamos Header
+
+    let headers = {
+      Authorization: "Bearer " + token,
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json"
+    };
+    const { data, status } = await axios({
+      header: headers,
+      url: `${config.apiNormalizacion}/normalization/data-manager/normalize`,
+      method: 'post',
+      data,
+    });
+  }
+  async getAuth(){
+    try {
+      const { token } = await axios({
+        url: `${config.apiNormalizacion}/normalization/data-manager/token`,
+        method: 'post',
+        data: {
+            apiKeyToken: config.apiKeyToken
+        }
+      });
+      return token;
+    }catch(error) {
+      console.log(error);
+    }
+  }
 }
 module.exports = ProductsService;
