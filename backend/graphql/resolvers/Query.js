@@ -22,58 +22,78 @@ const Query = {
 
   productsCount: async (__, args, context, info) => {
     const criterias = Object.keys(args);
-    console.log('criterias', criterias);
-    const search = criterias.map(criteria => ({ [criteria]: args[criteria] }));
-    console.log('search', search);
-    const where =
-      search.length > 0
-        ? {
-            $and: search
-          }
-        : {};
 
-    console.log('where', where);
+    const search = criterias
+      .map(criteria => ({
+        [criteria]: {
+          $in: Array.isArray(args[criteria]) ? args[criteria] : [args[criteria]]
+        }
+      }))
+      .reduce((result, item) => {
+        const key = Object.keys(item)[0];
+        result[key] = item[key];
+        return result;
+      }, {});
 
     const product = await Products.aggregate([
       // First Stage
       {
-        $match: where
+        $match: search
       },
       // Second Stage
       {
         $group: {
-          _id: '$country',
+          _id: '$keyWord',
           count: { $sum: 1 }
         }
       }
     ]);
-    console.log(product);
+
     return product;
   },
+
   daysAgo: async (__, args) => {
+    const criterias = Object.keys(args).filter(args => {
+      return args != 'when';
+    });
+
+    const search = criterias
+      .map(criteria => ({
+        [criteria]: {
+          $in: Array.isArray(args[criteria]) ? args[criteria] : [args[criteria]]
+        }
+      }))
+      .reduce((result, item) => {
+        const key = Object.keys(item)[0];
+        result[key] = item[key];
+        return result;
+      }, {});
+
     const diff = Math.trunc((Date.now() - args.when) / 1000 / 60 / 60 / 24);
     console.log(diff);
     if (diff <= 30) {
+      search.date = {
+        $gte: new Date(args.when)
+      };
+      console.log('search', search);
       const product = await Products.aggregate([
         // First Stage
         {
-          $match: {
-            date: {
-              // $gte: new Date(Date.now()),
-              $gte: new Date(args.when)
-            }
-          }
+          $match: search
         },
         // Second Stage
         {
           $group: {
-            _id: { $dateToString: { format: '%Y-%m-%d', date: '$date' } },
+            _id: {
+              keyWord: '$keyWord',
+              date: { $dateToString: { format: '%Y-%m-%d', date: '$date' } }
+            },
             count: { $sum: 1 }
           }
         },
         // Third Stage
         {
-          $sort: { totalSaleAmount: -1 }
+          $sort: { _id: -1 }
         }
       ]);
       return product;
@@ -81,23 +101,21 @@ const Query = {
       const product = await Products.aggregate([
         // First Stage
         {
-          $match: {
-            date: {
-              // $gte: new Date(Date.now()),
-              $gte: new Date(args.when)
-            }
-          }
+          $match: search
         },
         // Second Stage
         {
           $group: {
-            _id: { $dateToString: { format: '%m', date: '$date' } },
+            _id: {
+              keyWord: '$keyWord',
+              date: { $dateToString: { format: '%m', date: '$date' } }
+            },
             count: { $sum: 1 }
           }
         },
         // Third Stage
         {
-          $sort: { totalSaleAmount: -1 }
+          $sort: { _id: -1 }
         }
       ]);
       return product;
@@ -105,28 +123,25 @@ const Query = {
       const product = await Products.aggregate([
         // First Stage
         {
-          $match: {
-            date: {
-              // $gte: new Date(Date.now()),
-              $gte: new Date(args.when)
-            }
-          }
+          $match: search
         },
         // Second Stage
         {
           $group: {
-            _id: { $dateToString: { format: '%Y', date: '$date' } },
+            _id: {
+              keyWord: '$keyWord',
+              date: { $dateToString: { format: '%Y', date: '$date' } }
+            },
             count: { $sum: 1 }
           }
         },
         // Third Stage
         {
-          $sort: { totalSaleAmount: -1 }
+          $sort: { _id: -1 }
         }
       ]);
       return product;
     }
-    console.log(product);
   }
 };
 

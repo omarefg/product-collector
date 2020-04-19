@@ -2,12 +2,12 @@ scalar Date
 
 type Query {
   products(country: String, keyWord: String): [Product!]
-  productsCount(keyWord: String): [Search!]
-  daysAgo(when: Date!): [Search!]
+  productsCount(country: String, keyWord: [String]): [Search!]
+  daysAgo(country: String, keyWord: [String], when: Date!): [Search!]
 }
 
 type Search {
-  _id: String
+  _id: Product!
   count: Int
 }
 
