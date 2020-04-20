@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@zeit/next-stylus": "^1.0.1",
-    "next": "^9.2.2",
+    "next": "^9.3.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "stylus": "^0.54.7"
