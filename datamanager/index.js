@@ -8,6 +8,7 @@ const searchers = {
     },
     'ML':{
         name: 'Mercado Libre search',
+        script: './mercadoLibre/index.js'
     },
     'GTrends':{
         name: 'Google Trends search',
@@ -16,7 +17,10 @@ const searchers = {
 };
 
 if(argv._.length < 3){
-    console.log(`run the script like: node index.js Amazon MX "PS4 for"`);
+    console.log(`run the script like: node index.js Target CountryID KeywordID`);
+    console.log(`Targets are: Amazon, ML, GTreends`);
+    console.log(`CountryID is the id in the countries table`);
+    console.log(`KeywordID is the id in the keywords table`);
     proccess.exit(1);
 }
 
@@ -26,11 +30,28 @@ if (searchers[argv._[0]]) {
     console.error(`Not "${argv._[0]}" found in searchers`);
 }
 
-function exec (searcher, country, product, arguments) {
+function exec (searcher, country, keyword, arguments) {
     if (searcher.script) {
-        console.info(`Starting script for ${searcher.name} in country: ${country} and product ${product}`);
-        require(searcher.script)(country, product, arguments);
+        console.info(`Starting script for ${searcher.name} in country: ${country} and keyword ${keyword}`);
+        require(searcher.script)(country, keyword, arguments);
     } else {
         console.error(`The ${searcher.name} has not script defined`);
     }
 }
+
+/*
+keywords = [
+{
+    keyword: 'iphone', id: 00000
+}   ,
+{
+    keyword: 'android', id: 00001
+}
+]
+
+keywords.forEach(function(keyword){
+    RTCPeerConnection('job', {keyword, country: 'MX'});
+})
+
+child.process('node productcolletor/index.js', [...aargs])
+*/
