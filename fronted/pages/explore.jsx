@@ -1,13 +1,15 @@
 import { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { TendenceContext } from '../context/tendence-context';
+import { TrendContext } from '../context/trend-context';
 
 import Page from '../components/page';
 import CompareKeywords from '../components/compare-keywords';
+import Filters from '../components/filters';
+import Test from '../components/test';
 
 export default function ExplorePage() {
   const router = useRouter();
-  const { setKeywords } = useContext(TendenceContext);
+  const { setKeywords } = useContext(TrendContext);
 
   useEffect(() => {
     const { search } = router.query;
@@ -18,16 +20,17 @@ export default function ExplorePage() {
     <Page>
       <>
         <CompareKeywords />
-        {/* 
-        <div>Barra Filtros {search}</div>
-        <div className='dashboard'>
-          <div>Grafico - Cantidad Productos publicados</div>
-          <div>Grafico - Cantidad Productos vendidos (?)</div>
-          <div>Grafico - Precio Promedio - Por Pais</div>
-          <div>Grafico - Busquedas - Por Pais</div>
+        <Filters />
+        <section className='dashboard'>
+          <Test />
+          {/* 
+          <section>Gráfico - Cantidad Productos publicados</div>
+          <div>Gráfico - Cantidad Productos vendidos (?)</div>
+          <div>Gráfico - Precio Promedio - Por País</div>
+          <div>Gráfico - Búsquedas - Por País</div>
           <div>Lista - Productos relacionados</div>
-        </div>
-       */}
+        */}
+        </section>
       </>
     </Page>
   );

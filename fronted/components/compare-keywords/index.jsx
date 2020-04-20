@@ -1,13 +1,13 @@
 import { useContext, useState, useEffect, useRef } from 'react';
 import { useForm } from 'react-hook-form';
-import { TendenceContext } from '../../context/tendence-context';
+import { TrendContext } from '../../context/trend-context';
 import Keyword from './keyword';
 import AddKeyword from './add-keyword';
 
 import styles from './CompareKeywords.module.styl';
 
 export default function CompareKeywords() {
-  const { keywords, setKeywords } = useContext(TendenceContext);
+  const { keywords, setKeywords } = useContext(TrendContext);
   const { register, triggerValidation, getValues, setValue } = useForm();
 
   const MAX_KEYWORDS = 5;
@@ -22,14 +22,14 @@ export default function CompareKeywords() {
   });
 
   const updateKeywordsAndErrors = async (name) => {
+    const values = Object.values(getValues());
+    setKeywords(values);
     const result = await triggerValidation(name);
     const newErrors = errors.slice();
     if (!result) {
       newErrors[Number(name)] = '* Valor requerido';
     } else {
       newErrors[Number(name)] = ' ';
-      const values = Object.values(getValues());
-      setKeywords(values);
       buttonRef.current && buttonRef.current.focus();
     }
     setErrors(newErrors);
@@ -56,7 +56,6 @@ export default function CompareKeywords() {
     const newKeywords = keywords.filter(
       (item) => keywords.indexOf(item) !== Number(name)
     );
-
     setKeywords(newKeywords);
   };
 

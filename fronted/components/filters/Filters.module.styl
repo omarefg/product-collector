@@ -1,0 +1,31 @@
+@import '../../styles/libstyle/index.styl'
+
+.filters
+    margin -1rem 1rem 1rem
+    border-bottom 1px solid $gray-400
+    display flex
+    align-items center
+    flex-wrap wrap
+
+    .formControl
+        padding .5rem
+        min-width 200px
+        width 50%
+
+        &:nth-child(3)
+            width 100%
+
+@media $md
+    .filters
+        margin -1rem 1.5rem 1rem
+
+        .formControl
+            width 33%
+
+            &:nth-child(3)
+                width 33%
+
+
+@media $lg
+    .filters
+        margin -1rem 3rem 1rem
