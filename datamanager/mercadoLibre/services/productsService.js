@@ -101,10 +101,11 @@ class ProductsService {
       //countries = countries.filter((country) => country === "MLA");
       countries.map(country => {
           return criteria.map(item => {
-            const url = `${config.apiMercadolibre}/sites/${country}/search?q=${item}`;
+            const url = `${config.apiMercadolibre}/sites/${country}/search?q=${item.keyWord}`;
             const allURL = {
               url,
-              processed: false
+              processed: false,
+              criteria: item,
             }
             result.push(allURL);
             this.createLinks(allURL);
@@ -120,6 +121,7 @@ class ProductsService {
         this.deleteProducts();
         const countries = await this.getCountries();
         const criteria = await this.getCriteria();
+        //console.log(criteria);
         return await this.getLinks(countries, criteria);
        }
        catch(error){
@@ -131,10 +133,9 @@ class ProductsService {
        console.log('Ejecutando Links e insertando productos en BD Mongo');
        try{
         const URLs = await this.getURLs();
-        console.log(URLs);
         URLs.map(async (item) => {
           console.log(`procesando ... ${item.url}`)
-          const result = await this.executeURL(item.url);
+          const result = await this.executeURL(item.url, item.criteria);
         })
         console.log('Sending data finished ...');
         return URLs;
@@ -164,12 +165,17 @@ class ProductsService {
         throw new Error(error);
       }
     }
-    async executeURL(url){
+    async executeURL(url, criteria){
       const dateGet = new Date();
       let allData = {
         "source": "PCML",
         "fecha": dateGet,
-        "Catalogue": "products"
+        "catalogue": "products",
+        "crieria": criteria,
+        "target": {
+          "endpoint": config.target,
+          "token": config.token,
+        }
       }
       try{
         const products =  await axios.get(url);
@@ -191,7 +197,7 @@ class ProductsService {
         const query = {};
         let criteria = await this.MongoDB.getAll(this.criteria, query);
         criteria = criteria.map((item) => {
-          return item.keyWord;
+          return item;
         })
         return criteria || [];
     }
