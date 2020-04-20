@@ -52,9 +52,10 @@ const Query = {
     return product;
   },
 
-  daysAgo: async (__, args) => {
+  productsByDate: async (__, args) => {
     const criterias = Object.keys(args).filter(args => {
-      return args != 'when';
+      args = args.replace(/\b(\w*_\w*)\b/, 'date');
+      return args != 'date';
     });
 
     const search = criterias
@@ -69,11 +70,14 @@ const Query = {
         return result;
       }, {});
 
-    const diff = Math.trunc((Date.now() - args.when) / 1000 / 60 / 60 / 24);
+    const diff = Math.trunc(
+      (args.end_date - args.start_date) / 1000 / 60 / 60 / 24
+    );
     console.log(diff);
     if (diff <= 30) {
       search.date = {
-        $gte: new Date(args.when)
+        $gte: new Date(args.start_date),
+        $lt: new Date(args.end_date)
       };
       console.log('search', search);
       const product = await Products.aggregate([
@@ -99,7 +103,8 @@ const Query = {
       return product;
     } else if (diff > 30 && diff <= 365) {
       search.date = {
-        $gte: new Date(args.when)
+        $gte: new Date(args.start_date),
+        $lt: new Date(args.end_date)
       };
       console.log('search', search);
       const product = await Products.aggregate([
@@ -125,7 +130,8 @@ const Query = {
       return product;
     } else if (diff > 365) {
       search.date = {
-        $gte: new Date(args.when)
+        $gte: new Date(args.start_date),
+        $lt: new Date(args.end_date)
       };
       console.log('search', search);
       const product = await Products.aggregate([
