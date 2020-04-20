@@ -23,10 +23,10 @@ db();
 
 //Server graphql
 server.start(({ port }) => {
-  console.log(`Server running on port ${port}`);
+  console.log(`Server GraphQL running on port ${port}`);
 });
 
 //Server rest
 app.listen(config.port, function() {
-  console.log(`Listen http://localhost:${config.port}`);
+  console.log(`Server REST running on port ${config.port}`);
 });
