@@ -2,6 +2,7 @@ const ProductsService = require('./services/productsService');
 
 
 async function insertLinks() {
+  console.log('executing insettLinks');
     const productsService = new ProductsService();
     try{
         const data = await productsService.insertLinksFromCriteria();

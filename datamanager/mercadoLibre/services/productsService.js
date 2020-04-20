@@ -101,10 +101,11 @@ class ProductsService {
       //countries = countries.filter((country) => country === "MLA");
       countries.map(country => {
           return criteria.map(item => {
-            const url = `${config.apiMercadolibre}/sites/${country}/search?q=${item}`;
+            const url = `${config.apiMercadolibre}/sites/${country}/search?q=${item.keyword}`;
             const allURL = {
               url,
-              processed: false
+              processed: false,
+              criteria: item,
             }
             result.push(allURL);
             this.createLinks(allURL);
@@ -191,7 +192,7 @@ class ProductsService {
         const query = {};
         let criteria = await this.MongoDB.getAll(this.criteria, query);
         criteria = criteria.map((item) => {
-          return item.keyWord;
+          return item;
         })
         return criteria || [];
     }

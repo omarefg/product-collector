@@ -9,6 +9,7 @@ const config = {
   apiMercadolibre: process.env.API_MERCADOLIBRE || "",
   apiNormalizacion: process.env.API_NORMALIZACION || "",
   apiKeyToken: process.env.API_KEY_TOKEN || "",
+  target: process.env.TARGET,
 };
 
 module.exports = { config };
