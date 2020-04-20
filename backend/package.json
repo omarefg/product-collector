@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "DEBUG=app:* nodemon index --exec babel-node"
+    "dev": "DEBUG=app:* nodemon index --exec babel-node",
+    "seed": "npm run seed:categories && npm run seed:keywords && npm run seed:products",
+    "seed:categories": "node scripts/mongo/seedCategories.js",
+    "seed:keywords": "node scripts/mongo/seedKeywords.js",
+    "seed:products": "node scripts/mongo/seedProducts.js",
+    "seed:countries": "node scripts/mongo/seedCountries.js"
   },
   "author": "",
   "license": "ISC",
