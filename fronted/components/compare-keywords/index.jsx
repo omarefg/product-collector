@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect, useRef } from 'react';
 import { useForm } from 'react-hook-form';
+
 import { TrendContext } from '../../context/trend-context';
 import Keyword from './keyword';
 import AddKeyword from './add-keyword';
