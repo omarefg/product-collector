@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect, useRef } from 'react';
 import { useForm } from 'react-hook-form';
+import Router, { useRouter } from 'next/router';
 
 import { TrendContext } from '../../context/trend-context';
 import Keyword from './keyword';
@@ -8,6 +9,7 @@ import AddKeyword from './add-keyword';
 import styles from './CompareKeywords.module.styl';
 
 export default function CompareKeywords() {
+  const router = useRouter();
   const { keywords, setKeywords } = useContext(TrendContext);
   const { register, triggerValidation, getValues, setValue } = useForm();
 
@@ -34,6 +36,12 @@ export default function CompareKeywords() {
       buttonRef.current && buttonRef.current.focus();
     }
     setErrors(newErrors);
+
+    const valuesString = values.join(',');
+    Router.push({
+      pathname: router.pathname,
+      query: { search: valuesString },
+    });
   };
 
   const handleBlur = async () => {
