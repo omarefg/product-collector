@@ -1,8 +1,5 @@
-import { server } from './server';
-import db from './database';
-
-import express from 'express';
-import helmet from 'helmet';
+const express = require('express');
+const helmet = require('helmet');
 const app = express();
 
 const { config } = require('./config/index');
@@ -18,13 +15,6 @@ app.use(helmet());
 productsApi(app);
 keywordsApi(app);
 categoriesApi(app);
-
-db();
-
-//Server graphql
-server.start(({ port }) => {
-  console.log(`Server GraphQL running on port ${port}`);
-});
 
 //Server rest
 app.listen(config.port, function() {
