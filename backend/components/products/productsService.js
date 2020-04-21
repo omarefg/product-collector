@@ -17,8 +17,11 @@ class ProductsService {
     return product || {};
   }
 
-  async createProduct({ product }) {
-    const createProductId = await this.mongoDB.create(this.collection, product);
+  async createProduct(products) {
+    const createProductId = await this.mongoDB.createMany(
+      this.collection,
+      products
+    );
     return createProductId;
   }
 
