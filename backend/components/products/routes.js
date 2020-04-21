@@ -1,5 +1,6 @@
 const express = require('express');
 const ProductsService = require('./productsService');
+const model = require('../../utils/schema/productsSchema');
 
 function productsApi(app) {
   const router = express.Router();
@@ -35,7 +36,9 @@ function productsApi(app) {
   router.post('/', async function(req, res, next) {
     const { body: product } = req;
     try {
-      const createdProductId = await productsService.createProduct({ product });
+      //TODO: validate array or object from product
+      const products = product.map(item => new model(item));
+      const createdProductId = await productsService.createProduct(products);
       res.status(201).json({
         data: createdProductId,
         message: req.body
