@@ -1,4 +1,5 @@
 const MongoLib = require('../../lib/mongo');
+const model = require('../../utils/schema/productsSchema');
 
 class ProductsService {
   constructor() {
@@ -18,7 +19,10 @@ class ProductsService {
   }
 
   async createProduct({ product }) {
-    const createProductId = await this.mongoDB.create(this.collection, product);
+    const createProductId = await this.mongoDB.create(
+      this.collection,
+      new model(product)
+    );
     return createProductId;
   }
 
