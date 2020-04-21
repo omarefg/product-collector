@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "response": [
+        {
+            "id": "PCP900000000",
+            "keyWord": "iphone",
+            "country": "México",
+            "countryState": "",
+            "currency": "mxn",
+            "condition": "used",
+            "model": "iphone 11",
+            "price": 6000,
+            "soldQuantity": 0,
+            "date": "2020-04-04T21:20:46.802Z",
+            "variant": "128 gb"
+        },
+        {
+            "id": "PCP900000000",
+            "keyWord": "iphone",
+            "country": "México",
+            "countryState": "",
+            "currency": "mxn",
+            "condition": "refurbished",
+            "model": "iphone 11",
+            "price": 4000,
+            "soldQuantity": 0,
+            "date": "2020-04-04T21:20:46.802Z",
+            "variant": "128 gb"
+        },
+        {
+            "id": "PCP900000000",
+            "keyWord": "iphone",
+            "country": "México",
+            "countryState": "",
+            "currency": "mxn",
+            "condition": "new",
+            "model": "iphone 11 pro max",
+            "price": 10398.98,
+            "soldQuantity": 0,
+            "date": "2020-04-04T21:20:46.802Z",
+            "variant": "128gb"
+        },
+        {
+            "id": "PCP900000000",
+            "keyWord": "iphone",
+            "country": "México",
+            "countryState": "",
+            "currency": "mxn",
+            "condition": "new",
+            "model": "iphone 11",
+            "price": 5000,
+            "soldQuantity": 0,
+            "date": "2020-04-04T21:20:46.802Z",
+            "variant": "64 gb"
+        }
+    ]
+}

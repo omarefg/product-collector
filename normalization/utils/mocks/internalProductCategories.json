@@ -1,0 +1,59 @@
+{
+  "source": "Product Collector",
+  "message": "categories listed for internal API product collector",
+  "fecha": "2020-03-26T15:40:00.000Z",
+  "categories": [
+    {
+      "id": "PCC100000",
+      "name": "Mobile phones and Phones",
+      "children_categories": [
+        {
+          "id": "PCC101000",
+          "name": "Phones"
+        },
+        {
+          "id": "PCC102000",
+          "name": "Mobile phones",
+          "children_categories": [
+            {
+              "id": "PCC102010",
+              "name": "No Smartphones"
+            },
+            {
+              "id": "PCC102020",
+              "name": "Smartphones"
+            },
+            {
+              "id": "PCC103000",
+              "name": "Accessories for Smartphones"
+            },
+            {
+              "id": "PCC104090",
+              "name": "Otros"
+            }
+          ]
+        },
+        {
+          "id": "PCC109000",
+          "name": "Otros"
+        }
+      ]
+    },
+    {
+      "id": "PCC200000",
+      "name": "Health and Medical Equipment",
+      "children_categories": [
+        {
+          "id": "PCC201000",
+          "name": "Medical equipament",
+          "children_categories": [
+            {
+              "id": "PCC201010",
+              "name": "Medical instruments"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

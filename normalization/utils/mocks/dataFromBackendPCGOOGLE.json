@@ -1,0 +1,866 @@
+{
+  "source": "PCGOOGLE",
+  "date": "2020-04-05T00:51:07.623Z",
+  "id": "PCP900000000",
+  "data": {
+    "site_id": "GoogleTrends",
+    "query": "iphone",
+    "results": {
+      "interestOverTime": {
+        "default": {
+          "timelineData": [
+            {
+              "time": "1585267200",
+              "formattedTime": "Mar 27, 2020",
+              "formattedAxisTime": "Mar 27",
+              "value": [78],
+              "hasData": [true],
+              "formattedValue": ["78"]
+            },
+            {
+              "time": "1585353600",
+              "formattedTime": "Mar 28, 2020",
+              "formattedAxisTime": "Mar 28",
+              "value": [93],
+              "hasData": [true],
+              "formattedValue": ["93"]
+            },
+            {
+              "time": "1585440000",
+              "formattedTime": "Mar 29, 2020",
+              "formattedAxisTime": "Mar 29",
+              "value": [100],
+              "hasData": [true],
+              "formattedValue": ["100"]
+            },
+            {
+              "time": "1585526400",
+              "formattedTime": "Mar 30, 2020",
+              "formattedAxisTime": "Mar 30",
+              "value": [88],
+              "hasData": [true],
+              "formattedValue": ["88"]
+            },
+            {
+              "time": "1585612800",
+              "formattedTime": "Mar 31, 2020",
+              "formattedAxisTime": "Mar 31",
+              "value": [89],
+              "hasData": [true],
+              "formattedValue": ["89"]
+            },
+            {
+              "time": "1585699200",
+              "formattedTime": "Apr 1, 2020",
+              "formattedAxisTime": "Apr 1",
+              "value": [86],
+              "hasData": [true],
+              "formattedValue": ["86"]
+            },
+            {
+              "time": "1585785600",
+              "formattedTime": "Apr 2, 2020",
+              "formattedAxisTime": "Apr 2",
+              "value": [79],
+              "hasData": [true],
+              "formattedValue": ["79"]
+            }
+          ],
+          "averages": []
+        }
+      },
+      "interestByRegion": {
+        "default": {
+          "geoMapData": [
+            {
+              "geoCode": "CO-AMA",
+              "geoName": "Amazonas Department",
+              "value": [100],
+              "formattedValue": ["100"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-CHO",
+              "geoName": "Choco",
+              "value": [49],
+              "formattedValue": ["49"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-GUV",
+              "geoName": "Guaviare",
+              "value": [40],
+              "formattedValue": ["40"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-SAP",
+              "geoName": "San Andrés and Providencia",
+              "value": [35],
+              "formattedValue": ["35"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-CAQ",
+              "geoName": "Caquetá",
+              "value": [30],
+              "formattedValue": ["30"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-COR",
+              "geoName": "Cordoba",
+              "value": [29],
+              "formattedValue": ["29"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-HUI",
+              "geoName": "Huila",
+              "value": [28],
+              "formattedValue": ["28"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-ATL",
+              "geoName": "Atlantico",
+              "value": [27],
+              "formattedValue": ["27"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-CAS",
+              "geoName": "Casanare",
+              "value": [27],
+              "formattedValue": ["27"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-CES",
+              "geoName": "Cesar",
+              "value": [27],
+              "formattedValue": ["27"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-LAG",
+              "geoName": "La Guajira",
+              "value": [25],
+              "formattedValue": ["25"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-PUT",
+              "geoName": "Putumayo",
+              "value": [25],
+              "formattedValue": ["25"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-VAC",
+              "geoName": "Valle del Cauca",
+              "value": [23],
+              "formattedValue": ["23"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-MET",
+              "geoName": "Meta",
+              "value": [23],
+              "formattedValue": ["23"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-ANT",
+              "geoName": "Antioquia",
+              "value": [23],
+              "formattedValue": ["23"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-MAG",
+              "geoName": "Magdalena",
+              "value": [22],
+              "formattedValue": ["22"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-CAL",
+              "geoName": "Caldas",
+              "value": [22],
+              "formattedValue": ["22"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-NSA",
+              "geoName": "North Santander",
+              "value": [22],
+              "formattedValue": ["22"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-CAU",
+              "geoName": "Cauca Department",
+              "value": [21],
+              "formattedValue": ["21"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-DC",
+              "geoName": "Bogota",
+              "value": [19],
+              "formattedValue": ["19"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-RIS",
+              "geoName": "Risaralda",
+              "value": [19],
+              "formattedValue": ["19"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-TOL",
+              "geoName": "Tolima",
+              "value": [19],
+              "formattedValue": ["19"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-SAN",
+              "geoName": "Santander Department",
+              "value": [18],
+              "formattedValue": ["18"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-BOL",
+              "geoName": "Bolivar",
+              "value": [17],
+              "formattedValue": ["17"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-BOY",
+              "geoName": "Boyaca",
+              "value": [16],
+              "formattedValue": ["16"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-CUN",
+              "geoName": "Cundinamarca",
+              "value": [15],
+              "formattedValue": ["15"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-NAR",
+              "geoName": "Narino",
+              "value": [15],
+              "formattedValue": ["15"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-QUI",
+              "geoName": "Quindio",
+              "value": [11],
+              "formattedValue": ["11"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-SUC",
+              "geoName": "Sucre",
+              "value": [10],
+              "formattedValue": ["10"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-ARA",
+              "geoName": "Arauca",
+              "value": [10],
+              "formattedValue": ["10"],
+              "maxValueIndex": 0,
+              "hasData": [true]
+            },
+            {
+              "geoCode": "CO-GUA",
+              "geoName": "Guainia",
+              "value": [0],
+              "formattedValue": [""],
+              "maxValueIndex": 0,
+              "hasData": [false]
+            },
+            {
+              "geoCode": "CO-VAU",
+              "geoName": "Vaupes",
+              "value": [0],
+              "formattedValue": [""],
+              "maxValueIndex": 0,
+              "hasData": [false]
+            },
+            {
+              "geoCode": "CO-VID",
+              "geoName": "Vichada",
+              "value": [0],
+              "formattedValue": [""],
+              "maxValueIndex": 0,
+              "hasData": [false]
+            }
+          ]
+        }
+      },
+      "relatedQueries": {
+        "default": {
+          "rankedList": [
+            {
+              "rankedKeyword": [
+                {
+                  "query": "iphone 11",
+                  "value": 100,
+                  "formattedValue": "100",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+11&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone 8 plus",
+                  "value": 53,
+                  "formattedValue": "53",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+8+plus&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone 7 plus",
+                  "value": 43,
+                  "formattedValue": "43",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+7+plus&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone xr",
+                  "value": 35,
+                  "formattedValue": "35",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+xr&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone 6s",
+                  "value": 32,
+                  "formattedValue": "32",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+6s&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone 11 pro",
+                  "value": 32,
+                  "formattedValue": "32",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+11+pro&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone 6 plus",
+                  "value": 28,
+                  "formattedValue": "28",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+6+plus&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone 11 pro max",
+                  "value": 21,
+                  "formattedValue": "21",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+11+pro+max&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone 12",
+                  "value": 14,
+                  "formattedValue": "14",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+12&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone xs max",
+                  "value": 14,
+                  "formattedValue": "14",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+xs+max&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone 8 plus precio",
+                  "value": 7,
+                  "formattedValue": "7",
+                  "hasData": true,
+                  "link": "/trends/explore?q=iphone+8+plus+precio&date=2020-03-27+2020-04-5&geo=CO"
+                }
+              ]
+            },
+            {
+              "rankedKeyword": [
+                {
+                  "query": "iphone 12",
+                  "value": 150,
+                  "formattedValue": "+150%",
+                  "link": "/trends/explore?q=iphone+12&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "query": "iphone 6 plus",
+                  "value": 60,
+                  "formattedValue": "+60%",
+                  "link": "/trends/explore?q=iphone+6+plus&date=2020-03-27+2020-04-5&geo=CO"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "relatedTopics": {
+        "default": {
+          "rankedList": [
+            {
+              "rankedKeyword": [
+                {
+                  "topic": {
+                    "mid": "/m/027lnzs",
+                    "title": "iPhone",
+                    "type": "Mobile phone"
+                  },
+                  "value": 100,
+                  "formattedValue": "100",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/027lnzs&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/15dpp6zh",
+                    "title": "iPhone",
+                    "type": "Topic"
+                  },
+                  "value": 88,
+                  "formattedValue": "88",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/15dpp6zh&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11c2659rn_",
+                    "title": "Apple iPhone 8",
+                    "type": "Mobile phone"
+                  },
+                  "value": 12,
+                  "formattedValue": "12",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11c2659rn_&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11c1nbb8w8",
+                    "title": "iPhone 7",
+                    "type": "Mobile phone"
+                  },
+                  "value": 11,
+                  "formattedValue": "11",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11c1nbb8w8&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/011sm55g",
+                    "title": "iPhone 6",
+                    "type": "Mobile phone"
+                  },
+                  "value": 10,
+                  "formattedValue": "10",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/011sm55g&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11bbxqmhsd",
+                    "title": "iPhone 6 Plus",
+                    "type": "Mobile phone"
+                  },
+                  "value": 9,
+                  "formattedValue": "9",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11bbxqmhsd&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11f0_dn3r1",
+                    "title": "Apple iPhone 8 Plus",
+                    "type": "Mobile phone"
+                  },
+                  "value": 9,
+                  "formattedValue": "9",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11f0_dn3r1&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11c1q0tgpv",
+                    "title": "Apple iPhone 7 Plus",
+                    "type": "Mobile phone"
+                  },
+                  "value": 6,
+                  "formattedValue": "6",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11c1q0tgpv&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11f0wxpnn4",
+                    "title": "iPhone X",
+                    "type": "Mobile phone"
+                  },
+                  "value": 5,
+                  "formattedValue": "5",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11f0wxpnn4&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11bw3d_g_3",
+                    "title": "iPhone 6S",
+                    "type": "Mobile phone"
+                  },
+                  "value": 4,
+                  "formattedValue": "4",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11bw3d_g_3&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11bw4s0rln",
+                    "title": "iPhone 6s Plus",
+                    "type": "Mobile phone"
+                  },
+                  "value": 4,
+                  "formattedValue": "4",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11bw4s0rln&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/02522",
+                    "title": "Computer monitor",
+                    "type": "Topic"
+                  },
+                  "value": 4,
+                  "formattedValue": "4",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/02522&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/07gv72",
+                    "title": "Samsung Group",
+                    "type": "Multinational conglomerate company"
+                  },
+                  "value": 3,
+                  "formattedValue": "3",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/07gv72&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11cs46mwwy",
+                    "title": "Apple iPhone 6s",
+                    "type": "Mobile phone"
+                  },
+                  "value": 3,
+                  "formattedValue": "3",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11cs46mwwy&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/04zjj11",
+                    "title": "Samsung",
+                    "type": "Topic"
+                  },
+                  "value": 3,
+                  "formattedValue": "3",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/04zjj11&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/01nn79",
+                    "title": "Samsung Electronics",
+                    "type": "Electronics company"
+                  },
+                  "value": 3,
+                  "formattedValue": "3",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/01nn79&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/019g58",
+                    "title": "iTunes",
+                    "type": "Media player"
+                  },
+                  "value": 2,
+                  "formattedValue": "2",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/019g58&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11b69mxz5h",
+                    "title": "Apple iPhone 6",
+                    "type": "Mobile phone"
+                  },
+                  "value": 2,
+                  "formattedValue": "2",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/g/11b69mxz5h&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0k8z",
+                    "title": "Apple",
+                    "type": "Technology company"
+                  },
+                  "value": 2,
+                  "formattedValue": "2",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/0k8z&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0gg4gh4",
+                    "title": "iPhone 5",
+                    "type": "Mobile phone"
+                  },
+                  "value": 2,
+                  "formattedValue": "2",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/0gg4gh4&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/01b7fy",
+                    "title": "Headphones",
+                    "type": "Topic"
+                  },
+                  "value": 2,
+                  "formattedValue": "2",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/01b7fy&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/025l19",
+                    "title": "Recording",
+                    "type": "Topic"
+                  },
+                  "value": 2,
+                  "formattedValue": "2",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/025l19&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0rf7hx0",
+                    "title": "Samsung Galaxy Note series",
+                    "type": "Computer"
+                  },
+                  "value": 1,
+                  "formattedValue": "1",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/0rf7hx0&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0h540pb",
+                    "title": "Samsung Galaxy Note",
+                    "type": "Mobile phone"
+                  },
+                  "value": 1,
+                  "formattedValue": "1",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/0h540pb&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0hnbsn3",
+                    "title": "Samsung Galaxy",
+                    "type": "Product line"
+                  },
+                  "value": 1,
+                  "formattedValue": "1",
+                  "hasData": true,
+                  "link": "/trends/explore?q=/m/0hnbsn3&date=2020-03-27+2020-04-5&geo=CO"
+                }
+              ]
+            },
+            {
+              "rankedKeyword": [
+                {
+                  "topic": {
+                    "mid": "/m/0rf7hx0",
+                    "title": "Samsung Galaxy Note series",
+                    "type": "Computer"
+                  },
+                  "value": 43800,
+                  "formattedValue": "Breakout",
+                  "link": "/trends/explore?q=/m/0rf7hx0&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0h540pb",
+                    "title": "Samsung Galaxy Note",
+                    "type": "Mobile phone"
+                  },
+                  "value": 43550,
+                  "formattedValue": "Breakout",
+                  "link": "/trends/explore?q=/m/0h540pb&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0kv797c",
+                    "title": "Samsung Galaxy Note 10.1",
+                    "type": "Tablet computer"
+                  },
+                  "value": 29100,
+                  "formattedValue": "Breakout",
+                  "link": "/trends/explore?q=/m/0kv797c&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/06h12k",
+                    "title": "Sharing",
+                    "type": "Topic"
+                  },
+                  "value": 14450,
+                  "formattedValue": "Breakout",
+                  "link": "/trends/explore?q=/m/06h12k&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/01b7fy",
+                    "title": "Headphones",
+                    "type": "Topic"
+                  },
+                  "value": 250,
+                  "formattedValue": "+250%",
+                  "link": "/trends/explore?q=/m/01b7fy&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0hnbsn3",
+                    "title": "Samsung Galaxy",
+                    "type": "Product line"
+                  },
+                  "value": 250,
+                  "formattedValue": "+250%",
+                  "link": "/trends/explore?q=/m/0hnbsn3&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11f0_dn3r1",
+                    "title": "Apple iPhone 8 Plus",
+                    "type": "Mobile phone"
+                  },
+                  "value": 180,
+                  "formattedValue": "+180%",
+                  "link": "/trends/explore?q=/g/11f0_dn3r1&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11b69mxz5h",
+                    "title": "Apple iPhone 6",
+                    "type": "Mobile phone"
+                  },
+                  "value": 140,
+                  "formattedValue": "+140%",
+                  "link": "/trends/explore?q=/g/11b69mxz5h&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/02mhh1",
+                    "title": "Backup",
+                    "type": "Topic"
+                  },
+                  "value": 140,
+                  "formattedValue": "+140%",
+                  "link": "/trends/explore?q=/m/02mhh1&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0cnzt8p",
+                    "title": "Smart TV",
+                    "type": "Topic"
+                  },
+                  "value": 140,
+                  "formattedValue": "+140%",
+                  "link": "/trends/explore?q=/m/0cnzt8p&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/019g58",
+                    "title": "iTunes",
+                    "type": "Media player"
+                  },
+                  "value": 90,
+                  "formattedValue": "+90%",
+                  "link": "/trends/explore?q=/m/019g58&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/g/11c2659rn_",
+                    "title": "Apple iPhone 8",
+                    "type": "Mobile phone"
+                  },
+                  "value": 80,
+                  "formattedValue": "+80%",
+                  "link": "/trends/explore?q=/g/11c2659rn_&date=2020-03-27+2020-04-5&geo=CO"
+                },
+                {
+                  "topic": {
+                    "mid": "/m/0gg4gh4",
+                    "title": "iPhone 5",
+                    "type": "Mobile phone"
+                  },
+                  "value": 50,
+                  "formattedValue": "+50%",
+                  "link": "/trends/explore?q=/m/0gg4gh4&date=2020-03-27+2020-04-5&geo=CO"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
