@@ -2,13 +2,24 @@
   "name": "rest-api",
   "version": 2,
   "builds": [{
-    "src": "index.js",
-    "use": "@now/node"
-  }],
+      "src": "index.js",
+      "use": "@now/node-server"
+    },
+    {
+      "src": "public/swagger-ui-dist/**",
+      "use": "@now/static"
+    }
+  ],
+  "public": false,
   "routes": [{
-    "src": "/(.*)",
-    "dest": "/index.js"
-  }],
+      "src": "/(.*)",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/api-docs/(swagger-ui-bundle.js|swagger-ui-standalone-preset.js)",
+      "dest": "/public/swagger-ui-dist/$1"
+    }
+  ],
   "env": {
     "DB_USER": "@api-db-user",
     "DB_PASSWORD": "@api-db-password",

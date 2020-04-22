@@ -22,6 +22,7 @@
     "helmet": "^3.21.3",
     "mongodb": "^3.5.4",
     "mongoose": "^5.9.10",
+    "swagger-jsdoc": "^4.0.0",
     "swagger-ui-express": "^4.1.4"
   },
   "devDependencies": {
