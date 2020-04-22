@@ -1,8 +1,10 @@
-require('dotenv').config();
+require('dotenv').config({path: '../.env'});
 
 const config = {
   dev: process.env.NODE_ENV !== 'production',
   port: process.env.PORT || 3000,
+  authKey: process.env.AUTH_KEY,
+  normalizacionApi: process.env.NORMALIZACION_API,
   cors: process.env.CORS,
   dbUser: process.env.DB_USER,
   dbPassword: process.env.DB_PASSWORD,
