@@ -1,6 +1,18 @@
 const productSearchCriteria = require('../utils/mocks/productSearchCriteria.json')
 
+/**
+ * Esta es la clase base que nos permite definir los metodos
+ * para reducir la cantidad de datos dependiento de su origen
+ */
 class SourceLib {
+    /**
+     * Este es le metodo de normalización, su objetivo es
+     * reducir el numero items aplicando criterios de busqueda y filtros.
+     * @param {number} id - ID del item
+     * @param {string} source - Fuente de la información
+     * @param {array} data - Datos a ser normalizados
+     * @param {string} date - Fecha de la busqueda
+     */
     normalize (id, source, data, date) {
         const criteria = productSearchCriteria[id]
         let normalizedData = this._simplifyData(id, source, data, date)
@@ -27,6 +39,11 @@ class SourceLib {
             })
     }
 
+    /**
+     * Esta función permite aplicar criterios de busqueda, para depurar os datos.
+     * @param {array} data array de objectos con los datos crudos
+     * @param {object} filters objecto con los criterios de busqueda
+     */
     _applyCriteria (data, filters) {
         const keysFilters = Object.keys(filters)
         // Example -> itemAttributes = [ 'condition', 'model', 'variant' ] without 's' in the end

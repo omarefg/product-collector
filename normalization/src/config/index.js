@@ -1,5 +1,11 @@
 require('dotenv').config()
 
+/**
+ * ## Objeto de configuración
+ * @module Config
+ */
+
+
 const config = {
     dev: process.env.NODE_ENV !== 'production',
     port: process.env.PORT || 3000,

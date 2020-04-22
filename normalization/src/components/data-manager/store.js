@@ -3,7 +3,7 @@ const axios = require('axios')
 const sendNormalizedData = async (normalizedData) => {
     const { data: { data } } = await axios({
         method: 'post',
-        url: 'http://localhost:3000/api/products',
+        url: 'https://rest-api-mocha.now.sh/api/products',
         data: normalizedData
     })
 
