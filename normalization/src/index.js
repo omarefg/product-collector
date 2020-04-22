@@ -1,12 +1,13 @@
 const express = require('express')
-const router = require('./network/routes');
+const router = require('./network/router')
 
 const notFound = require('./utils/middleware/notFoundHandler')
 const { logErrors, errorHandler, wrapErrors } = require('./utils/middleware/errorHandlers')
 const { config } = require('./config/index')
 
 /**
- * This a comment
+ * Es aquí donde implementamos un servidor de express el cual usará un enrrutador y middlewares de manejo de errores
+ * para dar respuesta a las peticiones que reciba.
  */
 const app = express()
 // CORS
@@ -20,6 +21,7 @@ app.use((req, res, next) => {
     }
     next()
 })
+
 app.use(express.json({ limit: '4MB' }))
 
 router(app)

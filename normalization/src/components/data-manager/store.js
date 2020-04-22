@@ -1,9 +1,9 @@
 const axios = require('axios')
 
-const sendNormalizedData = async (normalizedData) => {
+const sendNormalizedData = async (target, normalizedData) => {
     const { data: { data } } = await axios({
         method: 'post',
-        url: 'http://localhost:3000/api/products',
+        url: target.input,
         data: normalizedData
     })
 
