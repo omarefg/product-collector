@@ -5,6 +5,7 @@
   "description": "normalize raw data for different sources API / web scrapping",
   "main": "index.js",
   "scripts": {
+    "doc": "jsdoc -c jsdoc.json",
     "dev": "DEBUG=express:*,app:* nodemon ./src/index",
     "start": "node ./src/index"
   },
@@ -27,6 +28,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "jsdoc": "^3.6.4",
     "nodemon": "^2.0.2"
   }
 }

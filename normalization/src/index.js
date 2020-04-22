@@ -5,6 +5,9 @@ const notFound = require('./utils/middleware/notFoundHandler')
 const { logErrors, errorHandler, wrapErrors } = require('./utils/middleware/errorHandlers')
 const { config } = require('./config/index')
 
+/**
+ * This a comment
+ */
 const app = express()
 // CORS
 app.use((req, res, next) => {
