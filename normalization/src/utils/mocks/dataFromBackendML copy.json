@@ -1,0 +1,1238 @@
+{
+    "source": "PCML",
+    "date": "2020-03-22T06:36:44.892Z",
+    "id": "PCP900000000",
+    "data": {
+        "site_id": "MCO",
+        "query": "iphone",
+        "paging": {
+            "total": 6460,
+            "offset": 0,
+            "limit": 50,
+            "primary_results": 1000
+        },
+        "results": [
+            {
+                "id": "MCO534880145",
+                "site_id": "MCO",
+                "title": "Celular iPhone 11 64gb Sellado Nuevo 4g",
+                "seller": {
+                    "id": 409975477,
+                    "permalink": null,
+                    "power_seller_status": null,
+                    "car_dealer": false,
+                    "real_estate_agency": false,
+                    "tags": [
+                    ]
+                },
+                "price": 3279000,
+                "currency_id": "COP",
+                "available_quantity": 1,
+                "sold_quantity": 50,
+                "buying_mode": "buy_it_now",
+                "listing_type_id": "gold_special",
+                "stop_time": "2039-09-18T04:00:00.000Z",
+                "condition": "new",
+                "permalink": "https://articulo.mercadolibre.com.co/MCO-534880145-celular-iphone-11-64gb-sellado-nuevo-4g-_JM",
+                "thumbnail": "http://mco-s2-p.mlstatic.com/709943-MCO40352844038_012020-I.jpg",
+                "accepts_mercadopago": true,
+                "installments": {
+                    "quantity": 36,
+                    "amount": 91083.33,
+                    "rate": 0,
+                    "currency_id": "COP"
+                },
+                "address": {
+                    "state_id": "CO-DC",
+                    "state_name": "Bogotá D.C.",
+                    "city_id": "TUNPQ0NIQTk2OTI1",
+                    "city_name": "Chapinero"
+                },
+                "shipping": {
+                    "free_shipping": true,
+                    "mode": "me2",
+                    "tags": [
+                        "self_service_out",
+                        "mandatory_free_shipping"
+                    ],
+                    "logistic_type": "drop_off",
+                    "store_pick_up": false
+                },
+                "seller_address": {
+                    "id": "",
+                    "comment": "",
+                    "address_line": "",
+                    "zip_code": "",
+                    "country": {
+                        "id": "CO",
+                        "name": "Colombia"
+                    },
+                    "state": {
+                        "id": "CO-DC",
+                        "name": "Bogotá D.C."
+                    },
+                    "city": {
+                        "id": "TUNPQ0NIQTk2OTI1",
+                        "name": "Chapinero"
+                    },
+                    "latitude": "",
+                    "longitude": ""
+                },
+                "attributes": [
+                    {
+                        "value_id": "9344",
+                        "values": [
+                            {
+                                "id": "9344",
+                                "name": "Apple",
+                                "struct": null,
+                                "source": 6808261514773724
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "source": 6808261514773724,
+                        "id": "BRAND",
+                        "name": "Marca",
+                        "attribute_group_name": "Otros",
+                        "value_name": "Apple",
+                        "value_struct": null
+                    },
+                    {
+                        "value_name": "Hexa-core (2x2.65 GHz Lightning + 4x1.8 GHz Thunder)",
+                        "attribute_group_id": "OTHERS",
+                        "value_id": null,
+                        "value_struct": null,
+                        "values": [
+                            {
+                                "id": null,
+                                "name": "Hexa-core (2x2.65 GHz Lightning + 4x1.8 GHz Thunder)",
+                                "struct": null,
+                                "source": 3376461333454861
+                            }
+                        ],
+                        "attribute_group_name": "Otros",
+                        "source": 3376461333454861,
+                        "id": "CPU_MODEL",
+                        "name": "Modelo de CPU"
+                    },
+                    {
+                        "name": "Modelo de GPU",
+                        "value_name": "Apple GPU (4-core graphics)",
+                        "value_struct": null,
+                        "values": [
+                            {
+                                "name": "Apple GPU (4-core graphics)",
+                                "struct": null,
+                                "source": 3376461333454861,
+                                "id": null
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "id": "GPU_MODEL",
+                        "value_id": null,
+                        "attribute_group_name": "Otros",
+                        "source": 3376461333454861
+                    },
+                    {
+                        "value_struct": null,
+                        "attribute_group_name": "Otros",
+                        "source": 6808261514773724,
+                        "values": [
+                            {
+                                "struct": null,
+                                "source": 6808261514773724,
+                                "id": "2230284",
+                                "name": "Nuevo"
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "id": "ITEM_CONDITION",
+                        "name": "Condición del ítem",
+                        "value_id": "2230284",
+                        "value_name": "Nuevo"
+                    },
+                    {
+                        "value_struct": null,
+                        "attribute_group_id": "OTHERS",
+                        "attribute_group_name": "Otros",
+                        "id": "LINE",
+                        "value_id": "58993",
+                        "values": [
+                            {
+                                "id": "58993",
+                                "name": "iPhone",
+                                "struct": null,
+                                "source": 6808261514773724
+                            }
+                        ],
+                        "source": 6808261514773724,
+                        "name": "Línea",
+                        "value_name": "iPhone"
+                    },
+                    {
+                        "source": 6808261514773724,
+                        "name": "Modelo",
+                        "value_id": "7739079",
+                        "value_name": "iPhone 11",
+                        "attribute_group_name": "Otros",
+                        "id": "MODEL",
+                        "value_struct": null,
+                        "values": [
+                            {
+                                "id": "7739079",
+                                "name": "iPhone 11",
+                                "struct": null,
+                                "source": 6808261514773724
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS"
+                    },
+                    {
+                        "id": "PROCESSOR_MODEL",
+                        "value_name": "Apple A13 Bionic (7 nm+)",
+                        "values": [
+                            {
+                                "struct": null,
+                                "source": 3376461333454861,
+                                "id": null,
+                                "name": "Apple A13 Bionic (7 nm+)"
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "name": "Modelo del procesador",
+                        "value_id": null,
+                        "value_struct": null,
+                        "attribute_group_name": "Otros",
+                        "source": 3376461333454861
+                    }
+                ],
+                "original_price": null,
+                "category_id": "MCO1055",
+                "official_store_id": null,
+                "catalog_product_id": "MCO15149560",
+                "tags": [
+                    "good_quality_picture",
+                    "good_quality_thumbnail",
+                    "immediate_payment"
+                ]
+            },
+            {
+                "id": "MCO535482386",
+                "site_id": "MCO",
+                "title": "Celular iPhone 11 128gb Nuevo 100% Original Y Sellada ",
+                "seller": {
+                    "id": 409975477,
+                    "permalink": null,
+                    "power_seller_status": null,
+                    "car_dealer": false,
+                    "real_estate_agency": false,
+                    "tags": [
+                    ]
+                },
+                "price": 3439000,
+                "currency_id": "COP",
+                "available_quantity": 1,
+                "sold_quantity": 25,
+                "buying_mode": "buy_it_now",
+                "listing_type_id": "gold_special",
+                "stop_time": "2039-09-21T04:00:00.000Z",
+                "condition": "new",
+                "permalink": "https://articulo.mercadolibre.com.co/MCO-535482386-celular-iphone-11-128gb-nuevo-100-original-y-sellada-_JM",
+                "thumbnail": "http://mco-s1-p.mlstatic.com/805950-MCO40352919808_012020-I.jpg",
+                "accepts_mercadopago": true,
+                "installments": {
+                    "quantity": 36,
+                    "amount": 95527.78,
+                    "rate": 0,
+                    "currency_id": "COP"
+                },
+                "address": {
+                    "state_id": "CO-DC",
+                    "state_name": "Bogotá D.C.",
+                    "city_id": "TUNPQ0NIQTk2OTI1",
+                    "city_name": "Chapinero"
+                },
+                "shipping": {
+                    "free_shipping": true,
+                    "mode": "me2",
+                    "tags": [
+                        "self_service_out",
+                        "mandatory_free_shipping"
+                    ],
+                    "logistic_type": "drop_off",
+                    "store_pick_up": false
+                },
+                "seller_address": {
+                    "id": "",
+                    "comment": "",
+                    "address_line": "",
+                    "zip_code": "",
+                    "country": {
+                        "id": "CO",
+                        "name": "Colombia"
+                    },
+                    "state": {
+                        "id": "CO-DC",
+                        "name": "Bogotá D.C."
+                    },
+                    "city": {
+                        "id": "TUNPQ0NIQTk2OTI1",
+                        "name": "Chapinero"
+                    },
+                    "latitude": "",
+                    "longitude": ""
+                },
+                "attributes": [
+                    {
+                        "id": "BRAND",
+                        "value_name": "Apple",
+                        "value_struct": null,
+                        "attribute_group_name": "Otros",
+                        "name": "Marca",
+                        "value_id": "9344",
+                        "values": [
+                            {
+                                "id": "9344",
+                                "name": "Apple",
+                                "struct": null,
+                                "source": 6808261514773724
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "source": 6808261514773724
+                    },
+                    {
+                        "id": "CPU_MODEL",
+                        "value_id": "7740541",
+                        "value_name": "2x2.65 GHz Lightning/4x1.8 GHz Thunder",
+                        "values": [
+                            {
+                                "id": "7740541",
+                                "name": "2x2.65 GHz Lightning/4x1.8 GHz Thunder",
+                                "struct": null,
+                                "source": 4709228965570453
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "name": "Modelo de CPU",
+                        "value_struct": null,
+                        "attribute_group_name": "Otros",
+                        "source": 4709228965570453
+                    },
+                    {
+                        "name": "Modelo de GPU",
+                        "value_struct": null,
+                        "attribute_group_id": "OTHERS",
+                        "id": "GPU_MODEL",
+                        "value_id": "7741027",
+                        "value_name": "Apple GPU",
+                        "values": [
+                            {
+                                "id": "7741027",
+                                "name": "Apple GPU",
+                                "struct": null,
+                                "source": 1183438784296846
+                            }
+                        ],
+                        "attribute_group_name": "Otros",
+                        "source": 1183438784296846
+                    },
+                    {
+                        "value_id": "2230284",
+                        "value_struct": null,
+                        "attribute_group_id": "OTHERS",
+                        "attribute_group_name": "Otros",
+                        "id": "ITEM_CONDITION",
+                        "name": "Condición del ítem",
+                        "value_name": "Nuevo",
+                        "values": [
+                            {
+                                "id": "2230284",
+                                "name": "Nuevo",
+                                "struct": null,
+                                "source": 6808261514773724
+                            }
+                        ],
+                        "source": 6808261514773724
+                    },
+                    {
+                        "source": 6808261514773724,
+                        "id": "LINE",
+                        "value_id": "58993",
+                        "value_name": "iPhone",
+                        "values": [
+                            {
+                                "id": "58993",
+                                "name": "iPhone",
+                                "struct": null,
+                                "source": 6808261514773724
+                            }
+                        ],
+                        "attribute_group_name": "Otros",
+                        "name": "Línea",
+                        "value_struct": null,
+                        "attribute_group_id": "OTHERS"
+                    },
+                    {
+                        "id": "MODEL",
+                        "values": [
+                            {
+                                "id": "7739079",
+                                "name": "iPhone 11",
+                                "struct": null,
+                                "source": 6808261514773724
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "attribute_group_name": "Otros",
+                        "source": 6808261514773724,
+                        "name": "Modelo",
+                        "value_id": "7739079",
+                        "value_name": "iPhone 11",
+                        "value_struct": null
+                    },
+                    {
+                        "name": "Modelo del procesador",
+                        "values": [
+                            {
+                                "id": "7740540",
+                                "name": "Apple A13 Bionic",
+                                "struct": null,
+                                "source": 4709228965570453
+                            }
+                        ],
+                        "value_struct": null,
+                        "attribute_group_id": "OTHERS",
+                        "attribute_group_name": "Otros",
+                        "source": 4709228965570453,
+                        "id": "PROCESSOR_MODEL",
+                        "value_id": "7740540",
+                        "value_name": "Apple A13 Bionic"
+                    }
+                ],
+                "original_price": null,
+                "category_id": "MCO1055",
+                "official_store_id": null,
+                "catalog_product_id": "MCO15149560",
+                "tags": [
+                    "good_quality_picture",
+                    "good_quality_thumbnail",
+                    "immediate_payment"
+                ]
+            },
+            {
+                "id": "MCO512307381",
+                "site_id": "MCO",
+                "title": "iPhone 8 Plus 64gb Entrega Inmediata Envío Gratis Garantía",
+                "seller": {
+                    "id": 135462891,
+                    "permalink": null,
+                    "power_seller_status": "gold",
+                    "car_dealer": false,
+                    "real_estate_agency": false,
+                    "tags": [
+                    ]
+                },
+                "price": 2399000,
+                "currency_id": "COP",
+                "available_quantity": 1,
+                "sold_quantity": 25,
+                "buying_mode": "buy_it_now",
+                "listing_type_id": "gold_special",
+                "stop_time": "2039-05-03T04:00:00.000Z",
+                "condition": "new",
+                "permalink": "https://articulo.mercadolibre.com.co/MCO-512307381-iphone-8-plus-64gb-entrega-inmediata-envio-gratis-garantia-_JM",
+                "thumbnail": "http://mco-s2-p.mlstatic.com/738837-MCO31615254272_072019-I.jpg",
+                "accepts_mercadopago": true,
+                "installments": {
+                    "quantity": 36,
+                    "amount": 66638.89,
+                    "rate": 0,
+                    "currency_id": "COP"
+                },
+                "address": {
+                    "state_id": "CO-ANT",
+                    "state_name": "Antioquia",
+                    "city_id": "TUNPQ01FRGRjNjc4",
+                    "city_name": "Medellín"
+                },
+                "shipping": {
+                    "free_shipping": true,
+                    "mode": "me2",
+                    "tags": [
+                        "mandatory_free_shipping"
+                    ],
+                    "logistic_type": "drop_off",
+                    "store_pick_up": false
+                },
+                "seller_address": {
+                    "id": "",
+                    "comment": "",
+                    "address_line": "",
+                    "zip_code": "",
+                    "country": {
+                        "id": "CO",
+                        "name": "Colombia"
+                    },
+                    "state": {
+                        "id": "CO-ANT",
+                        "name": "Antioquia"
+                    },
+                    "city": {
+                        "id": "TUNPQ01FRGRjNjc4",
+                        "name": "Medellín"
+                    },
+                    "latitude": "",
+                    "longitude": ""
+                },
+                "attributes": [
+                    {
+                        "name": "Marca",
+                        "attribute_group_id": "OTHERS",
+                        "source": 1,
+                        "attribute_group_name": "Otros",
+                        "id": "BRAND",
+                        "value_id": "9344",
+                        "value_name": "Apple",
+                        "value_struct": null,
+                        "values": [
+                            {
+                                "id": "9344",
+                                "name": "Apple",
+                                "struct": null,
+                                "source": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Modelo de CPU",
+                        "value_struct": null,
+                        "values": [
+                            {
+                                "id": null,
+                                "name": "Apple A11 Bionic",
+                                "struct": null,
+                                "source": 3773260486938822
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "attribute_group_name": "Otros",
+                        "id": "CPU_MODEL",
+                        "value_id": null,
+                        "value_name": "Apple A11 Bionic",
+                        "source": 3773260486938822
+                    },
+                    {
+                        "id": "ITEM_CONDITION",
+                        "value_id": "2230284",
+                        "source": 1,
+                        "name": "Condición del ítem",
+                        "value_name": "Nuevo",
+                        "value_struct": null,
+                        "values": [
+                            {
+                                "id": "2230284",
+                                "name": "Nuevo",
+                                "struct": null,
+                                "source": 1
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "attribute_group_name": "Otros"
+                    },
+                    {
+                        "id": "LINE",
+                        "values": [
+                            {
+                                "name": "iPhone",
+                                "struct": null,
+                                "source": 1,
+                                "id": "58993"
+                            }
+                        ],
+                        "attribute_group_id": "OTHERS",
+                        "name": "Línea",
+                        "value_id": "58993",
+                        "value_name": "iPhone",
+                        "value_struct": null,
+                        "attribute_group_name": "Otros",
+                        "source": 1
+                    },
+                    {
+                        "source": 1,
+                        "value_name": "iPhone 8 Plus",
+                        "value_struct": null,
+                        "attribute_group_id": "OTHERS",
+                        "values": [
+                            {
+                                "name": "iPhone 8 Plus",
+                                "struct": null,
+                                "source": 1,
+                                "id": "2244673"
+                            }
+                        ],
+                        "attribute_group_name": "Otros",
+                        "id": "MODEL",
+                        "name": "Modelo",
+                        "value_id": "2244673"
+                    },
+                    {
+                        "values": [
+                            {
+                                "id": "6936434",
+                                "name": "Apple A11 Bionic",
+                                "struct": null,
+                                "source": 1183438784296846
+                            }
+                        ],
+                        "attribute_group_name": "Otros",
+                        "source": 1183438784296846,
+                        "value_name": "Apple A11 Bionic",
+                        "name": "Modelo del procesador",
+                        "value_id": "6936434",
+                        "value_struct": null,
+                        "attribute_group_id": "OTHERS",
+                        "id": "PROCESSOR_MODEL"
+                    }
+                ],
+                "original_price": null,
+                "category_id": "MCO1055",
+                "official_store_id": null,
+                "catalog_product_id": "MCO8752450",
+                "tags": [
+                    "good_quality_picture",
+                    "good_quality_thumbnail",
+                    "immediate_payment"
+                ]
+            }
+        ],
+        "secondary_results": [
+        ],
+        "related_results": [
+        ],
+        "sort": {
+            "id": "relevance",
+            "name": "More relevant"
+        },
+        "available_sorts": [
+            {
+                "id": "price_asc",
+                "name": "Lower price"
+            },
+            {
+                "id": "price_desc",
+                "name": "Higher price"
+            }
+        ],
+        "filters": [
+            {
+                "id": "category",
+                "name": "Categories",
+                "type": "text",
+                "values": [
+                    {
+                        "id": "MCO1055",
+                        "name": "Celulares y Smartphones",
+                        "path_from_root": [
+                            {
+                                "id": "MCO1051",
+                                "name": "Celulares y Teléfonos"
+                            },
+                            {
+                                "id": "MCO1055",
+                                "name": "Celulares y Smartphones"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "LINE",
+                "name": "Línea",
+                "type": "STRING",
+                "values": [
+                    {
+                        "id": "58993",
+                        "name": "iPhone"
+                    }
+                ]
+            },
+            {
+                "id": "BRAND",
+                "name": "Marca",
+                "type": "STRING",
+                "values": [
+                    {
+                        "id": "9344",
+                        "name": "Apple"
+                    }
+                ]
+            }
+        ],
+        "available_filters": [
+            {
+                "id": "discount",
+                "name": "Discounts",
+                "type": "range",
+                "values": [
+                    {
+                        "id": "10-100",
+                        "name": "From 10% off",
+                        "results": 6
+                    },
+                    {
+                        "id": "20-100",
+                        "name": "From 20% off",
+                        "results": 5
+                    },
+                    {
+                        "id": "30-100",
+                        "name": "From 30% off",
+                        "results": 2
+                    },
+                    {
+                        "id": "40-100",
+                        "name": "From 40% off",
+                        "results": 1
+                    }
+                ]
+            },
+            {
+                "id": "state",
+                "name": "Location",
+                "type": "text",
+                "values": [
+                    {
+                        "id": "CO-DC",
+                        "name": "Bogotá D.C.",
+                        "results": 2183
+                    },
+                    {
+                        "id": "CO-ANT",
+                        "name": "Antioquia",
+                        "results": 1021
+                    },
+                    {
+                        "id": "CO-VAC",
+                        "name": "Valle Del Cauca",
+                        "results": 593
+                    },
+                    {
+                        "id": "CO-ATL",
+                        "name": "Atlantico",
+                        "results": 566
+                    },
+                    {
+                        "id": "CO-SAN",
+                        "name": "Santander",
+                        "results": 199
+                    },
+                    {
+                        "id": "CO-CUN",
+                        "name": "Cundinamarca",
+                        "results": 173
+                    },
+                    {
+                        "id": "CO-NSA",
+                        "name": "Norte De Santander",
+                        "results": 111
+                    },
+                    {
+                        "id": "CO-RIS",
+                        "name": "Risaralda",
+                        "results": 91
+                    },
+                    {
+                        "id": "CO-BOL",
+                        "name": "Bolivar",
+                        "results": 84
+                    },
+                    {
+                        "id": "CO-CES",
+                        "name": "Cesar",
+                        "results": 77
+                    },
+                    {
+                        "id": "CO-MET",
+                        "name": "Meta",
+                        "results": 76
+                    },
+                    {
+                        "id": "CO-TOL",
+                        "name": "Tolima",
+                        "results": 73
+                    },
+                    {
+                        "id": "CO-CAL",
+                        "name": "Caldas",
+                        "results": 72
+                    },
+                    {
+                        "id": "CO-BOY",
+                        "name": "Boyaca",
+                        "results": 69
+                    },
+                    {
+                        "id": "CO-CAU",
+                        "name": "Cauca",
+                        "results": 64
+                    },
+                    {
+                        "id": "CO-MAG",
+                        "name": "Magdalena",
+                        "results": 63
+                    },
+                    {
+                        "id": "CO-NAR",
+                        "name": "Nariño",
+                        "results": 61
+                    },
+                    {
+                        "id": "CO-HUI",
+                        "name": "Huila",
+                        "results": 60
+                    },
+                    {
+                        "id": "CO-QUI",
+                        "name": "Quindio",
+                        "results": 40
+                    },
+                    {
+                        "id": "CO-SUC",
+                        "name": "Sucre",
+                        "results": 29
+                    },
+                    {
+                        "id": "CO-LAG",
+                        "name": "Guajira",
+                        "results": 28
+                    },
+                    {
+                        "id": "CO-COR",
+                        "name": "Córdoba",
+                        "results": 27
+                    },
+                    {
+                        "id": "CO-CAQ",
+                        "name": "Caqueta",
+                        "results": 23
+                    },
+                    {
+                        "id": "CO-AMA",
+                        "name": "Amazonas",
+                        "results": 17
+                    },
+                    {
+                        "id": "CO-CAS",
+                        "name": "Casanare",
+                        "results": 14
+                    },
+                    {
+                        "id": "CO-CHO",
+                        "name": "Choco",
+                        "results": 14
+                    },
+                    {
+                        "id": "CO-ARA",
+                        "name": "Arauca",
+                        "results": 13
+                    },
+                    {
+                        "id": "CO-PUT",
+                        "name": "Putumayo",
+                        "results": 10
+                    },
+                    {
+                        "id": "CO-SAP",
+                        "name": "San Andres y Providencia",
+                        "results": 6
+                    },
+                    {
+                        "id": "CO-VID",
+                        "name": "Vichada",
+                        "results": 3
+                    }
+                ]
+            },
+            {
+                "id": "price",
+                "name": "Precio",
+                "type": "range",
+                "values": [
+                    {
+                        "id": "*-900000.0",
+                        "name": "Up to $900.000",
+                        "results": 2008
+                    },
+                    {
+                        "id": "900000.0-1500000.0",
+                        "name": "$900.000 to $1.500.000",
+                        "results": 1587
+                    },
+                    {
+                        "id": "1500000.0-*",
+                        "name": "More than $1.500.000",
+                        "results": 2865
+                    }
+                ]
+            },
+            {
+                "id": "accepts_mercadopago",
+                "name": "MercadoPago filter",
+                "type": "boolean",
+                "values": [
+                    {
+                        "id": "yes",
+                        "name": "With MercadoPago",
+                        "results": 6460
+                    }
+                ]
+            },
+            {
+                "id": "installments",
+                "name": "Pago",
+                "type": "text",
+                "values": [
+                    {
+                        "id": "yes",
+                        "name": "Installments",
+                        "results": 6442
+                    },
+                    {
+                        "id": "no_interest",
+                        "name": "Cuotas sin interés",
+                        "results": 1446
+                    }
+                ]
+            },
+            {
+                "id": "shipping",
+                "name": "Envío",
+                "type": "text",
+                "values": [
+                    {
+                        "id": "mercadoenvios",
+                        "name": "Mercado Envíos",
+                        "results": 6174
+                    }
+                ]
+            },
+            {
+                "id": "power_seller",
+                "name": "Seller quality filter",
+                "type": "boolean",
+                "values": [
+                    {
+                        "id": "yes",
+                        "name": "Best sellers",
+                        "results": 159
+                    }
+                ]
+            },
+            {
+                "id": "since",
+                "name": "Auction start date filter",
+                "type": "text",
+                "values": [
+                    {
+                        "id": "today",
+                        "name": "Publicados hoy",
+                        "results": 36
+                    }
+                ]
+            },
+            {
+                "id": "until",
+                "name": "Auction stop filter",
+                "type": "text",
+                "values": [
+                    {
+                        "id": "today",
+                        "name": "Ending today",
+                        "results": 74
+                    }
+                ]
+            },
+            {
+                "id": "has_video",
+                "name": "Video publications filter",
+                "type": "boolean",
+                "values": [
+                    {
+                        "id": "yes",
+                        "name": "Publications with video",
+                        "results": 335
+                    }
+                ]
+            },
+            {
+                "id": "has_pictures",
+                "name": "Items with images filter",
+                "type": "boolean",
+                "values": [
+                    {
+                        "id": "yes",
+                        "name": "With pictures",
+                        "results": 6456
+                    }
+                ]
+            },
+            {
+                "id": "shipping_cost",
+                "name": "Costo de envío",
+                "type": "text",
+                "values": [
+                    {
+                        "id": "free",
+                        "name": "Gratis",
+                        "results": 4035
+                    }
+                ]
+            },
+            {
+                "id": "ITEM_CONDITION",
+                "name": "Condición",
+                "type": "STRING",
+                "values": [
+                    {
+                        "id": "2230581",
+                        "name": "Usado",
+                        "results": 4409
+                    },
+                    {
+                        "id": "2230284",
+                        "name": "Nuevo",
+                        "results": 1963
+                    },
+                    {
+                        "id": "2230582",
+                        "name": "Reacondicionado",
+                        "results": 58
+                    }
+                ]
+            },
+            {
+                "id": "MODEL",
+                "name": "Modelo",
+                "type": "STRING",
+                "values": [
+                    {
+                        "id": "312155",
+                        "name": "iPhone 7",
+                        "results": 796
+                    },
+                    {
+                        "id": "312149",
+                        "name": "iPhone 6",
+                        "results": 618
+                    },
+                    {
+                        "id": "312157",
+                        "name": "iPhone 7 Plus",
+                        "results": 506
+                    },
+                    {
+                        "id": "312151",
+                        "name": "iPhone 6s",
+                        "results": 460
+                    },
+                    {
+                        "id": "2244673",
+                        "name": "iPhone 8 Plus",
+                        "results": 403
+                    },
+                    {
+                        "id": "1164456",
+                        "name": "iPhone X",
+                        "results": 403
+                    },
+                    {
+                        "id": "2244670",
+                        "name": "iPhone 8",
+                        "results": 262
+                    },
+                    {
+                        "id": "5414168",
+                        "name": "iPhone XS Max",
+                        "results": 237
+                    },
+                    {
+                        "id": "5414260",
+                        "name": "iPhone XR",
+                        "results": 217
+                    },
+                    {
+                        "id": "312153",
+                        "name": "iPhone 6s Plus",
+                        "results": 209
+                    },
+                    {
+                        "id": "7739079",
+                        "name": "iPhone 11",
+                        "results": 207
+                    },
+                    {
+                        "id": "312144",
+                        "name": "iPhone 5s",
+                        "results": 159
+                    },
+                    {
+                        "id": "312154",
+                        "name": "iPhone SE",
+                        "results": 156
+                    },
+                    {
+                        "id": "7741677",
+                        "name": "iPhone 11 Pro Max",
+                        "results": 135
+                    },
+                    {
+                        "id": "5414079",
+                        "name": "iPhone XS",
+                        "results": 116
+                    },
+                    {
+                        "id": "4904058",
+                        "name": "8 Plus",
+                        "results": 111
+                    },
+                    {
+                        "id": "14608",
+                        "name": "iPhone",
+                        "results": 107
+                    },
+                    {
+                        "id": "31998",
+                        "name": "X",
+                        "results": 104
+                    },
+                    {
+                        "id": "312145",
+                        "name": "iPhone 4s",
+                        "results": 103
+                    },
+                    {
+                        "id": "7741023",
+                        "name": "iPhone 11 Pro",
+                        "results": 89
+                    },
+                    {
+                        "id": "312150",
+                        "name": "iPhone 6 Plus",
+                        "results": 81
+                    },
+                    {
+                        "id": "312152",
+                        "name": "iPhone 5",
+                        "results": 78
+                    },
+                    {
+                        "id": "52828",
+                        "name": "7 Plus",
+                        "results": 69
+                    },
+                    {
+                        "id": "27251",
+                        "name": "7",
+                        "results": 63
+                    },
+                    {
+                        "id": "59833",
+                        "name": "6",
+                        "results": 56
+                    },
+                    {
+                        "id": "11043",
+                        "name": "8",
+                        "results": 48
+                    },
+                    {
+                        "id": "58054",
+                        "name": "XR",
+                        "results": 46
+                    },
+                    {
+                        "id": "14610",
+                        "name": "iPhone 4",
+                        "results": 43
+                    },
+                    {
+                        "id": "312143",
+                        "name": "iPhone 5c",
+                        "results": 22
+                    },
+                    {
+                        "id": "5729",
+                        "name": "XS",
+                        "results": 19
+                    },
+                    {
+                        "id": "59000",
+                        "name": "5s",
+                        "results": 14
+                    },
+                    {
+                        "id": "165838",
+                        "name": "SE",
+                        "results": 12
+                    },
+                    {
+                        "id": "58615",
+                        "name": "5",
+                        "results": 10
+                    },
+                    {
+                        "id": "5414092",
+                        "name": "iPhone XS Dual SIM",
+                        "results": 9
+                    },
+                    {
+                        "id": "58458",
+                        "name": "4S",
+                        "results": 7
+                    },
+                    {
+                        "id": "10320",
+                        "name": "110",
+                        "results": 6
+                    },
+                    {
+                        "id": "84612",
+                        "name": "6 Plus",
+                        "results": 5
+                    },
+                    {
+                        "id": "9515",
+                        "name": "Pro",
+                        "results": 3
+                    },
+                    {
+                        "id": "14609",
+                        "name": "iPhone 3GS",
+                        "results": 3
+                    },
+                    {
+                        "id": "7227",
+                        "name": "S10",
+                        "results": 1
+                    },
+                    {
+                        "id": "58992",
+                        "name": "5c",
+                        "results": 1
+                    },
+                    {
+                        "id": "14605",
+                        "name": "iPhone 3G",
+                        "results": 1
+                    },
+                    {
+                        "id": "10971",
+                        "name": "4",
+                        "results": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

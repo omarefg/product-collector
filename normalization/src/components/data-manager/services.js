@@ -4,7 +4,7 @@ const boom = require('@hapi/boom')
 const RedisLib = require('../../lib/RedisLib')
 const MercadoLibreLib = require('../../lib/MercadoLibreLib')
 const AmazonLib = require('../../lib/AmazonLib')
-
+const sendNormalizedData = require('./store')
 class DataManagerService {
     constructor () {
         this.collection = 'products'
@@ -37,6 +37,10 @@ class DataManagerService {
         }
         default: return {}
         }
+    }
+
+    sendNormalizedData (normalizedData) {
+        return sendNormalizedData(normalizedData)
     }
 }
 

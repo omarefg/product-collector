@@ -18,8 +18,9 @@ router.post(
             await dataManagerService.searchForSecretByToken(authorization)
 
             try {
-                const idDB = await dataManagerService.normalize(body)
-                response.success({}, res, idDB, 200)
+                const normalizedData = await dataManagerService.normalize(body)
+                const savedDataIds = await dataManagerService.sendNormalizedData(normalizedData)
+                response.success({}, res, savedDataIds, 200)
             } catch (error) {
                 next(boom.badImplementation(error.message))
             }
