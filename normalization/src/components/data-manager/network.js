@@ -1,12 +1,30 @@
+/**
+ * ## Componente para el manejo de datos
+ * @module Data-manager
+ */
 const express = require('express')
 const boom = require('@hapi/boom')
 
 const DataManagerService = require('./services')
+
 const response = require('../../network/response')
+/**
+ * Middleware para validar la existencia del token dentro del request
+ * lo puedes ver en el siguiente link
+ * [tokenHandler](https://documentacion-normalizacion.now.sh/module-tokenHandler.html "tokenHandler")
+ */
 const tokenHandler = require('../../utils/middleware/tokenHandler')
+/**
+ * Middleware para validar que el request tiene los datos que esperamos recibir.
+ * [bodyDataHandler](https://documentacion-normalizacion.now.sh/module-bodyDataHandler.html "bodyDataHandler")
+ */
 const bodyDataHandler = require('../../utils/middleware/bodyDataHandler')
 
 const router = express.Router()
+/**
+ * Creamos a instancia a los servicios para el manejo de los datos
+ *  {@link DataManagerService }
+ */
 const dataManagerService = new DataManagerService()
 
 router.post(

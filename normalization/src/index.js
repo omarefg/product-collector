@@ -1,5 +1,5 @@
 const express = require('express')
-const router = require('./network/routes');
+const router = require('./network/router');
 
 const notFound = require('./utils/middleware/notFoundHandler')
 const { logErrors, errorHandler, wrapErrors } = require('./utils/middleware/errorHandlers')
@@ -20,6 +20,7 @@ app.use((req, res, next) => {
     }
     next()
 })
+
 app.use(express.json({ limit: '4MB' }))
 
 router(app)
