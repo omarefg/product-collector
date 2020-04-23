@@ -1,7 +1,7 @@
 {
   "name": "pc-normalization",
   "version": 2,
-  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "builds": [{ "src": "src/index.js", "use": "@now/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
   "env": {
       "REDIS_DB_USER": "@pcn_redis_db_user",
