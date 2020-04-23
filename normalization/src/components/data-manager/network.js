@@ -36,9 +36,8 @@ router.post(
             await dataManagerService.searchForSecretByToken(authorization)
 
             try {
-                const normalizedData = await dataManagerService.normalize(body)
-                console.log(normalizedData)
-                response.success({}, res, normalizedData)
+                const { data } = await dataManagerService.normalize(body)
+                response.success({}, res, data)
             } catch (error) {
                 next(boom.badImplementation(error.message))
             }

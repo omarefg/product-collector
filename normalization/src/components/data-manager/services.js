@@ -55,6 +55,7 @@ class DataManagerService {
             try {
                 normalizedData = await this.mercadoLibre.normalize(id, source, data, date, criteria)
             } catch (error) {
+                console.log(error, error.stack)
                 throw boom.internal()
             }
             break

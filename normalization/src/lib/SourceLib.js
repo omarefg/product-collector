@@ -13,8 +13,7 @@ class SourceLib {
      * @param {array} data - Datos a ser normalizados
      * @param {string} date - Fecha de la busqueda
      */
-    normalize (id, source, data, date) {
-        const criteria = productSearchCriteria[id]
+    normalize (id, source, data, date, criteria) {
         let normalizedData = this._simplifyData(id, source, data, date)
         normalizedData = this._getVariant(normalizedData, criteria.filters.variants)
         normalizedData = this._applyCriteria(normalizedData, criteria.filters)

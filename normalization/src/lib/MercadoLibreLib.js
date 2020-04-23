@@ -36,7 +36,7 @@ class MercadoLibreLib extends SourceLib {
         return results.map(item => ({
             ...item,
             condition: item.condition ? this._normCondition(item.condition.value_name, conditionsToReplace) : '',
-            model: item.model ? item.model.value_name.toLowerCase() : ''
+            model: item.model && item.model.value_name ? item.model.value_name.toLowerCase() : ''
         }))
     }
 }

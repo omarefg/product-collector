@@ -1,13 +1,22 @@
 const axios = require('axios')
 
 const sendNormalizedData = async (target, normalizedData) => {
-    const { data: { data } } = await axios({
+    let axiosData = {
         method: 'post',
-        url: 'https://rest-api-mocha.now.sh/api/products',
+        url: target.endpoint,
         data: normalizedData
-    })
+    }
 
-    return data
+    if (target.token) {
+        axiosData = {
+            ...axiosData,
+            headers: {
+                authorization: target.token
+            }
+        }
+    }
+
+    return await axios(axiosData)
 }
 
 module.exports = sendNormalizedData
