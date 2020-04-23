@@ -22,7 +22,7 @@ app.use((req, res, next) => {
     next()
 })
 
-app.use(express.json({ limit: '4MB' }))
+app.use(express.json({ limit: '20MB' }))
 
 router(app)
 app.use(notFound)

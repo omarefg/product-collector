@@ -37,8 +37,8 @@ router.post(
 
             try {
                 const normalizedData = await dataManagerService.normalize(body)
-                const savedDataIds = await dataManagerService.sendNormalizedData(normalizedData)
-                response.success({}, res, savedDataIds)
+                console.log(normalizedData)
+                response.success({}, res, normalizedData)
             } catch (error) {
                 next(boom.badImplementation(error.message))
             }
