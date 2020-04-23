@@ -2,6 +2,19 @@
     "source": "PCML",
     "date": "2020-03-22T06:36:44.892Z",
     "id": "PCP900000000",
+    "target": {
+        "endpint": "http://localhost:3000/api/products",
+        "token": ""
+    },
+    "criteria": {
+        "keyWord": "iphone",
+        "categoryId": "PCC102020",
+        "filters": {
+            "conditions": ["new", "used", "refurbished"],
+            "models": ["iphone[ ]?11", "iphone[ ]?11[ ]?pro", "iphone[ ]?11[ ]?pro[ ]?max"],
+            "variants": ["64[ ]?gb", "128[ ]?gb", "256[ ]?gb"]
+        }
+    },
     "data": {
         "site_id": "MCO",
         "query": "iphone",
