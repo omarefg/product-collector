@@ -2,7 +2,7 @@
   "name": "pc-normalization",
   "version": 2,
   "builds": [{ "src": "src/index.js", "use": "@now/node" }],
-  "routes": [{ "src": "src/(.*)", "dest": "src/index.js" }],
+  "routes": [{ "src": "/(.*)", "dest": "src/index.js" }],
   "env": {
       "REDIS_DB_USER": "@pcn_redis_db_user",
       "REDIS_DB_PASSWORD": "@pcn_redis_db_password",
