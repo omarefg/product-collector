@@ -1,6 +1,7 @@
 const axios = require("axios");
 const { config } = require("../config");
 const MongoLib = require('../lib/mongo');
+const sendData = require('../../auth/index');
 
 class ProductsService {
   constructor() {
@@ -29,7 +30,7 @@ class ProductsService {
 
           countries = countries.filter((country) => country !== "MPT");
           // hago esta linea para solo hacer el de un pais
-          countries = countries.filter((country) => country === "MLA");
+          countries = countries.filter((country) => country === "MCO");
           const countriesIndex = countries.map(async (item) => {
               indexCategory=[];
             try {
@@ -74,7 +75,9 @@ class ProductsService {
       }
       createProducts(data) {
         try {
-          return this.MongoDB.create(this.collection, data);
+          this.MongoDB.create(this.collection, data);
+          // Se modifico  para enviar información a normalizacion 
+          return sendData(data);
         } catch (error) {
           throw new Error(error);
         }
@@ -98,17 +101,23 @@ class ProductsService {
      async getLinks(countries, criteria){
       let result = [];
       countries = countries.filter((country) => country !== "MPT");
-      //countries = countries.filter((country) => country === "MLA");
+      countries = countries.filter((country) => country === "MCO");
       countries.map(country => {
           return criteria.map(item => {
-            const url = `${config.apiMercadolibre}/sites/${country}/search?q=${item.keyWord}`;
-            const allURL = {
-              url,
-              processed: false,
-              criteria: item,
+            //console.log(item);
+            console.log(item[Object.keys(item)[1]].keyWord);
+            
+              const url = `${config.apiMercadolibre}/sites/${country}/search?q=${item[Object.keys(item)[1]].keyWord}`;
+              const allURL = {
+                url,
+                processed: false,
+                //criteria: item,
+                criteria: item[Object.keys(item)[1]],
+              }
+              result.push(allURL);
+            if(item[Object.keys(item)[1]].keyWord=='tapabocas'){
+              this.createLinks(allURL);
             }
-            result.push(allURL);
-            this.createLinks(allURL);
           });
       });
       //result = await this.createLinks(result);
@@ -121,7 +130,6 @@ class ProductsService {
         this.deleteProducts();
         const countries = await this.getCountries();
         const criteria = await this.getCriteria();
-        //console.log(criteria);
         return await this.getLinks(countries, criteria);
        }
        catch(error){
@@ -133,6 +141,7 @@ class ProductsService {
        console.log('Ejecutando Links e insertando productos en BD Mongo');
        try{
         const URLs = await this.getURLs();
+        console.log(`se empiezan a ejecutar los links ${URLs}`);
         URLs.map(async (item) => {
           console.log(`procesando ... ${item.url}`)
           const result = await this.executeURL(item.url, item.criteria);
@@ -169,9 +178,9 @@ class ProductsService {
       const dateGet = new Date();
       let allData = {
         "source": "PCML",
-        "fecha": dateGet,
+        "date": dateGet,
         "catalogue": "products",
-        "crieria": criteria,
+        "criteria": criteria,
         "target": {
           "endpoint": config.target,
           "token": config.token,
@@ -182,7 +191,7 @@ class ProductsService {
         //console.log(products);
         allData = {
           ...allData,
-          data: products.data,
+          data: products.data,   
         }
         this.createProducts(allData);
       }catch(error){
