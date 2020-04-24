@@ -2,7 +2,12 @@ scalar Date
 
 type Query {
   products(country: String, keyWord: String): [Product!]
-  productsCount(country: String, keyWord: [String]): [Count!]
+  productsCount(
+    country: String
+    keyWord: [String]
+    start_date: Date!
+    end_date: Date!
+  ): [Count!]
   productsByDate(
     country: String
     keyWord: [String]

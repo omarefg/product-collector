@@ -21,7 +21,10 @@ const Query = {
   },
 
   productsCount: async (__, args, context, info) => {
-    const criterias = Object.keys(args);
+    const criterias = Object.keys(args).filter(args => {
+      args = args.replace(/\b(\w*_\w*)\b/, 'date');
+      return args != 'date';
+    });
 
     const search = criterias
       .map(criteria => ({
@@ -35,21 +38,83 @@ const Query = {
         return result;
       }, {});
 
-    const product = await Products.aggregate([
-      // First Stage
-      {
-        $match: search
-      },
-      // Second Stage
-      {
-        $group: {
-          _id: '$keyWord',
-          count: { $sum: 1 }
+    const diff = Math.trunc(
+      (args.end_date - args.start_date) / 1000 / 60 / 60 / 24
+    );
+    console.log(diff);
+    if (diff <= 30) {
+      search.date = {
+        $gte: new Date(args.start_date),
+        $lt: new Date(args.end_date)
+      };
+      console.log('search', search);
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: search
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: '$keyWord',
+            count: { $sum: 1 }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { '_id.date': -1 }
         }
-      }
-    ]);
-
-    return product;
+      ]);
+      return product;
+    } else if (diff > 30 && diff <= 365) {
+      search.date = {
+        $gte: new Date(args.start_date),
+        $lt: new Date(args.end_date)
+      };
+      console.log('search', search);
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: search
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: '$keyWord',
+            count: { $sum: 1 }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { '_id.date': -1 }
+        }
+      ]);
+      return product;
+    } else if (diff > 365) {
+      search.date = {
+        $gte: new Date(args.start_date),
+        $lt: new Date(args.end_date)
+      };
+      console.log('search', search);
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: search
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: '$keyWord',
+            count: { $sum: 1 }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { '_id.date': -1 }
+        }
+      ]);
+      return product;
+    }
   },
 
   productsByDate: async (__, args) => {
