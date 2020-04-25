@@ -7,7 +7,8 @@ const config = {
   dbUser: process.env.DB_USER,
   dbPassword: process.env.DB_PASSWORD,
   dbHost: process.env.DB_HOST,
-  dbName: process.env.DB_NAME
+  dbName: process.env.DB_NAME,
+  dbConnection: process.env.DB_CONNECTION || 'mongodb+srv',
 };
 
 module.exports = { config };

@@ -1,6 +1,6 @@
 const axios = require("axios");
 const { config } = require("../config");
-const MongoLib = require('../lib/mongo');
+const MongoLib = require('../../lib/mongo');
 
 class ProductsService {
   constructor() {
@@ -271,7 +271,7 @@ class ProductsService {
       Accept: "application/json, text/plain, */*",
       "Content-Type": "application/json"
     };
-    const { data, status } = await axios({
+    const { data:result, status } = await axios({
       header: headers,
       url: `${config.apiNormalizacion}/normalization/data-manager/normalize`,
       method: 'post',

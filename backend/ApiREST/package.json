@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "DEBUG=app:* nodemon index --exec babel-node",
+    "dev": "nodemon index.js",
     "seed": "npm run seed:categories && npm run seed:keywords && npm run seed:products",
     "seed:categories": "node scripts/mongo/seedCategories.js",
     "seed:keywords": "node scripts/mongo/seedKeywords.js",
@@ -37,7 +37,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.3",
     "prettier": "^1.19.1"
   }
 }
