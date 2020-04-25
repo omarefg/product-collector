@@ -54,7 +54,10 @@ async function sendToNormalization(){
 
 async function main(){
   const insert = await insertLinks();
-  const execute = await executeLinks();
+
+  setTimeout(async () => {
+    const execute = await executeLinks();
+  }, 3000);
 }
 main();
 
