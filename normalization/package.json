@@ -5,14 +5,16 @@
   "description": "normalize raw data for different sources API / web scrapping",
   "main": "index.js",
   "scripts": {
-    "dev": "DEBUG=express:*,app:* nodemon index",
-    "start": "node index"
+    "doc": "jsdoc -c jsdoc.json",
+    "dev": "DEBUG=express:*,app:* nodemon ./src/index",
+    "start": "node ./src/index"
   },
   "keywords": [],
   "author": "Omar Flores (@omarefg), Andres Santana (@rulo-code), Jorge Nemogá (@jhnemogap)",
   "license": "MIT",
   "dependencies": {
     "@hapi/boom": "9.0.0",
+    "axios": "^0.19.2",
     "bcrypt": "4.0.1",
     "dotenv": "8.2.0",
     "express": "4.17.1",
@@ -26,6 +28,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "jsdoc": "^3.6.4",
     "nodemon": "^2.0.2"
   }
 }

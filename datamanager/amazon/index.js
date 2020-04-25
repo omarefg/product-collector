@@ -6,7 +6,16 @@ const mongoDB = new MongoLib();
 
 async function start(country_id, keyword_id) {
     const date = new Date();
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        args: [
+          // Required for Docker version of Puppeteer
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+          // This will write shared memory files into /tmp instead of /dev/shm,
+          // because Docker’s default for /dev/shm is 64MB
+          '--disable-dev-shm-usage'
+        ]
+      });
     try {
         
         const keyword = await mongoDB.get('keywords', keyword_id);
@@ -23,8 +32,8 @@ async function start(country_id, keyword_id) {
             const list = document.querySelectorAll('.s-result-list > .s-asin');
             const results = [];
             for (let i = 0; i < (3 < list.length ? 3 : list.length); i++) {
-                const image = list[i].querySelector('img');
-                const product_page = list[i].querySelector('a.a-link-normal');
+                const image = list[i].querySelector('.sg-row:nth-child(2)').querySelector('img');
+                const product_page = list[i].querySelector('.sg-row:nth-child(2)').querySelector('a.a-link-normal');
                 results.push({
                     image: image ? image.getAttribute('src') : null,
                     page: product_page ? product_page.getAttribute('href') : null
@@ -71,18 +80,17 @@ async function start(country_id, keyword_id) {
 
         fs.writeFileSync(`database/Amazon-${country._id}-product-${ Date.now() }.json`, JSON.stringify(result));
         await browser.close();
-        process.exit(0);
     } catch (e){
         console.log('-----error-----');
         console.log(e)
         await browser.close();
-        process.exit(1);
     }
+
+    return 1;
 }
 
 const currencyToNumber = currency => Number(currency.replace(/[^0-9.-]+/g,""));
 
-module.exports = (country, keyword) => {
-    console.log(country, keyword);
-    start(country, keyword);
+module.exports = async (country, keyword) => {
+    return await start(country, keyword);
 }
