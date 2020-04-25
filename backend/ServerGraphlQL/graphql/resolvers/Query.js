@@ -45,7 +45,7 @@ const Query = {
     if (diff <= 30) {
       search.date = {
         $gte: new Date(args.start_date),
-        $lt: new Date(args.end_date)
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
       };
       console.log('search', search);
       const product = await Products.aggregate([
@@ -69,7 +69,7 @@ const Query = {
     } else if (diff > 30 && diff <= 365) {
       search.date = {
         $gte: new Date(args.start_date),
-        $lt: new Date(args.end_date)
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
       };
       console.log('search', search);
       const product = await Products.aggregate([
@@ -93,7 +93,7 @@ const Query = {
     } else if (diff > 365) {
       search.date = {
         $gte: new Date(args.start_date),
-        $lt: new Date(args.end_date)
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
       };
       console.log('search', search);
       const product = await Products.aggregate([
@@ -140,9 +140,12 @@ const Query = {
     );
     console.log(diff);
     if (diff <= 30) {
+      // args.end_date.setHours(22, 59, 59, 999);
+      console.log(args.end_date);
+
       search.date = {
         $gte: new Date(args.start_date),
-        $lt: new Date(args.end_date)
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
       };
       console.log('search', search);
       const product = await Products.aggregate([
@@ -169,7 +172,7 @@ const Query = {
     } else if (diff > 30 && diff <= 365) {
       search.date = {
         $gte: new Date(args.start_date),
-        $lt: new Date(args.end_date)
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
       };
       console.log('search', search);
       const product = await Products.aggregate([
@@ -196,7 +199,7 @@ const Query = {
     } else if (diff > 365) {
       search.date = {
         $gte: new Date(args.start_date),
-        $lt: new Date(args.end_date)
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
       };
       console.log('search', search);
       const product = await Products.aggregate([
