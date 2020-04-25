@@ -101,7 +101,7 @@ class ProductsService {
      async getLinks(countries, criteria){
       let result = [];
       countries = countries.filter((country) => country !== "MPT");
-      countries = countries.filter((country) => country === "MCO");
+      //countries = countries.filter((country) => country === "MCO");
       countries.map(country => {
           return criteria.map(item => {
             //console.log(item);
@@ -115,9 +115,9 @@ class ProductsService {
                 criteria: item[Object.keys(item)[1]],
               }
               result.push(allURL);
-            if(item[Object.keys(item)[1]].keyWord=='tapabocas'){
+            //if(item[Object.keys(item)[1]].keyWord=='tapabocas'){
               this.createLinks(allURL);
-            }
+            //}
           });
       });
       //result = await this.createLinks(result);
@@ -191,7 +191,8 @@ class ProductsService {
         //console.log(products);
         allData = {
           ...allData,
-          data: products.data,   
+          //data: products.data,   
+          data: JSON.parse(JSON.stringify(products.data).replace("'"," ")),
         }
         this.createProducts(allData);
       }catch(error){
