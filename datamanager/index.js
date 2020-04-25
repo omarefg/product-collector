@@ -30,10 +30,11 @@ if (searchers[argv._[0]]) {
     console.error(`Not "${argv._[0]}" found in searchers`);
 }
 
-function exec (searcher, country, keyword, arguments) {
+async function exec (searcher, country, keyword, arguments) {
     if (searcher.script) {
         console.info(`Starting script for ${searcher.name} in country: ${country} and keyword ${keyword}`);
-        require(searcher.script)(country, keyword, arguments);
+        await require(searcher.script)(country, keyword, arguments);
+        process.exit(0);
     } else {
         console.error(`The ${searcher.name} has not script defined`);
     }

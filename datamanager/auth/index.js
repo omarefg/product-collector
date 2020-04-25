@@ -31,10 +31,13 @@ const sendProducts = async (data, token) => {
         headers,
         url: `${config.normalizacionApi}/normalization/data-manager/normalize`,
         method: 'post',
+        data,
+        /*
         data: {
           source: source,
           data,
         },
+        */
       });
       return response;
     }catch(error){
@@ -45,10 +48,14 @@ const sendProducts = async (data, token) => {
 const sendData = async (data) => {
   const result = await obtenerAuth();
   console.log(`se ha generado la llave de autenticación `);
+  console.log(result);
   console.log('enviando datos a normalizacion ...');
   const product = await sendProducts(data, result);
-  console.log(`el estatus de la peticion fue: ${product.status} ${product.statusText}`)
+  if(product.status){
+    console.log(`el estatus de la peticion fue: ${product.status} ${product.statusText}`)
+  }
+  return product.data;
 }
 
-sendData(data = { results: [{"prueba": "prueba"}]});
-//module.exports = sendData;
+//sendData(data = { results: [{"prueba": "prueba"}]});
+module.exports = sendData;

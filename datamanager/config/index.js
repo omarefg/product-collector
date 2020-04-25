@@ -1,17 +1,18 @@
-require('dotenv').config({path: '../.env'});
+require('dotenv').config();
 
 const config = {
-  dev: process.env.NODE_ENV !== 'production',
   port: process.env.PORT || 3000,
-  authKey: process.env.AUTH_KEY,
-  normalizacionApi: process.env.NORMALIZACION_API,
-  cors: process.env.CORS,
   dbUser: process.env.DB_USER,
   dbPassword: process.env.DB_PASSWORD,
   dbHost: process.env.DB_HOST,
-  dbPort: process.env.DB_PORT,
   dbName: process.env.DB_NAME,
+  dbPort: process.env.DB_PORT,
+  apiMercadolibre: process.env.API_MERCADOLIBRE || "",
+  apiNormalizacion: process.env.NORMALIZACION_API,
+  apiKeyToken: process.env.API_KEY_TOKEN || "",
   rabbitMQ: process.env.RABBITMQ_HOST,
+  target: process.env.TARGET || "http://localhost:3001/api",
+  token: process.env.token || null,
 };
 
 module.exports = { config };

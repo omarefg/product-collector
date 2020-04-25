@@ -55,6 +55,7 @@ async function sendToNormalization(){
 module.exports = async () => {
   const insert = await insertLinks();
   const execute = await executeLinks();
+  return 1;
 }
 
 
