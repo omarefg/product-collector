@@ -2,20 +2,21 @@ version: "3.7"
 
 services:
 
-  # normalization:
-  #   container_name: normalization
-  #   restart: always
-  #   build:
-  #     context: ./
-  #     dockerfile: ./docker/normalization/Dockerfile
-  #   ports:
-  #     - '3000:3000'
-  #   links:
-  #     - redis
-  #     - mongo
-  #   env_file:
-  #     - .env
-
+  normalization:
+    container_name: normalization
+    restart: always
+    image: node:alpine
+    working_dir: /var/www
+    ports:
+      - '3000:3000'
+    links:
+      - mongo
+    volumes:
+      - ./normalization:/var/www
+    command: /bin/sh -c "npm install && npm run start"
+    depends_on: 
+      - redis
+      
   mongo:
     container_name: product_collector_mongo
     build:
@@ -23,7 +24,7 @@ services:
       dockerfile: ./docker/mongo/Dockerfile
     volumes:
       - ./docker/mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
-      - product_collector_mongo:/data/mongodb
+      - product_collector_mongo:/data/db
     env_file:
       - .env
     environment:
@@ -33,20 +34,60 @@ services:
     ports:
       - 27027:27017
 
-  backend:
-    container_name: product_collector_backend
+  redis:
+    image: redis:alpine
+    command: redis-server
+    ports:
+        - 6379:6379
+    volumes:
+        - redis-data:/data
+    environment:
+        - REDIS_REPLICATION_MODE=master
+    
+  backend_graphql:
+    container_name: product_collector_backend_graphql
     build:
       context: ./
       dockerfile: ./docker/backend/Dockerfile
     volumes:
-      - ./backend:/var/www
+      - ./backend/ServerGraphlQL:/var/www
     working_dir: /var/www
     command: /bin/sh -c "npm install && npm run dev"
     ports:
-      - 3001:3000
+      - 3001:4000
     depends_on:
       - mongo
+
+  backend_api:
+    container_name: product_collector_backend_api
+    build:
+      context: ./
+      dockerfile: ./docker/backend/Dockerfile
+    volumes:
+      - ./backend/ApiREST:/var/www
+    working_dir: /var/www
+    command: /bin/sh -c "npm install && npm run dev"
+    ports:
+      - 3002:3000
+    depends_on:
+      - mongo
+
+  datamanager:
+    container_name: product_collector_datamanager
+    build: 
+      context: ./docker/datamanager
+      dockerfile: Dockerfile
+    volumes:
+      - ./datamanager:/var/www
+    working_dir: /var/www 
+  rabbitmq:
+    image: rabbitmq:management-alpine
+    ports:
+        - '5672:5672'
+        - '15672:15672'
+    
 
 volumes:
   product_collector_mongo:
   product_collector_redis:
+  redis-data:

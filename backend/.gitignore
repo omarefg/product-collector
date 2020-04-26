@@ -1,7 +1,7 @@
 
 # Created by https://www.gitignore.io/api/node
 # Edit at https://www.gitignore.io/?templates=node
-
+**/.DS_Store
 ### Node ###
 # Logs
 logs
@@ -109,4 +109,3 @@ tmp/
 temp/
 
 # End of https://www.gitignore.io/api/node
-.now

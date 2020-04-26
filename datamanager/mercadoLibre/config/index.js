@@ -9,7 +9,7 @@ const config = {
   apiMercadolibre: process.env.API_MERCADOLIBRE || "",
   apiNormalizacion: process.env.API_NORMALIZACION || "",
   apiKeyToken: process.env.API_KEY_TOKEN || "",
-  target: process.env.TARGET || "http://localhost:3000/api",
+  target: process.env.TARGET || "http://localhost:3001/api",
   token: process.env.token || null,
 };
 
