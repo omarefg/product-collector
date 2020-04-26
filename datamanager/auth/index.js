@@ -3,10 +3,10 @@ const { config } = require('../config/index');
 
 
 const obtenerAuth = async () => {
-  console.log(`Conectando a: ${config.normalizacionApi}/normalization/auth/token`);
+  console.log(`Conectando a: ${config.apiNormalizacion}/normalization/auth/token`);
   try{
     const response = await axios({
-      url: `${config.normalizacionApi}/normalization/auth/token`,
+      url: `${config.apiNormalizacion}/normalization/auth/token`,
       method: 'post',
       data: {
         "authKey": config.authKey,
@@ -29,7 +29,7 @@ const sendProducts = async (data, token) => {
       };
       const response = await axios({
         headers,
-        url: `${config.normalizacionApi}/normalization/data-manager/normalize`,
+        url: `${config.apiNormalizacion}/normalization/data-manager/normalize`,
         method: 'post',
         data,
         /*
@@ -48,7 +48,7 @@ const sendProducts = async (data, token) => {
 const sendData = async (data) => {
   const result = await obtenerAuth();
   console.log(`se ha generado la llave de autenticación `);
-  console.log(result);
+  //console.log(result);
   console.log('enviando datos a normalizacion ...');
   const product = await sendProducts(data, result);
   if(product.status){
