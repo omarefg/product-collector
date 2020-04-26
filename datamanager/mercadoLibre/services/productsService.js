@@ -103,8 +103,6 @@ class ProductsService {
      async getLinks(countries, criteria){
        console.log(`comenzando a cargar los links...`);
       let result = [];
-      countries = countries.filter((country) => country !== "MPT");
-      //countries = countries.filter((country) => country === "MCO");
       countries = countries.filter((country) => country === "MCO" || country === "MLM" || country === "MLU" || country === "MPE" || country === "MLV");
 
       countries.map(country => {
