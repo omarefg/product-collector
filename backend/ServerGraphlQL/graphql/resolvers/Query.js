@@ -139,7 +139,7 @@ const Query = {
       (args.end_date - args.start_date) / 1000 / 60 / 60 / 24
     );
     console.log(diff);
-    if (diff <= 30) {
+    if (diff <= 31) {
       // args.end_date.setHours(22, 59, 59, 999);
       console.log(args.end_date);
 
@@ -169,7 +169,7 @@ const Query = {
         }
       ]);
       return product;
-    } else if (diff > 30 && diff <= 365) {
+    } else if (diff > 30 && diff <= 366) {
       search.date = {
         $gte: new Date(args.start_date),
         $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
@@ -184,7 +184,7 @@ const Query = {
         {
           $group: {
             _id: {
-              date: { $dateToString: { format: '%m', date: '$date' } },
+              date: { $dateToString: { format: '%Y-%m', date: '$date' } },
               keyWord: '$keyWord'
             },
             count: { $sum: 1 }
