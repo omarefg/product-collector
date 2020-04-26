@@ -7,18 +7,13 @@ type Query {
     keyWord: [String]
     start_date: Date!
     end_date: Date!
-  ): [Count!]
+  ): [Search!]
   productsByDate(
     country: String
     keyWord: [String]
     start_date: Date!
     end_date: Date!
   ): [Search!]
-}
-
-type Count {
-  _id: String
-  count: Int
 }
 
 type Search {

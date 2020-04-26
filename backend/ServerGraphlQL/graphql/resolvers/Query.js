@@ -56,7 +56,10 @@ const Query = {
         // Second Stage
         {
           $group: {
-            _id: '$keyWord',
+            _id: {
+              keyWord: '$keyWord',
+              country: '$country'
+            },
             count: { $sum: 1 }
           }
         },
@@ -80,7 +83,10 @@ const Query = {
         // Second Stage
         {
           $group: {
-            _id: '$keyWord',
+            _id: {
+              keyWord: '$keyWord',
+              country: '$country'
+            },
             count: { $sum: 1 }
           }
         },
@@ -104,7 +110,10 @@ const Query = {
         // Second Stage
         {
           $group: {
-            _id: '$keyWord',
+            _id: {
+              keyWord: '$keyWord',
+              country: '$country'
+            },
             count: { $sum: 1 }
           }
         },
