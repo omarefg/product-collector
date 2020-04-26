@@ -14,11 +14,18 @@ type Query {
     start_date: Date!
     end_date: Date!
   ): [Search!]
+  productsSold(
+    country: String
+    keyWord: [String]
+    start_date: Date!
+    end_date: Date!
+  ): [Sold!]
 }
 
 type Search {
   _id: Product!
   count: Int
+  sumSold: Int
 }
 
 type Mutation {

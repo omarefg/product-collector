@@ -60,7 +60,8 @@ const Query = {
               keyWord: '$keyWord',
               country: '$country'
             },
-            count: { $sum: 1 }
+            count: { $sum: 1 },
+            sumSold: { $sum: '$soldQuantity' }
           }
         },
         // Third Stage
@@ -87,7 +88,8 @@ const Query = {
               keyWord: '$keyWord',
               country: '$country'
             },
-            count: { $sum: 1 }
+            count: { $sum: 1 },
+            sumSold: { $sum: '$soldQuantity' }
           }
         },
         // Third Stage
@@ -114,7 +116,8 @@ const Query = {
               keyWord: '$keyWord',
               country: '$country'
             },
-            count: { $sum: 1 }
+            count: { $sum: 1 },
+            sumSold: { $sum: '$soldQuantity' }
           }
         },
         // Third Stage
@@ -169,7 +172,8 @@ const Query = {
               keyWord: '$keyWord',
               date: { $dateToString: { format: '%Y-%m-%d', date: '$date' } }
             },
-            count: { $sum: 1 }
+            count: { $sum: 1 },
+            sumSold: { $sum: '$soldQuantity' }
           }
         },
         // Third Stage
@@ -196,7 +200,8 @@ const Query = {
               date: { $dateToString: { format: '%Y-%m', date: '$date' } },
               keyWord: '$keyWord'
             },
-            count: { $sum: 1 }
+            count: { $sum: 1 },
+            sumSold: { $sum: '$soldQuantity' }
           }
         },
         // Third Stage
@@ -223,7 +228,8 @@ const Query = {
               keyWord: '$keyWord',
               date: { $dateToString: { format: '%Y', date: '$date' } }
             },
-            count: { $sum: 1 }
+            count: { $sum: 1 },
+            sumSold: { $sum: '$soldQuantity' }
           }
         },
         // Third Stage
