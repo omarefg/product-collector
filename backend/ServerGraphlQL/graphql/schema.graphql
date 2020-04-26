@@ -14,18 +14,31 @@ type Query {
     start_date: Date!
     end_date: Date!
   ): [Search!]
-  productsSold(
-    country: String
+  productsAvgPrice(
+    country: [String]
+    condition: String
     keyWord: [String]
     start_date: Date!
     end_date: Date!
-  ): [Sold!]
+  ): [Avg!]
+  productsAvgByDate(
+    country: [String]
+    condition: String
+    keyWord: [String]
+    start_date: Date!
+    end_date: Date!
+  ): [Avg!]
 }
 
 type Search {
   _id: Product!
   count: Int
   sumSold: Int
+}
+
+type Avg {
+  _id: Product!
+  avg: Float
 }
 
 type Mutation {
@@ -55,7 +68,7 @@ type Product {
   condition: String!
   model: String!
   variants: String!
-  price: Int!
+  price: Float!
   soldQuantity: Int!
   date: String!
   analyzedResults: Int!

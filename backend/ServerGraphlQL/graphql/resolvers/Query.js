@@ -239,6 +239,230 @@ const Query = {
       ]);
       return product;
     }
+  },
+
+  productsAvgPrice: async (__, args, context, info) => {
+    const criterias = Object.keys(args).filter(args => {
+      args = args.replace(/\b(\w*_\w*)\b/, 'date');
+      return args != 'date';
+    });
+
+    const search = criterias
+      .map(criteria => ({
+        [criteria]: {
+          $in: Array.isArray(args[criteria]) ? args[criteria] : [args[criteria]]
+        }
+      }))
+      .reduce((result, item) => {
+        const key = Object.keys(item)[0];
+        result[key] = item[key];
+        return result;
+      }, {});
+
+    const diff = Math.trunc(
+      (args.end_date - args.start_date) / 1000 / 60 / 60 / 24
+    );
+    console.log(diff);
+    if (diff <= 30) {
+      search.date = {
+        $gte: new Date(args.start_date),
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
+      };
+      console.log('search', search);
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: search
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: {
+              keyWord: '$keyWord',
+              country: '$country',
+              currency: '$currency'
+            },
+            avg: { $avg: '$price' }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { '_id.date': -1 }
+        }
+      ]);
+      return product;
+    } else if (diff > 30 && diff <= 365) {
+      search.date = {
+        $gte: new Date(args.start_date),
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
+      };
+      console.log('search', search);
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: search
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: {
+              keyWord: '$keyWord',
+              country: '$country',
+              currency: '$currency'
+            },
+            avg: { $avg: '$price' }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { '_id.date': -1 }
+        }
+      ]);
+      return product;
+    } else if (diff > 365) {
+      search.date = {
+        $gte: new Date(args.start_date),
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
+      };
+      console.log('search', search);
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: search
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: {
+              keyWord: '$keyWord',
+              country: '$country',
+              currency: '$currency'
+            },
+            avg: { $avg: '$price' }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { '_id.date': -1 }
+        }
+      ]);
+      return product;
+    }
+  },
+
+  productsAvgByDate: async (__, args) => {
+    const criterias = Object.keys(args).filter(args => {
+      args = args.replace(/\b(\w*_\w*)\b/, 'date');
+      return args != 'date';
+    });
+
+    const search = criterias
+      .map(criteria => ({
+        [criteria]: {
+          $in: Array.isArray(args[criteria]) ? args[criteria] : [args[criteria]]
+        }
+      }))
+      .reduce((result, item) => {
+        const key = Object.keys(item)[0];
+        result[key] = item[key];
+        return result;
+      }, {});
+
+    const diff = Math.trunc(
+      (args.end_date - args.start_date) / 1000 / 60 / 60 / 24
+    );
+    console.log(diff);
+    if (diff <= 31) {
+      // args.end_date.setHours(22, 59, 59, 999);
+      console.log(args.end_date);
+
+      search.date = {
+        $gte: new Date(args.start_date),
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
+      };
+      console.log('search', search);
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: search
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: {
+              keyWord: '$keyWord',
+              date: { $dateToString: { format: '%Y-%m-%d', date: '$date' } },
+              country: '$country',
+              currency: '$currency'
+            },
+            avg: { $avg: '$price' }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { '_id.date': -1 }
+        }
+      ]);
+      return product;
+    } else if (diff > 30 && diff <= 366) {
+      search.date = {
+        $gte: new Date(args.start_date),
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
+      };
+      console.log('search', search);
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: search
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: {
+              keyWord: '$keyWord',
+              date: { $dateToString: { format: '%Y-%m', date: '$date' } },
+              country: '$country',
+              currency: '$currency'
+            },
+            avg: { $avg: '$price' }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { '_id.date': -1 }
+        }
+      ]);
+      return product;
+    } else if (diff > 365) {
+      search.date = {
+        $gte: new Date(args.start_date),
+        $lte: new Date(args.end_date.setHours(22, 59, 59, 999))
+      };
+      console.log('search', search);
+      const product = await Products.aggregate([
+        // First Stage
+        {
+          $match: search
+        },
+        // Second Stage
+        {
+          $group: {
+            _id: {
+              keyWord: '$keyWord',
+              date: { $dateToString: { format: '%Y', date: '$date' } },
+              country: '$country',
+              currency: '$currency'
+            },
+            avg: { $avg: '$price' }
+          }
+        },
+        // Third Stage
+        {
+          $sort: { '_id.date': -1 }
+        }
+      ]);
+      return product;
+    }
   }
 };
 
