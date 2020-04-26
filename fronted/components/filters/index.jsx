@@ -84,6 +84,7 @@ export default function Filters() {
         />
         <FormHelperText>{errors.date && errors.date.message}</FormHelperText>
       </FormControl>
+      {/* 
       <FormControl
         className={styles.formControl}
         error={Boolean(errors.category)}
@@ -108,7 +109,8 @@ export default function Filters() {
         <FormHelperText>
           {errors.category && errors.category.message}
         </FormHelperText>
-      </FormControl>
+      </FormControl> 
+      */}
     </section>
   );
 }

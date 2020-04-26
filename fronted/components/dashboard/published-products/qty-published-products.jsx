@@ -7,7 +7,7 @@ import {
   Line,
 } from 'recharts';
 
-import { result } from '../../mocks';
+import { result } from '../../../mocks';
 
 export default function QtyPublishedProducts() {
   const {
@@ -16,7 +16,7 @@ export default function QtyPublishedProducts() {
 
   return (
     <LineChart
-        width={900}
+        width={720}
         height={300}
         data={productsCount}
         margin={{
