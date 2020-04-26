@@ -1,7 +1,7 @@
 const axios = require("axios");
-const { config } = require("../config");
+const { config } = require("../../config");
 
-const MongoLib = require('../lib/mongo');
+const MongoLib = require('../../lib/mongo');
 const sendData = require('../../auth/index');
 
 
@@ -101,13 +101,14 @@ class ProductsService {
       }
      }
      async getLinks(countries, criteria){
+       console.log(`comenzando a cargar los links...`);
       let result = [];
-      countries = countries.filter((country) => country !== "MPT");
-      //countries = countries.filter((country) => country === "MCO");
+      countries = countries.filter((country) => country === "MCO" || country === "MLM" || country === "MLU" || country === "MPE" || country === "MLV");
+
       countries.map(country => {
           return criteria.map(item => {
             //console.log(item);
-            console.log(item[Object.keys(item)[1]].keyWord);
+            //console.log(item[Object.keys(item)[1]].keyWord);
             
               const url = `${config.apiMercadolibre}/sites/${country}/search?q=${item[Object.keys(item)[1]].keyWord}`;
               const allURL = {
@@ -141,12 +142,15 @@ class ProductsService {
      async executeURLsCreated(){
        //get Links
        console.log('Ejecutando Links e insertando productos en BD Mongo');
+       let TIME_TO_NEXT = 0;
        try{
         const URLs = await this.getURLs();
-        console.log(`se empiezan a ejecutar los links ${URLs}`);
         URLs.map(async (item) => {
           console.log(`procesando ... ${item.url}`)
-          const result = await this.executeURL(item.url, item.criteria);
+          setTimeout(async () => {
+            const result = await this.executeURL(item.url, item.criteria);
+          }, TIME_TO_NEXT);
+          TIME_TO_NEXT = TIME_TO_NEXT + 3000;
         })
         console.log('Sending data finished ...');
         return URLs;
