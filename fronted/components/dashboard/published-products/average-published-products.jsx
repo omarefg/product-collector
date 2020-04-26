@@ -7,12 +7,9 @@ export default function AveragePublishedProducts({ productsCount }) {
     return <div> Loading ... </div>;
   }
 
-  console.log(productsCount);
   const data =
     productsCount &&
     productsCount.map((item, index) => ({ ...item, fill: colors[index] }));
-
-  console.log(data);
 
   return (
     <BarChart
@@ -30,7 +27,7 @@ export default function AveragePublishedProducts({ productsCount }) {
       <XAxis dataKey='_id' />
       <YAxis />
       <Tooltip />
-      <Bar dataKey='count' fill='fill' />
+      <Bar dataKey='cantidad' fill='fill' />
     </BarChart>
   );
 }

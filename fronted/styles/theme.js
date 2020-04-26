@@ -20,6 +20,14 @@ const theme = createMuiTheme({
       default: '#fff',
     },
   },
+  overrides: {
+    MuiTab: {
+      root: {
+        textTransform: 'capitalize',
+        boxShadow: 'none',
+      },
+    },
+  },
 });
 
 export default theme;

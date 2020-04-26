@@ -10,6 +10,11 @@ const dateFilters = [
     endAt: todayFormat,
   },
   {
+    label: 'Últimos 15 días',
+    startAt: format(sub(today, { days: 15 }), 'yyyy-MM-dd'),
+    endAt: todayFormat,
+  },
+  {
     label: 'Mes actual',
     startAt: format(new Date(getYear(today), getMonth(today), 1), 'yyyy-MM-dd'),
     endAt: todayFormat,

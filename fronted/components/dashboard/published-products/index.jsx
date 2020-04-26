@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Card, CardContent, CardHeader } from '@material-ui/core';
 
 import { result } from '../../../mocks';
@@ -32,8 +32,24 @@ export default function PublishedProducts() {
       }
     `;
 
-  console.log(`query ${query}`);
-  const data = useRequestData(query, keywords, filter);
+  const requestData = useRequestData(query, keywords, filter);
+
+  const [productsCount, setProductsCount] = useState([]);
+
+  useEffect(() => {
+    const data = keywords.map((keyword) => {
+      let qty = 0;
+      if (Array.isArray(requestData.productsCount)) {
+        const productsCount = requestData.productsCount.filter(
+          (item) => item._id === keyword
+        );
+        if (productsCount.length > 0) qty = productsCount[0].count;
+      }
+      return { _id: keyword, cantidad: qty };
+    });
+
+    setProductsCount(data);
+  }, [JSON.stringify(requestData)]);
 
   return (
     <Card variant='outlined'>
@@ -42,8 +58,8 @@ export default function PublishedProducts() {
         subheader={`Fuente: mercadolibre.com - Fecha: ${startAt} a ${endAt}`}
       />
       <CardContent className={styles.cardContent}>
-        <AveragePublishedProducts productsCount={data.productsCount} />
-        <QtyPublishedProducts />
+        <AveragePublishedProducts productsCount={productsCount} />
+        {/* <QtyPublishedProducts /> */}
       </CardContent>
     </Card>
   );
