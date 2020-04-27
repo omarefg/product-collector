@@ -26,26 +26,41 @@ export default function PublishedProducts() {
           end_date: "${endAt}"
           ${countryExists ? `country: "${countries[filter['country']]}"` : ``}
         ) {
-          _id
+          _id{
+            keyWord
+            country
+          }
           count
         }
+        productsByDate(
+          keyWord: [${keywords.map((k) => `"${k}"`)}]
+          start_date: "${startAt}"
+          end_date: "${endAt}"
+          ${countryExists ? `country: "${countries[filter['country']]}"` : ``}
+        ) {
+          _id {
+            keyWord
+            date
+          }
+          count
+        }
+      
       }
     `;
 
   const requestData = useRequestData(query, keywords, filter);
-
   const [productsCount, setProductsCount] = useState([]);
 
   useEffect(() => {
     const data = keywords.map((keyword) => {
-      let qty = 0;
+      let total = 0;
       if (Array.isArray(requestData.productsCount)) {
-        const productsCount = requestData.productsCount.filter(
-          (item) => item._id === keyword
+        const products = requestData.productsCount.filter(
+          (item) => item._id.keyWord === keyword
         );
-        if (productsCount.length > 0) qty = productsCount[0].count;
+        total = products.reduce((a, b) => a + b.count, 0);
       }
-      return { _id: keyword, cantidad: qty };
+      return { _id: keyword, cantidad: total };
     });
 
     setProductsCount(data);
@@ -59,7 +74,7 @@ export default function PublishedProducts() {
       />
       <CardContent className={styles.cardContent}>
         <AveragePublishedProducts productsCount={productsCount} />
-        {/* <QtyPublishedProducts /> */}
+        <QtyPublishedProducts />
       </CardContent>
     </Card>
   );

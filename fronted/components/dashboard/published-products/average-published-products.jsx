@@ -1,4 +1,12 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  LabelList,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+} from 'recharts';
 
 import colors from '../../../utils/colors';
 
@@ -13,9 +21,10 @@ export default function AveragePublishedProducts({ productsCount }) {
 
   return (
     <BarChart
-      width={400}
+      width={300}
       height={300}
       data={data}
+      labelLine={false}
       margin={{
         top: 5,
         right: 30,
@@ -23,7 +32,7 @@ export default function AveragePublishedProducts({ productsCount }) {
         bottom: 5,
       }}
     >
-      <CartesianGrid strokeDasharray='3 3' />
+      <CartesianGrid strokeDasharray='1 1' />
       <XAxis dataKey='_id' />
       <YAxis />
       <Tooltip />
