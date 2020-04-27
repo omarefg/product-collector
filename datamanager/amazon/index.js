@@ -25,7 +25,7 @@ async function start(country_id, criteria_id) {
             catalogue: "products",
             criteria: criteria_val,
             target: {
-                endpoint: config.backendProductsApi,
+                endpoint: config.target,
                 token: null
             },
             data: {

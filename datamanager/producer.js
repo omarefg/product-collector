@@ -18,7 +18,7 @@ async function sendData(channel)
             }   
         }
 
-        //await sendDataToQueue(channel, {"_id":"MLM","default_currency_id":"MXN","name":"Mexico","amazon":{"base_url":"https://www.amazon.com.mx","search_route":"/s?k="},"ISO3166_alpha":"MX"}, {"_id":"5e9db2d01ef50b003344ba0e","date":"2020-01-01","keyword":"xbox","country":"CO","categoryName":"Categoria","origin":"google-trends","visits":1420}, 'ML');
+        await sendDataToQueue(channel,{"_id":"MLM","default_currency_id":"MXN","name":"Mexico","amazon":{"base_url":"https://www.amazon.com.mx","search_route":"/s?k="},"ISO3166_alpha":"MX"}, {"_id":"5ea1bb3ba89c152430df6446","PCP900000000":{"keyWord":"iphone","categoryId":"PCC102020","filters":{"conditions":["new","used","refurbished"],"models":["iphone[ ]?11","iphone[ ]?11[ ]?pro","iphone[ ]?11[ ]?pro[ ]?max","iphone[ ]?x"],"variants":["64[ ]?gb","128[ ]?gb","256[ ]?gb"]}}}, 'ML');
         console.log('the end...');
         process.exit(0);
       } catch (error) {

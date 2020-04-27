@@ -15,6 +15,7 @@ const config = {
   backendProductsApi: process.env.BACKEND_PRODUCTS_API,
   token: process.env.token || null,
   authKey: process.env.AUTH_KEY || "",
+  target: process.env.TARGET || "",
 };
 
 module.exports = { config };

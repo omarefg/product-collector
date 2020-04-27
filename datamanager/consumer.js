@@ -3,6 +3,11 @@ const { config } = require('./config');
 
 const amqp = require('amqplib/callback_api');
 
+process.on('SIGINT', function() {
+    console.log("Caught interrupt signal");
+    process.exit(0);
+});
+
 amqp.connect(`amqp://${config.rabbitMQ}`, function(error0, connection) {
     if (error0) {
         throw error0;
@@ -45,4 +50,5 @@ function systemSync(cmd) {
     catch (error) {
       console.error(error)
     }
-  };
+};
+  
