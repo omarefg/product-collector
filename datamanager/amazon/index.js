@@ -34,7 +34,7 @@ async function start(country_id, criteria_id) {
         page.waitFor(2000);
 
         const results = await page.evaluate(() => {
-            const list = document.querySelectorAll('.s-result-list > .s-asin');
+            const list = document.querySelectorAll('.s-result-list > .s-asin:not(.AdHolder)');
             const results = [];
             let i = 0, j = 0;
             do {
