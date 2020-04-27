@@ -1,10 +1,12 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const MongoLib = require('../lib/mongo');
+const { config } = require('../config');
+const sendData = require('../auth')
 
 const mongoDB = new MongoLib();
 
-async function start(country_id, keyword_id) {
+async function start(country_id, criteria_id) {
     const date = new Date();
     const browser = await puppeteer.launch({
         args: [
@@ -18,9 +20,12 @@ async function start(country_id, keyword_id) {
       });
     try {
         
-        const keyword = await mongoDB.get('keywords', keyword_id);
+        const criteria_object = await mongoDB.get('criteria', criteria_id, {fields: {_id:0}});
         const country = await mongoDB.getOne('countries', {_id: country_id});
-        const search = keyword.keyword.replace(' ', '+');
+        const criteria_key = Object.keys(criteria_object)[0];
+        const criteria_val = criteria_object[criteria_key];
+        
+        const search = criteria_val.keyWord.replace(' ', '+');
 
         const page = await browser.newPage();
         console.log(`${country.amazon.base_url}${country.amazon.search_route}${search}`);
@@ -31,14 +36,19 @@ async function start(country_id, keyword_id) {
         const results = await page.evaluate(() => {
             const list = document.querySelectorAll('.s-result-list > .s-asin');
             const results = [];
-            for (let i = 0; i < (3 < list.length ? 3 : list.length); i++) {
-                const image = list[i].querySelector('.sg-row:nth-child(2)').querySelector('img');
-                const product_page = list[i].querySelector('.sg-row:nth-child(2)').querySelector('a.a-link-normal');
-                results.push({
-                    image: image ? image.getAttribute('src') : null,
-                    page: product_page ? product_page.getAttribute('href') : null
-                });
-            }
+            let i = 0, j = 0;
+            do {
+                if(!!list[i].querySelector('.a-price')) {
+                    const image = list[i].querySelector('.sg-row:nth-child(2)').querySelector('img');
+                    const product_page = list[i].querySelector('.sg-row:nth-child(2)').querySelector('a.a-link-normal');
+                    results.push({
+                        image: image ? image.getAttribute('src') : null,
+                        page: product_page ? product_page.getAttribute('href') : null
+                    });
+                    j++;
+                }
+                i++;
+            } while(j < (3 < list.length ? 3 : list.length));
             return results;
         });
 
@@ -58,27 +68,32 @@ async function start(country_id, keyword_id) {
                 brand: product_brand,
                 price: currencyToNumber(product_price),
                 name: product_name,
+                model: product_name,
                 currency: 'MXN',
+                condition: 'new',
                 ...results[i]
             };
             console.log(result);
             products.push(result);
         }
-        //TODO push to normalizer API
-        const result = {
-            criteria: keyword,
-            source: "AmazonMX",
-            data: products,
+
+        await sendData({
+            source: "PCAMZ",
             date: date,
+            id: criteria_key,
+            catalogue: "products",
+            criteria: criteria_val,
             target: {
-                endpoint: "",
-                token: ""
+                endpoint: config.backendProductsApi,
+                token: null
+            },
+            data: {
+                site_id: "AmazonMX",
+                query: criteria_val.keyWord,
+                results: products
             }
-        }
+        });
 
-        console.log('....',result);
-
-        fs.writeFileSync(`database/Amazon-${country._id}-product-${ Date.now() }.json`, JSON.stringify(result));
         await browser.close();
     } catch (e){
         console.log('-----error-----');
@@ -91,6 +106,6 @@ async function start(country_id, keyword_id) {
 
 const currencyToNumber = currency => Number(currency.replace(/[^0-9.-]+/g,""));
 
-module.exports = async (country, keyword) => {
-    return await start(country, keyword);
+module.exports = async (country, criteria) => {
+    return await start(country, criteria);
 }

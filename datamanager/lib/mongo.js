@@ -5,7 +5,7 @@ const USER = encodeURIComponent(config.dbUser);
 const PASSWORD = encodeURIComponent(config.dbPassword);
 const DB_NAME = config.dbName;
 
-const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}/${DB_NAME}?retryWrites=true&w=majority`;
+const MONGO_URI = `${config.dbConnection}://${USER}:${PASSWORD}@${config.dbHost}/${DB_NAME}?retryWrites=true&w=majority`;
 
 class MongoConnect {
   constructor() {
@@ -39,9 +39,14 @@ class MongoConnect {
     });
   }
 
-  get(collection, id) {
-    return this.connect().then((db) => {
-      return db.collection(collection).findOne({ _id: ObjectId(id) });
+  get(collection, id, options={}) {
+    return this.connect().then(db => {
+      return db.collection(collection).findOne({ _id: ObjectId(id) }, options);
+    });
+  }
+  getOne(collection, query, options={}) {
+    return this.connect().then(db => {
+      return db.collection(collection).findOne(query, options);
     });
   }
 

@@ -25,7 +25,7 @@ amqp.connect(`amqp://${config.rabbitMQ}`, function(error0, connection) {
             try {
                 const data = JSON.parse(msg.content.toString());
 
-                const command = `node ${process.cwd()}/index.js ${data.target} ${data.country._id} "${data.keyword._id}"`;
+                const command = `node ${process.cwd()}/index.js ${data.target} ${data.country._id} "${data.criteria._id}"`;
                 console.log(systemSync(command));
             } catch(error) {
                 console.log(error);
