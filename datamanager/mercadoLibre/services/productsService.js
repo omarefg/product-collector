@@ -1,7 +1,7 @@
 const axios = require("axios");
 const { config } = require("../../config");
 
-const MongoLib = require('../../lib/mongo');
+const MongoLib = require('../../criteria/lib/mongo');
 const sendData = require('../../auth/index');
 
 
