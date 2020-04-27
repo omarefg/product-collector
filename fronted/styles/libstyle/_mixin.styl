@@ -1,0 +1,15 @@
+
+border-radius($radius = $border-radius, $fallback-border-radius = false)
+  if $enable-rounded
+    border-radius: $radius
+  else if $fallback-border-radius != false
+    border-radius: $fallback-border-radius
+
+remove-outline-focus()
+  &:focus 
+  &.form-control:focus 
+    outline none !important
+    outline-width 0 !important
+    box-shadow none
+    -moz-box-shadow none
+    -webkit-box-shadow none    

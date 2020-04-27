@@ -1,0 +1,89 @@
+@import '../../styles/libstyle/index.styl'
+
+.searchTrends
+    height calc(100vh - 81px)
+    margin 0 1rem
+    display flex
+    flex-direction column
+    align-items center
+
+    
+    form 
+        margin-top 40px
+        margin-bottom 2.5rem
+        display flex
+        flex-direction column
+
+        h1 
+            margin-bottom 1.5rem
+            font-weight $font-weight-light
+            font-size $h1-font-size * .875 
+            text-align center
+        
+        input 
+            height 45px
+            width 100%
+            margin-bottom .5rem
+            padding 0 32px
+            margin-right .5rem
+            font-size .85rem
+            border 0
+            background $input-bg
+        
+        button
+            height 45px
+            width 100%
+            margin-bottom .5rem
+            font-size .85rem
+            font-weight 600
+            background $primary
+            color $white
+            border none
+            border-radius 0
+            text-transform capitalize
+
+            &:hover
+                background $yellow
+        
+        .error
+            color $warning
+            font-weight 600
+            text-align center
+
+    .footer img
+        height calc(2.5 * 80px)
+
+
+@media $md
+    .searchTrends
+        height calc(100vh - 85px)
+        margin 0 3rem
+
+        form 
+            margin-top 60px
+            margin-bottom 3rem
+
+            h1 
+                margin-bottom 2rem
+                font-size $h1-font-size
+
+            input
+                width 400px
+            
+            button
+                width 144px
+                margin-bottom 0
+
+        .footer img
+            height calc(3 * 80px)
+
+@media $lg
+    .searchTrends
+        height calc(100vh - 89px)
+
+        form
+            margin-top 80px
+            margin-bottom 3.5rem
+        
+        .footer img
+            height calc(3.5 * 80px)

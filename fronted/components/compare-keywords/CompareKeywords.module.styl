@@ -1,0 +1,24 @@
+@import '../../styles/libstyle/index.styl'
+
+.compare
+    margin -1rem 1rem 1rem
+    border-bottom 1px solid $gray-400
+    display flex
+    flex-direction column
+    align-items center
+    
+
+@media $md
+    .compare
+        margin -1rem 1.5rem 1rem
+        flex-direction row
+        flex-wrap wrap
+        justify-content space-evenly
+
+    
+        
+@media $lg
+    .compare
+        margin -1rem 3rem 1rem
+        flex-wrap nowrap
+        
