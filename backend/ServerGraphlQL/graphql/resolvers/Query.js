@@ -1,7 +1,6 @@
 import Products from '../../models/Products';
 
 const Query = {
-  // Date: GraphQLDate,
   products: async (__, args, context, info) => {
     const criterias = Object.keys(args);
     console.log('criterias', criterias);
@@ -463,6 +462,29 @@ const Query = {
       ]);
       return product;
     }
+  },
+
+  keywords: async (__, args, context, info) => {
+    const criterias = Object.keys(args);
+    console.log('criterias', criterias);
+    const search = criterias.map(criteria => ({ [criteria]: args[criteria] }));
+    console.log('search', search);
+    const where =
+      search.length > 0
+        ? {
+            $and: search
+          }
+        : {};
+
+    console.log('where', where);
+
+    const product = await Products.distinct('keyWord', where);
+    return product;
+  },
+
+  countries: async (__, args, context, info) => {
+    const product = await Products.distinct('country');
+    return product;
   }
 };
 
