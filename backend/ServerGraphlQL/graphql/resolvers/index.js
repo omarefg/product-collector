@@ -2,8 +2,8 @@ import Query from './Query';
 import Mutation from './Mutation';
 const { GraphQLDate } = require('graphql-iso-date');
 
-export default {
+module.exports = {
   Query,
-  Mutation,
+
   Date: GraphQLDate
 };

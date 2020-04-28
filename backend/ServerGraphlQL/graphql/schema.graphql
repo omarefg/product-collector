@@ -7,40 +7,40 @@ type Query {
     keyWord: [String]
     start_date: Date!
     end_date: Date!
-  ): [Count!]
+  ): [Search!]
   productsByDate(
     country: String
     keyWord: [String]
     start_date: Date!
     end_date: Date!
   ): [Search!]
-}
-
-type Count {
-  _id: String
-  count: Int
+  productsAvgPrice(
+    country: [String]
+    condition: String
+    keyWord: [String]
+    start_date: Date!
+    end_date: Date!
+  ): [Avg!]
+  productsAvgByDate(
+    country: [String]
+    condition: String
+    keyWord: [String]
+    start_date: Date!
+    end_date: Date!
+  ): [Avg!]
+  keywords(country: String): [String!]
+  countries: [String!]
 }
 
 type Search {
   _id: Product!
   count: Int
+  sumSold: Int
 }
 
-type Mutation {
-  createProduct(
-    id: String
-    country: String
-    city: String
-    currency: String
-    keyWord: String
-    condition: String
-    model: String
-    variants: String
-    price: Int
-    soldQuantity: Int
-    date: String
-    analyzedResults: Int
-  ): Product
+type Avg {
+  _id: Product!
+  avg: Float
 }
 
 type Product {
@@ -53,7 +53,7 @@ type Product {
   condition: String!
   model: String!
   variants: String!
-  price: Int!
+  price: Float!
   soldQuantity: Int!
   date: String!
   analyzedResults: Int!

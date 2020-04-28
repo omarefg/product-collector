@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model, Types } from 'mongoose';
 
 const productsSchame = new Schema({
   _id: {
@@ -37,7 +37,7 @@ const productsSchame = new Schema({
     required: true
   },
   price: {
-    type: Number,
+    type: Schema.Types.Decimal128,
     required: true
   },
   soldQuantity: {
