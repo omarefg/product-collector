@@ -1,22 +1,21 @@
 import { useState, useEffect, useContext } from 'react';
 import { Card, CardContent, CardHeader } from '@material-ui/core';
 
-import { result } from '../../../mocks';
 import { TrendContext } from '../../../context/trend-context';
 import dateFilters from '../../../utils/date-filters';
 import useRequestData from '../../../hooks/useRequestData';
-import AveragePublishedProducts from './average-published-products';
+import TotalPublishedProducts from './total-published-products';
 import QtyPublishedProducts from './qty-published-products';
 
 import styles from './PublishedProducts.module.styl';
 
 export default function PublishedProducts() {
-  const { keywords, filter } = useContext(TrendContext);
+  const { keywords, filter, countries } = useContext(TrendContext);
   const { startAt, endAt } = dateFilters[filter['date'] || 0];
-  const {
-    data: { countries },
-  } = result;
   const countryExists = !!filter['country'];
+
+  const [totalPublished, setTotalPublished] = useState();
+  const [qtyPublished, setQtyPublished] = useState();
 
   const query = `
       {
@@ -47,11 +46,9 @@ export default function PublishedProducts() {
       
       }
     `;
+  const requestData = useRequestData(query);
 
-  const requestData = useRequestData(query, keywords, filter);
-  const [productsCount, setProductsCount] = useState([]);
-
-  useEffect(() => {
+  function productsCount() {
     const data = keywords.map((keyword) => {
       let total = 0;
       if (Array.isArray(requestData.productsCount)) {
@@ -62,19 +59,38 @@ export default function PublishedProducts() {
       }
       return { _id: keyword, cantidad: total };
     });
+    setTotalPublished(data);
+  }
 
-    setProductsCount(data);
+  function productsByDate() {
+    const data = new Map();
+    if (Array.isArray(requestData.productsByDate)) {
+      requestData.productsByDate.forEach((item) => {
+        const {
+          _id: { date, keyWord },
+          count,
+        } = item;
+        data.set(date, { ...data.get(date), date, [`"${keyWord}"`]: count });
+      });
+    }
+    const dataAsc = new Map([...data.entries()].sort());
+    setQtyPublished(Array.from(dataAsc.values()));
+  }
+
+  useEffect(() => {
+    productsCount();
+    productsByDate();
   }, [JSON.stringify(requestData)]);
 
   return (
     <Card variant='outlined'>
       <CardHeader
         title='Productos publicados'
-        subheader={`Fuente: mercadolibre.com - Fecha: ${startAt} a ${endAt}`}
+        subheader={`Fuente: mercadolibre.com - Desde: ${startAt} a ${endAt}`}
       />
       <CardContent className={styles.cardContent}>
-        <AveragePublishedProducts productsCount={productsCount} />
-        <QtyPublishedProducts />
+        <TotalPublishedProducts products={totalPublished} />
+        <QtyPublishedProducts products={qtyPublished} keywords={keywords} />
       </CardContent>
     </Card>
   );

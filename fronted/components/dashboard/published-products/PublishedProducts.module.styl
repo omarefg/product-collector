@@ -1,2 +1,11 @@
+@import '../../../styles/libstyle/index.styl'
+
 .cardContent
-    display flex
+    display grid
+    grid-template-columns 100%
+
+
+@media $md
+    .cardContent
+        grid-template-columns 30% 70%
+

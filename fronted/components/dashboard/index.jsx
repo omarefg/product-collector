@@ -23,7 +23,6 @@ export default function DashBoard() {
         <Tab label='Publicados' {...a11yProps(0)} />
         <Tab label='Vendidos' {...a11yProps(1)} />
         <Tab label='Precio' {...a11yProps(2)} />
-        <Tab label='Relacionados' {...a11yProps(4)} />
       </Tabs>
       
       {value === 0 && <PublishedProducts />}

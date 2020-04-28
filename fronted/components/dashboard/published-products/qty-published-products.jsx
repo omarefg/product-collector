@@ -5,33 +5,39 @@ import {
   Tooltip,
   LineChart,
   Line,
+  ResponsiveContainer,
 } from 'recharts';
 
-import { result } from '../../../mocks';
+import colors from '../../../utils/colors';
 
-export default function QtyPublishedProducts() {
-  const {
-    data: { productsCount },
-  } = result;
+export default function QtyPublishedProducts({ products, keywords }) {
+  if (!products) {
+    return <div> Loading ... </div>;
+  }
+
+  const lines = keywords.map((item, index) => ({
+    keyword: item,
+    fill: colors[index],
+  }));
 
   return (
-    <LineChart
-        width={720}
-        height={300}
-        data={productsCount}
-        margin={{
-          top: 5, right: 30, left: 20, bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="date" />
+    <ResponsiveContainer height={300}>
+      <LineChart data={products}>
+        <CartesianGrid strokeDasharray='5 5' />
+        <XAxis dataKey='date' />
         <YAxis />
         <Tooltip />
-        <Line dataKey="iphone" stroke="#46d6bb" />
-        <Line dataKey="samsung" stroke="#339de2" />
-        <Line dataKey="huawei" stroke="#fbd500" />
-        <Line dataKey="motorola" stroke="#df3523" />
-        <Line dataKey="xiaomi" stroke="#f78155" />
+        {lines.map(({ keyword, fill }) => {
+          return (
+            <Line
+              key={keyword.replace(' ', '-')}
+              dataKey={`"${keyword}"`}
+              fill={fill}
+              stroke={fill}
+            />
+          );
+        })}
       </LineChart>
+    </ResponsiveContainer>
   );
 }
