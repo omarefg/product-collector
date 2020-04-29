@@ -12,10 +12,9 @@ const config = {
   apiNormalizacion: process.env.NORMALIZACION_API,
   apiKeyToken: process.env.API_KEY_TOKEN || "",
   rabbitMQ: process.env.RABBITMQ_HOST,
-  backendProductsApi: process.env.BACKEND_PRODUCTS_API,
+  target: process.env.TARGET || "",
   token: process.env.token || null,
   authKey: process.env.AUTH_KEY || "",
-  target: process.env.TARGET || "",
 };
 
 module.exports = { config };
