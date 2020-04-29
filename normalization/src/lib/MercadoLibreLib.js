@@ -1,5 +1,6 @@
 const SourceLib = require('./SourceLib')
 const countries = require('../utils/mocks/countriesMock.json')
+const { removeDiacritics } = require('../utils/grammar')
 
 /**
  * Esta clase basada en [SourceLib](https://documentacion-normalizacion.now.sh/SourceLib.html "SourceLib")  nos permite definir los metodos simpliticar la estructura de los datos que nos llega de Mercado libre
@@ -17,7 +18,7 @@ class MercadoLibreLib extends SourceLib {
     _simplifyData (id, source, data, date) {
         const conditionsToReplace = { nuevo: 'new', usado: 'used', reacondicionado: 'refurbished' }
         const keyWord = data.query
-        const country = countries[source].data.filter(item => item.id === data.site_id)[0].name
+        const country = removeDiacritics(countries[source].data.filter(item => item.id === data.site_id)[0].name)
 
         const results = data.results.map(item => ({
             id,
