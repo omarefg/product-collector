@@ -1,5 +1,5 @@
 function removeDiacritics (word) {
-    if (!word) {
+    if (typeof word !== 'string') {
         return ''
     }
 
