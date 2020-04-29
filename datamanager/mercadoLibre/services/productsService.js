@@ -69,13 +69,13 @@ class ProductsService {
                 }
                 // aqui se guarda en base de datos
                 // pero aca debera ser enviado al servicio de normalizacion
-                this.createProducts(allData);
+                await this.createProducts(allData);
               })
             })
           });
 
       }
-      createProducts(data) {
+      async createProducts(data) {
         try {
           this.MongoDB.create(this.collection, data);
           // Se modifico  para enviar información a normalizacion 
@@ -142,16 +142,15 @@ class ProductsService {
      async executeURLsCreated(){
        //get Links
        console.log('Ejecutando Links e insertando productos en BD Mongo');
-       let TIME_TO_NEXT = 0;
        try{
         const URLs = await this.getURLs();
-        URLs.map(async (item) => {
+        for (const item of URLs) {
           console.log(`procesando ... ${item.url}`)
-          setTimeout(async () => {
-            const result = await this.executeURL(item.url, item.criteria);
-          }, TIME_TO_NEXT);
-          TIME_TO_NEXT = TIME_TO_NEXT + 3000;
-        })
+          const result = await this.executeURL(item.url, item.criteria);
+          await new Promise((resolve, reject) => {
+            setTimeout(() => resolve(), 3000)
+          });
+        }
         console.log('Sending data finished ...');
         return URLs;
        }catch(error){
@@ -200,7 +199,7 @@ class ProductsService {
           //data: products.data,   
           data: JSON.parse(JSON.stringify(products.data).replace("'"," ")),
         }
-        this.createProducts(allData);
+        await this.createProducts(allData);
       }catch(error){
         console.log(error);
         return error;
