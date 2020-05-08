@@ -8,7 +8,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-import colors from '../../../utils/colors';
+import colors from '../../utils/colors';
 
 export default function QtyPublishedProducts({ products, keywords }) {
   if (!products) {

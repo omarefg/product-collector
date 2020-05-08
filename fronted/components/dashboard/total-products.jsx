@@ -8,9 +8,9 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-import colors from '../../../utils/colors';
+import colors from '../../utils/colors';
 
-export default function TotalPublishedProducts({ products }) {
+export default function TotalPublishedProducts({ products, dataKey }) {
   if (!products) {
     return <div> Loading ... </div>;
   }
@@ -26,7 +26,7 @@ export default function TotalPublishedProducts({ products }) {
         <XAxis dataKey='_id' />
         <YAxis />
         <Tooltip />
-        <Bar dataKey='cantidad' fill='fill' />
+        <Bar dataKey={dataKey} fill='fill' />
       </BarChart>
     </ResponsiveContainer>
   );

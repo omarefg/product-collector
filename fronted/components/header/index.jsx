@@ -9,11 +9,6 @@ const Header = () => (
     <nav>
       <ul>
         <li>
-          <Link href='/team' activeClassName={styles.active}>
-            <a>Team</a>
-          </Link>
-        </li>
-        <li>
           <a
             href='https://github.com/omarefg/product-collector'
             target='_blank'

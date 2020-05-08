@@ -23,13 +23,13 @@ const SearchTrends = () => {
           <input
             type='text'
             name='search'
-            placeholder='Ingrese la palabras clave a buscar'
+            placeholder='Ingrese el producto a buscar'
             ref={register({ required: true })}
           />
           <Button type='submit'>Buscar</Button>
         </div>
         {errors.search && (
-          <div className={styles.error}>La palabra es requerida</div>
+          <div className={styles.error}>El producto es requerida</div>
         )}
       </form>
       <div className={styles.footer}>
