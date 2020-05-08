@@ -9,13 +9,13 @@ import QtyPublishedProducts from '../qty-products';
 
 import styles from '../DashBoard.module.styl';
 
-export default function PublishedProducts() {
+export default function SoldProducts() {
   const { keywords, filter, countries } = useContext(TrendContext);
   const { startAt, endAt } = dateFilters[filter['date'] || 0];
   const countryExists = !!filter['country'];
 
-  const [totalPublished, setTotalPublished] = useState();
-  const [qtyPublished, setQtyPublished] = useState();
+  const [totalSold, setTotalSold] = useState();
+  const [qtySold, setQtySold] = useState();
 
   const query = `
       {
@@ -29,7 +29,7 @@ export default function PublishedProducts() {
             keyWord
             country
           }
-          count
+          sumSold
         }
         productsByDate(
           keyWord: [${keywords.map((k) => `"${k}"`)}]
@@ -41,25 +41,25 @@ export default function PublishedProducts() {
             keyWord
             date
           }
-          count
+          sumSold
         }
       
       }
     `;
   const requestData = useRequestData(query);
 
-  function productsCount() {
+  function productsSold() {
     const data = keywords.map((keyword) => {
       let total = 0;
       if (Array.isArray(requestData.productsCount)) {
         const products = requestData.productsCount.filter(
           (item) => item._id.keyWord === keyword
         );
-        total = products.reduce((a, b) => a + b.count, 0);
+        total = products.reduce((a, b) => a + b.sumSold, 0);
       }
-      return { _id: keyword, cantidad: total };
+      return { _id: keyword, valor: total };
     });
-    setTotalPublished(data);
+    setTotalSold(data);
   }
 
   function productsByDate() {
@@ -68,29 +68,29 @@ export default function PublishedProducts() {
       requestData.productsByDate.forEach((item) => {
         const {
           _id: { date, keyWord },
-          count,
+          sumSold,
         } = item;
-        data.set(date, { ...data.get(date), date, [`"${keyWord}"`]: count });
+        data.set(date, { ...data.get(date), date, [`"${keyWord}"`]: sumSold });
       });
     }
     const dataAsc = new Map([...data.entries()].sort());
-    setQtyPublished(Array.from(dataAsc.values()));
+    setQtySold(Array.from(dataAsc.values()));
   }
 
   useEffect(() => {
-    productsCount();
+    productsSold();
     productsByDate();
   }, [JSON.stringify(requestData)]);
 
   return (
     <Card variant='outlined'>
       <CardHeader
-        title='Productos publicados'
+        title='Productos vendidos'
         subheader={`Fuente: mercadolibre.com - Desde: ${startAt} a ${endAt}`}
       />
       <CardContent className={styles.cardContent}>
-        <TotalPublishedProducts products={totalPublished} dataKey={'cantidad'} />
-        <QtyPublishedProducts products={qtyPublished} keywords={keywords} />
+        <TotalPublishedProducts products={totalSold} dataKey={'valor'} />
+        <QtyPublishedProducts products={qtySold} keywords={keywords} />
       </CardContent>
     </Card>
   );

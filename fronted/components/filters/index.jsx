@@ -8,25 +8,37 @@ import {
   Select,
 } from '@material-ui/core';
 import { TrendContext } from '../../context/trend-context';
+import useRequestData from '../../hooks/useRequestData';
 import dateFilters from '../../utils/date-filters';
 
 import styles from './Filters.module.styl';
 
-import { result } from '../../mocks';
-
 export default function Filters() {
-  const {
-    data: { countries, categories },
-  } = result;
-
-  const { filter, setFilter } = useContext(TrendContext);
+  const { filter, setFilter, countries, setCountries } = useContext(
+    TrendContext
+  );
   const { control, errors, setValue } = useForm();
+
+  const query = `
+    {
+      countries
+    }
+  `;
+
+  const requestData = useRequestData(query);
+
+  useEffect(() => {
+    if (requestData.countries) {
+      const values = ['Todos', ...requestData.countries];
+      setCountries(values);
+    }
+  }, [JSON.stringify(requestData)]);
 
   useEffect(() => {
     Object.entries(filter).map(([key, value]) => {
       setValue(key, value);
     });
-  });
+  }, [filter.toString()]);
 
   const handleChange = ([event]) => {
     const {
@@ -82,35 +94,8 @@ export default function Filters() {
           defaultValue={0}
           onChange={handleChange}
         />
-        <FormHelperText>{errors.date && errors.date.message}</FormHelperText>
+        <FormHelperText>{errors.date && errors.date.message}</FormHelperText>{' '}
       </FormControl>
-      {/* 
-      <FormControl
-        className={styles.formControl}
-        error={Boolean(errors.category)}
-      >
-        <InputLabel>Por categoría</InputLabel>
-        <Controller
-          as={
-            <Select>
-              {categories.map((item, index) => (
-                <MenuItem key={index} value={index}>
-                  {item}
-                </MenuItem>
-              ))}
-            </Select>
-          }
-          name='category'
-          rules={{ required: 'Valor requerido' }}
-          control={control}
-          defaultValue={0}
-          onChange={handleChange}
-        />
-        <FormHelperText>
-          {errors.category && errors.category.message}
-        </FormHelperText>
-      </FormControl> 
-      */}
     </section>
   );
 }

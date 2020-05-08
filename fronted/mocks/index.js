@@ -1,26 +1,5 @@
 export const result = {
   data: {
-    countries: [
-      'Todos',
-      'Argentina',
-      'Bolivia',
-      'Brasil',
-      'Chile',
-      'Colombia',
-      'Costa Rica',
-      'Dominicana',
-      'Ecuador',
-      'Guatemala',
-      'Honduras',
-      'México',
-      'Nicaragua',
-      'Panama',
-      'Paraguay',
-      'Perú',
-      'Salvador',
-      'Uruguay',
-      'Venezuela',
-    ],
     categories: [
       'Todas',
       'Accesorios para Vehículos',
@@ -54,33 +33,6 @@ export const result = {
       'Salud y Equipamiento Médico',
       'Servicios',
       'Otras categorías',
-    ],
-    productsAverage: [
-      {
-        producto: 'iphone',
-        cantidad: 26,
-        fill: '#46d6bb',
-      },
-      {
-        producto: 'samsung',
-        cantidad: 14,
-        fill: '#339de2',
-      },
-      {
-        producto: 'huawei',
-        cantidad: 6,
-        fill: '#fbd500',
-      },
-      {
-        producto: 'motorola',
-        cantidad: 1,
-        fill: '#df3523',
-      },
-      {
-        producto: 'xiaomi',
-        cantidad: 5,
-        fill: '#f78155',
-      },
     ],
     productsCount: [
       {

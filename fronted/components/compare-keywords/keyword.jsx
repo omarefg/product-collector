@@ -21,7 +21,7 @@ export default function Keyword({
       <PointColor color={color} />
       <TextField
         type='search'
-        label='Palabra clave'
+        label='Producto'
         name={name}
         inputRef={inputRef}
         defaultValue={keyword}

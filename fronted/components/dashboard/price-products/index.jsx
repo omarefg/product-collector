@@ -5,92 +5,97 @@ import { TrendContext } from '../../../context/trend-context';
 import dateFilters from '../../../utils/date-filters';
 import useRequestData from '../../../hooks/useRequestData';
 import TotalPublishedProducts from '../total-products';
-import QtyPublishedProducts from '../qty-products';
+import DateQtyProducts from '../qty-products';
 
 import styles from '../DashBoard.module.styl';
 
-export default function PublishedProducts() {
-  const { keywords, filter, countries } = useContext(TrendContext);
+export default function PriceProducts({ country }) {
+  const { keywords, filter } = useContext(TrendContext);
   const { startAt, endAt } = dateFilters[filter['date'] || 0];
-  const countryExists = !!filter['country'];
 
-  const [totalPublished, setTotalPublished] = useState();
-  const [qtyPublished, setQtyPublished] = useState();
+  const [avgTotal, setAvgTotal] = useState();
+  const [avgByDate, setAvgByDate] = useState();
 
   const query = `
       {
-        productsCount(
+        productsAvgPrice(
           keyWord: [${keywords.map((k) => `"${k}"`)}]
           start_date: "${startAt}"
           end_date: "${endAt}"
-          ${countryExists ? `country: "${countries[filter['country']]}"` : ``}
+          country: "${country}"
         ) {
           _id{
             keyWord
             country
           }
-          count
+          avg
         }
-        productsByDate(
+        productsAvgByDate(
           keyWord: [${keywords.map((k) => `"${k}"`)}]
           start_date: "${startAt}"
           end_date: "${endAt}"
-          ${countryExists ? `country: "${countries[filter['country']]}"` : ``}
+          country: "${country}"
         ) {
           _id {
             keyWord
             date
           }
-          count
+          avg
         }
       
       }
     `;
   const requestData = useRequestData(query);
 
-  function productsCount() {
+  function productsAvgPrice() {
     const data = keywords.map((keyword) => {
       let total = 0;
-      if (Array.isArray(requestData.productsCount)) {
-        const products = requestData.productsCount.filter(
+      let qty = 0;
+      if (Array.isArray(requestData.productsAvgPrice)) {
+        const products = requestData.productsAvgPrice.filter(
           (item) => item._id.keyWord === keyword
         );
-        total = products.reduce((a, b) => a + b.count, 0);
+        total = products.reduce((a, b) => a + b.avg, 0);
+        qty += 1;
       }
-      return { _id: keyword, cantidad: total };
+      return { _id: keyword, promedio: Number((total / qty).toFixed(2)) };
     });
-    setTotalPublished(data);
+    setAvgTotal(data);
   }
 
-  function productsByDate() {
+  function productsAvgByDate() {
     const data = new Map();
-    if (Array.isArray(requestData.productsByDate)) {
-      requestData.productsByDate.forEach((item) => {
+    if (Array.isArray(requestData.productsAvgByDate)) {
+      requestData.productsAvgByDate.forEach((item) => {
         const {
           _id: { date, keyWord },
-          count,
+          avg,
         } = item;
-        data.set(date, { ...data.get(date), date, [`"${keyWord}"`]: count });
+        data.set(date, {
+          ...data.get(date),
+          date,
+          [`"${keyWord}"`]: Number(avg.toFixed(2)),
+        });
       });
     }
     const dataAsc = new Map([...data.entries()].sort());
-    setQtyPublished(Array.from(dataAsc.values()));
+    setAvgByDate(Array.from(dataAsc.values()));
   }
 
   useEffect(() => {
-    productsCount();
-    productsByDate();
+    productsAvgPrice();
+    productsAvgByDate();
   }, [JSON.stringify(requestData)]);
 
   return (
     <Card variant='outlined'>
       <CardHeader
-        title='Productos publicados'
+        title={`Precio promedio ${country}`}
         subheader={`Fuente: mercadolibre.com - Desde: ${startAt} a ${endAt}`}
       />
       <CardContent className={styles.cardContent}>
-        <TotalPublishedProducts products={totalPublished} dataKey={'cantidad'} />
-        <QtyPublishedProducts products={qtyPublished} keywords={keywords} />
+        <TotalPublishedProducts products={avgTotal} dataKey={'promedio'} />
+        <DateQtyProducts products={avgByDate} keywords={keywords} />
       </CardContent>
     </Card>
   );
