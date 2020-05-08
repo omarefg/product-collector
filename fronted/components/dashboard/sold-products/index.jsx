@@ -7,7 +7,7 @@ import useRequestData from '../../../hooks/useRequestData';
 import TotalPublishedProducts from '../total-products';
 import QtyPublishedProducts from '../qty-products';
 
-import styles from '../Dashboard.module.styl';
+import styles from '../DashBoard.module.styl';
 
 export default function SoldProducts() {
   const { keywords, filter, countries } = useContext(TrendContext);
