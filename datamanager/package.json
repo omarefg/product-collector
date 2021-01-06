@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.5.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "google-trends-api": "^4.9.0",
     "mongodb": "^3.5.6",
