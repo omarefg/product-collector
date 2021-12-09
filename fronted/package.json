@@ -28,7 +28,7 @@
     "@zeit/next-stylus": "^1.0.1",
     "date-fns": "^2.12.0",
     "graphql-request": "^1.8.2",
-    "next": "^9.3.5",
+    "next": "^11.1.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^5.6.0",
